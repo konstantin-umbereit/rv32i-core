@@ -1,0 +1,14 @@
+*.o                 
+*.bin          
+ 
+docs/ 
+rtl/
+test_benches/
+test_/programs/
+waveforms/
+
+assembler
+!assembler/
+
+!README.md       
+!Makefile         
