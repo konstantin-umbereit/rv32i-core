@@ -28,4 +28,13 @@ tb_regfile:
 		rtl/regfile.sv test_benches/tb_regfile.sv \
 		&& ./obj_dir/Vtb_regfile
 
+tb_pc:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ \
+		--top-module tb_pc \
+		rtl/pc.sv test_benches/tb_pc.sv \
+		&& ./obj_dir/Vtb_pc
+
+
 

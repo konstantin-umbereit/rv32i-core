@@ -10,15 +10,21 @@ module tb_regfile;
     regfile dut (.*);   
 
     always #5 clk = ~clk;   
-
+    
     initial begin
         $dumpfile("waveforms/tb_regfile.vcd");
         $dumpvars(0, tb_regfile);
-
-        #10 rst_n = 1;     /* release reset */
-        #10 we = 1; rd = 5; wd = 32'hDEADBEEF;   /* write to x5 */
-        #10 we = 0; rs1 = 5; rs2 = 0;            /* read x5 and x0 */
-        #10 $finish;
+        
+        @(posedge clk);                      /* release reset */
+        rst_n = 1;
+        @(posedge clk);                           
+        we = 1; rd = 5; wd = 32'hDEADBEEF;   /* write to x5 */
+        @(posedge clk);
+        we = 0; rs1 = 5; rs2 = 0;            /* read x5 and x0 */
+        @(posedge clk);                      
+        rst_n = 0;                           /* push reset */
+        @(posedge clk);
+        $finish;
     end 
 
     initial $monitor("Time=%0t rd1=%h rd2=%h", $time, rd1, rd2);
