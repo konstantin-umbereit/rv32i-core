@@ -20,9 +20,21 @@ RV32I-Assembler (written in C) + single-cycle CPU
       .ascii, .asciz
 
 2. USAGE ASSEMBLER
+
     1. Change directory to /assembler
-    2. 'make'
-    3. './assembler /path_to_source_file.s'
+    2. 
+```bash 
+        make 
+```
+    3. 
+```bash 
+    ./assembler /path_to_source_file.s 
+```
 
 3. CPU
+
     -- work in progress --
+
+4. LICENCE
+
+    - MIT

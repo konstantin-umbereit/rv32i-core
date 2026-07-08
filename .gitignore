@@ -2,9 +2,9 @@
 *.bin          
  
 docs/ 
-rtl/
 test_benches/
 test_/programs/
+obj_dir
 waveforms/
 
 assembler
@@ -12,3 +12,4 @@ assembler
 
 !README.md       
 !Makefile         
+git
