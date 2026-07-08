@@ -2,8 +2,6 @@
 *.bin          
  
 docs/ 
-test_benches/
-test_/programs/
 obj_dir
 waveforms/
 
