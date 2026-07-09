@@ -36,5 +36,13 @@ tb_pc:
 		rtl/pc.sv test_benches/tb_pc.sv \
 		&& ./obj_dir/Vtb_pc
 
+tb_extend:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL \
+		--top-module tb_extend \
+		rtl/extend.sv test_benches/tb_extend.sv \
+		&& ./obj_dir/Vtb_extend
+
 
 
