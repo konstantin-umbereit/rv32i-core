@@ -1,7 +1,11 @@
+/* test_benches/tb_pc.sv.sv
+ *
+ * Test bench for rtl/pc.sv
+ */
 module tb_pc;
 
-    logic clk = 0;
-    logic rst_n =0;
+    logic        clk = 0;
+    logic        rst_n =0;
     logic [31:0] pc_next;
     logic [31:0] pc_out;
 
@@ -16,13 +20,13 @@ module tb_pc;
         @(posedge clk);
         rst_n = 1;                  /* release reset */
         @(posedge clk);
-        pc_next = pc_next + 4;      /* increase PC by 4 */
+        pc_next = pc_next + 4;      /* increase PC by 4, expected pc_out=0x4 */
         @(posedge clk);
-        pc_next = 32'h0000_1000;    /* set PC to target */
+        pc_next = 32'h0000_1000;    /* set PC to target, expected pc_out=0x1000 */
         @(posedge clk);
-        pc_next = pc_next + 4;      /* increase PC by 4 */
+        pc_next = pc_next + 4;      /* increase PC by 4, expected pc_out=0x1004 */
         @(posedge clk);
-        rst_n = 0;                  /* push reset */
+        rst_n = 0;                  /* push reset, expected pc_out=0x0 */
         @(posedge clk);
         $finish;
     end

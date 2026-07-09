@@ -1,6 +1,6 @@
-/* rtl/tb_extend.sv
+/* test_benches/tb_extend.sv
  *
- * test bench for rtl/tb_extend.sv
+ * Test bench for rtl/extend.sv
  */
 module tb_extend;
 
@@ -15,15 +15,15 @@ module tb_extend;
         $dumpfile("waveforms/tb_extend.vcd");
         $dumpvars(0, tb_extend);
 
-        #10 imm_src = 3'b000; instr = 32'h1234_5678; /* I-type, imm = 0x123*/
-        #10 imm_src = 3'b001; instr = 32'h1234_5678; /* S-type, imm = 0x12C */
-        #10 imm_src = 3'b010; instr = 32'h1234_5678; /* B-type, imm = 0x96*/
-        #10 imm_src = 3'b011; instr = 32'h1234_5678; /* U-type, imm = 0x12345*/
-        #10 imm_src = 3'b100; instr = 32'h1234_5678; /* J-type, imm = 0x22C91*/
+        #10 imm_src = 3'b000; instr = 32'h1234_5678; /* I-type, expected imm_ext = 0x00000123 */
+        #10 imm_src = 3'b001; instr = 32'h1234_5678; /* S-type, expected imm_ext = 0x0000012C */
+        #10 imm_src = 3'b010; instr = 32'h1234_5678; /* B-type, expected imm_ext = 0x00000096 */
+        #10 imm_src = 3'b011; instr = 32'h1234_5678; /* U-type, expected imm_ext = 0x00012345  */
+        #10 imm_src = 3'b100; instr = 32'h1234_5678; /* J-type, expected imm_ext = 0x00022C91 */
 
-        #10 imm_src = 3'b101; instr = 32'h1234_5678; /* invalid imm_src, expected warning in simulator + imm = 0 */
-        #10 imm_src = 3'b110; instr = 32'h1234_5678; /* invalid imm_src, expected warning in simulator + imm = 0 */
-        #10 imm_src = 3'b111; instr = 32'h1234_5678; /* invalid imm_src, expected warning in simulator + imm = 0 */
+        #10 imm_src = 3'b101; instr = 32'h1234_5678; /* invalid imm_src, expected warning in simulator + imm_ext = 0 */
+        #10 imm_src = 3'b110; instr = 32'h1234_5678; /* invalid imm_src, expected warning in simulator + imm_ext = 0 */
+        #10 imm_src = 3'b111; instr = 32'h1234_5678; /* invalid imm_src, expected warning in simulator + imm_ext = 0 */
 
 
         #10 $finish;

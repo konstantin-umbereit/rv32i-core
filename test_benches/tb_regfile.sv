@@ -1,3 +1,7 @@
+/* test_benches/tb_regfile.sv
+ *
+ * Test bench for rtl/refile.sv
+ */
 module tb_regfile;
 
     logic clk = 0;
@@ -15,14 +19,14 @@ module tb_regfile;
         $dumpfile("waveforms/tb_regfile.vcd");
         $dumpvars(0, tb_regfile);
         
-        @(posedge clk);                      /* release reset */
-        rst_n = 1;
+        @(posedge clk);                      
+        rst_n = 1;                           /* release reset */
         @(posedge clk);                           
         we = 1; rd = 5; wd = 32'hDEADBEEF;   /* write to x5 */
         @(posedge clk);
-        we = 0; rs1 = 5; rs2 = 0;            /* read x5 and x0 */
+        we = 0; rs1 = 5; rs2 = 0;            /* read x5 and x0, expected rd1=0xdeadbeef + rd2=0x00000000 */
         @(posedge clk);                      
-        rst_n = 0;                           /* push reset */
+        rst_n = 0;                           /* push reset, expected rd1=0x00000000 + rd2=0x00000000 */
         @(posedge clk);
         $finish;
     end 
