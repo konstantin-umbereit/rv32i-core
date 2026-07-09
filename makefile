@@ -44,5 +44,13 @@ tb_extend:
 		rtl/extend.sv test_benches/tb_extend.sv \
 		&& ./obj_dir/Vtb_extend
 
+tb_alu:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL \
+		--top-module tb_alu \
+		rtl/alu.sv test_benches/tb_alu.sv \
+		&& ./obj_dir/Vtb_alu
+
 
 
