@@ -27,6 +27,6 @@ module tb_regfile;
         $finish;
     end 
 
-    initial $monitor("Time=%0t rd1=%h rd2=%h", $time, rd1, rd2);
+    initial $monitor("Time=0d%0t rd1=0x%h rd2=0x%h", $time, rd1, rd2);
 
 endmodule

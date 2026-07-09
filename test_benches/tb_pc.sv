@@ -27,5 +27,5 @@ module tb_pc;
         $finish;
     end
 
-    initial $monitor("Time=%0t pc_out=%0h", $time, pc_out);
+    initial $monitor("Time=0d%0t pc_out=0x%0h", $time, pc_out);
 endmodule
