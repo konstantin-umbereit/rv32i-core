@@ -48,6 +48,14 @@ tb_data_memory:
 		rtl/data_memory.sv test_benches/tb_data_memory.sv \
 		&& ./obj_dir/Vtb_data_memory
 
+tb_wb_mux:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL --Wno-SYNCASYNCNET \
+		--top-module tb_wb_mux \
+		rtl/wb_mux.sv test_benches/tb_wb_mux.sv \
+		&& ./obj_dir/Vtb_wb_mux
+
 
 
 
