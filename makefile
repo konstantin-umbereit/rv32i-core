@@ -1,23 +1,3 @@
-# Assembler
-
-CC = gcc
-CFLAGS = -Wall -Wextra -std=c11
-
-SRCS = assembler_src/main.c \
-       assembler_src/lexer.c \
-       assembler_src/parser.c\
-       assembler_src/emitter.c\
-       assembler_src/symbol_table.c\
-       assembler_src/rv32i.c
-
-assembler: $(SRCS)
-	$(CC) $(CFLAGS) $(SRCS) -o assembler
-	
-assembler_clean:
-	rm -f assembler
-
-.PHONY: clean
-
 # Test benches
 
 tb_regfile:
