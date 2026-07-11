@@ -15,6 +15,7 @@
     output logic       alu_src,     
     output logic [2:0] imm_src,     
     output logic       reg_write,   
+    output logic [1:0] data_mask,
 
     output logic [3:0] alu_ctrl     
 
@@ -31,6 +32,7 @@
                 alu_src          = 0;       /* = rd2 */
                 imm_src          = 0;       /* no impact, because alu_src = 0; */
                 reg_write        = 1;
+                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */
             end 
 
             /* I-type: OP-IMM */
@@ -80,7 +82,14 @@
                 mem_write        = 1;
                 alu_src          = 0;       /* = rd2 */
                 imm_src          = 3'b001;  /* = S-type */
-                reg_write        = 0;       
+                reg_write        = 0;
+                case (funct3)
+                    3'b000:  data_mask = 2'b00; /* [7:0] */
+                    3'b001:  data_mask = 2'b01; /* [15:0] */
+                    3'b010:  data_mask = 2'b10; /* [31:0] */
+                    default: data_mask = 2'b10; /* [7:0] */
+
+                endcase       
 
             end 
 

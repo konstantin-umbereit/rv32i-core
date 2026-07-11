@@ -60,5 +60,14 @@ tb_control:
 		rtl/control.sv test_benches/tb_control.sv \
 		&& ./obj_dir/Vtb_control
 
+tb_data_memory:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL --Wno-SYNCASYNCNET \
+		--top-module tb_data_memory \
+		rtl/data_memory.sv test_benches/tb_data_memory.sv \
+		&& ./obj_dir/Vtb_data_memory
+
+
 
 
