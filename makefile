@@ -52,5 +52,13 @@ tb_alu:
 		rtl/alu.sv test_benches/tb_alu.sv \
 		&& ./obj_dir/Vtb_alu
 
+tb_control:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL \
+		--top-module tb_control \
+		rtl/control.sv test_benches/tb_control.sv \
+		&& ./obj_dir/Vtb_control
+
 
 
