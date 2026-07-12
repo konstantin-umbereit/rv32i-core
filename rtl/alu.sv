@@ -23,7 +23,7 @@
                 alu_result[DATA_WIDTH-1:0] = src_a[DATA_WIDTH-1:0] + src_b[DATA_WIDTH-1:0];
             end
 
-            /* SUB: sub, beq, bne, bit, bge */
+            /* SUB: sub, beq, bne */
             4'b0001 : begin 
                 alu_result[DATA_WIDTH-1:0] = src_a[DATA_WIDTH-1:0] - src_b[DATA_WIDTH-1:0];
             end
@@ -43,12 +43,12 @@
                 alu_result[DATA_WIDTH-1:0] = src_a[DATA_WIDTH-1:0] ^ src_b[DATA_WIDTH-1:0];
             end
 
-            /* SLT: slt */
+            /* SLT: slt, blt, bge */
             4'b0101 : begin
                 alu_result[DATA_WIDTH-1:0]  = ($signed(src_a) < $signed(src_b)) ? 32'b1: 32'b0;
             end
 
-            /* SLTU: sltu, sltiu */
+            /* SLTU: sltu, sltiu, bltu, bgeu */
             4'b0110 : begin
                 alu_result[DATA_WIDTH-1:0]  = ($unsigned(src_a) < $unsigned(src_b)) ? 32'b1: 32'b0;
             end

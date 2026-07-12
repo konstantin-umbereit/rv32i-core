@@ -56,6 +56,14 @@ tb_wb_mux:
 		rtl/wb_mux.sv test_benches/tb_wb_mux.sv \
 		&& ./obj_dir/Vtb_wb_mux
 
+tb_branch:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL --Wno-SYNCASYNCNET \
+		--top-module tb_branch \
+		rtl/branch.sv test_benches/tb_branch.sv \
+		&& ./obj_dir/Vtb_branch
+
 
 
 
