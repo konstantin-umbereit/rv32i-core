@@ -64,6 +64,14 @@ tb_branch:
 		rtl/branch.sv test_benches/tb_branch.sv \
 		&& ./obj_dir/Vtb_branch
 
+tb_instr_memory:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL --Wno-SYNCASYNCNET \
+		--top-module tb_instr_memory \
+		rtl/instr_memory.sv test_benches/tb_instr_memory.sv \
+		&& ./obj_dir/Vtb_instr_memory
+
 
 
 
