@@ -48,14 +48,6 @@ tb_data_memory:
 		rtl/data_memory.sv test_benches/tb_data_memory.sv \
 		&& ./obj_dir/Vtb_data_memory
 
-tb_wb_mux:
-	rm -rf obj_dir && \
-	verilator --cc --exe --build -Wall --trace --timing --main \
-		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL --Wno-SYNCASYNCNET \
-		--top-module tb_wb_mux \
-		rtl/wb_mux.sv test_benches/tb_wb_mux.sv \
-		&& ./obj_dir/Vtb_wb_mux
-
 tb_branch:
 	rm -rf obj_dir && \
 	verilator --cc --exe --build -Wall --trace --timing --main \
@@ -71,6 +63,17 @@ tb_instr_memory:
 		--top-module tb_instr_memory \
 		rtl/instr_memory.sv test_benches/tb_instr_memory.sv \
 		&& ./obj_dir/Vtb_instr_memory
+
+tb_load_extend:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL --Wno-SYNCASYNCNET \
+		--top-module tb_load_extend \
+		rtl/load_extend.sv test_benches/tb_load_extend.sv \
+		&& ./obj_dir/Vtb_load_extend
+
+
+
 
 
 
