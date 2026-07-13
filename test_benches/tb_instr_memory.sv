@@ -4,7 +4,6 @@
  */
 
  module tb_instr_memory;
-    logic        rst_n;        /* active-low asynchronous reset */
     logic [31:0] pc;           /* PC */
 
     logic [31:0] instr;        /* instruction output */
@@ -15,7 +14,7 @@
         $dumpfile("waveforms/tb_instr_memory.vcd");
         $dumpvars(0, tb_instr_memory);
 
-        /* Memory initialisation */
+        /* Memory Initialisation */
         for (int i = 0; i < dut.MEM_SIZE; i++) begin
             dut.mem[i] = 8'b0;
         end

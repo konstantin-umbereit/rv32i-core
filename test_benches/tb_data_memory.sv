@@ -5,7 +5,6 @@
 
  module tb_data_memory;
     logic        clk   = 0; 
-    logic        rst_n = 0;
     logic        we    = 0;           
     logic [1:0]  data_mask;
     logic [31:0] alu_result;  
@@ -20,8 +19,10 @@
         $dumpfile("waveforms/tb_data_memory.vcd");
         $dumpvars(0, tb_data_memory);
 
-        @(posedge clk);
-        rst_n = 1;              /* release reset */
+        /* Memory Initialization */
+        for (int i = 0; i < dut.MEM_SIZE; i++) begin
+                    dut.mem[i] = 8'b0;
+        end
 
         @(posedge clk);
         we = 1; data_mask = 2'b00; alu_result = 32'h0000_0000; wd = 32'hDEAD_BEEF; /* write byte, write enabled */
@@ -35,9 +36,6 @@
         we = 1; data_mask = 2'b10; alu_result = 32'h0000_0008; wd = 32'hDEAD_BEEF; /* write half, write enabled */
         @(posedge clk);
         we = 0; data_mask = 2'b10; alu_result = 32'h0000_0008; wd = 32'hBEEF_DEAD; /* write byte, write disabled */
-
-        @(posedge clk); 
-        rst_n = 0;      /* push reset */
 
         $finish;
 
