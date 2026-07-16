@@ -7,6 +7,7 @@ module pc #(
 ) (
     input  logic clk,                       /* rising edge */
     input  logic rst_n,                     /* active-low asynchronous reset */
+    input logic  halt,                      /* signal from control unit: halts the program counter */
 
     input  logic [DATA_WIDTH-1:0] pc_next,   /* next PC (either pc+4 or target) */
     output logic [DATA_WIDTH-1:0] pc_out    /* program counter output */
@@ -19,7 +20,7 @@ module pc #(
         if(!rst_n) begin
             pc <= 32'b0;
         end 
-        else begin
+        else if(!halt) begin
             pc <= pc_next;
         end
     end

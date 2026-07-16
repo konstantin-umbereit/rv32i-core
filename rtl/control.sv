@@ -25,13 +25,15 @@
 
     /* control signals for DATA MEMORY */
     output logic                  mem_write,  /* write disabled, enabled */
-    output logic [1:0]            data_mask,  /* = [7:0], ([15:8],[7:0]), ([31:24],[23:16],[15:8],[7:0]) */
+    output logic [2:0]            data_mask,  /* = [7:0], ([15:8],[7:0]), ([31:24],[23:16],[15:8],[7:0]) */
 
     /* control signals for branch unit */
     output logic                  take_branch,/* = branch condition not fulfilled, fulfilled */
     output logic                  jal,        /* = instruction is not jal, is jal */
     output logic                  jalr,       /* = instruction is not jalr, is jalr */
     
+    /* control signal for program counter */
+    output logic                  halt,
 
     /* control signal for ALU  */
     output logic [3:0] alu_ctrl                 /* = ADD,SUB,AND,OR,XOR,SLT,SLTU,SLL,SRL,SRA */
@@ -48,10 +50,11 @@
                 imm_src          = 0;       /* no impact, because alu_src = 0; */
                 reg_write        = 1;
                 mem_write        = 0;
-                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */
+                data_mask        = 0;       /* no impact, because mem_write = 0 */
                 take_branch      = 0;
                 jal              = 0;
                 jalr             = 0;
+                halt             = 0;
             end 
 
             /* I-type: OP-IMM */
@@ -61,10 +64,11 @@
                 imm_src          = 3'b000;  /* = I-type */
                 reg_write        = 1;
                 mem_write        = 0;
-                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */
+                data_mask        = 0;       /* no impact, because mem_write = 0 */
                 take_branch      = 0;
                 jal              = 0;
                 jalr             = 0;
+                halt             = 0;
             end 
 
             /* I-type: LOAD */
@@ -74,10 +78,11 @@
                 imm_src          = 3'b000;  /* = I-type */
                 reg_write        = 1;
                 mem_write        = 0;
-                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */
+                data_mask        = funct3;
                 take_branch      = 0;
                 jal              = 0;
                 jalr             = 0;
+                halt             = 0;
             end 
 
             /* I-type: JALR */
@@ -87,41 +92,39 @@
                 imm_src          = 3'b100;  /* = J-type */
                 reg_write        = 1;
                 mem_write        = 0;
-                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */
+                data_mask        = 0;       /* no impact, because mem_write = 0 */
                 take_branch      = 0;
                 jal              = 0;
                 jalr             = 1;
+                halt             = 0;
             end 
 
-            /* I-type: SYSTEM */
+            /* I-type: SYSTEM(ecall/ebreak) (current handling: halts the programcounter) */
             7'b1110011: begin
                 result_src       = 0;       /* no impact, because reg_write = 0; */
                 alu_src          = 0;       /* no impact, because mem_write, reg_write = 0 and pc_src = 2'b00; */
                 imm_src          = 3'b000;  /* no impact, because alu_src = 0; */
                 reg_write        = 1;
                 mem_write        = 0;
-                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */
+                data_mask        = 0;       /* no impact, because mem_write = 0 */
                 take_branch      = 0;
                 jal              = 0;
                 jalr             = 0;
+                halt             = 1;
             end 
             
             /* S-type */
             7'b0100011: begin
                 result_src       = 0;       /* no impact, because reg_write = 0; */
-                alu_src          = 0;       /* = rd2 */
+                alu_src          = 1;       /* = imm_ext */
                 imm_src          = 3'b001;  /* = S-type */
                 reg_write        = 0;
                 mem_write        = 1;
-                case (funct3)
-                    3'b000:  data_mask = 2'b00; /* [7:0] */
-                    3'b001:  data_mask = 2'b01; /* [15:0] */
-                    3'b010:  data_mask = 2'b10; /* [31:0] */
-                    default: data_mask = 2'b10; /* [7:0] */
-                endcase                   
+                data_mask        = funct3;
                 take_branch      = 0;
                 jal              = 0;
                 jalr             = 0;
+                halt             = 0;
             end 
 
             /* B-type */
@@ -131,7 +134,7 @@
                 imm_src          = 3'b010;  /* = B-type */
                 reg_write        = 0; 
                 mem_write        = 0;   
-                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */ 
+                data_mask        = 0;       /* no impact, because mem_write = 0 */ 
                 case (funct3)
                     3'b000:  take_branch =(zero) ? 1: 0; /* beq */
                     3'b001:  take_branch =(!zero) ? 1: 0; /* bne */
@@ -144,6 +147,7 @@
                 endcase               
                 jal              = 0;
                 jalr             = 0; 
+                halt             = 0;
             end 
 
             /* U-type: LUI */
@@ -153,23 +157,25 @@
                 imm_src          = 3'b011;  /* = U-type */
                 reg_write        = 1;    
                 mem_write        = 0;
-                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */ 
+                data_mask        = 0;       /* no impact, because mem_write = 0 */ 
                 take_branch      = 0;
                 jal              = 0;
                 jalr             = 0;  
+                halt             = 0;
             end
 
-            /* U-type: AUIPC */
+            /* U-type: AUIPC  */
             7'b0010111: begin
                 result_src       = 3'b100;  /* = pc_target */
                 alu_src          = 0;       /* no impact, because result_src = pc_target, mem_write 0 and pc_src = 2'b00*/
                 imm_src          = 3'b011;  /* = U-type */
                 reg_write        = 1;  
-                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */  
+                data_mask        = 0;       /* no impact, because mem_write = 0 */  
                 mem_write        = 0;   
                 take_branch      = 0;
                 jal              = 0;
                 jalr             = 0;
+                halt             = 0;
             end  
 
             /* J-type: JAL */
@@ -178,11 +184,12 @@
                 alu_src          = 0;       /* no impact, because result_src = pc_plus4, mem_write = 0 and pc_src = 2'b01*/
                 imm_src          = 3'b100;  /* = J-type */
                 reg_write        = 1;   
-                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */  
+                data_mask        = 0;       /* no impact, because mem_write = 0 */  
                 mem_write        = 0;
                 take_branch      = 0;
                 jal              = 1;
                 jalr             = 0;
+                halt             = 0;
             end 
 
             default: begin
@@ -190,11 +197,12 @@
                 alu_src          = 0;       /* no impact, because reg_write, mem_write = 0 and pc_src = 2'b00*/
                 imm_src          = 0;       /* no impact, because alu_src, reg_write = 0  and pc_src = 2'b00*/
                 reg_write        = 0;  
-                data_mask        = 2'b00;   /* no impact, because mem_write = 0 */
+                data_mask        = 0;       /* no impact, because mem_write = 0 */
                 mem_write        = 0;
                 take_branch      = 0;
                 jal              = 0;
                 jalr             = 0;
+                halt             = 0;
                 $display("control module received invalid op=0b%b at time-0d%0t", op, $time);
             end
         endcase
@@ -207,6 +215,22 @@
             if(funct3 == 3'b100 || funct3 == 3'b101 ) alu_ctrl = 4'b0101; /* SLT  for blt,  bge*/
             else                                      alu_ctrl = 4'b0110; /* SLTU for bltu, bgeu*/
         end
+        else if(op ==7'b0100011) begin /* = store instruction */
+            alu_ctrl = 4'b0000; /* ADD */
+        end
+        else if(op ==7'b0010011) begin /* = I-type instruction */
+            case (funct3)
+                3'b000: alu_ctrl = 4'b0000; /* ADD */
+                3'b111: alu_ctrl = 4'b0010; /* AND */
+                3'b110: alu_ctrl = 4'b0011; /* 0R */
+                3'b100: alu_ctrl = 4'b0100; /* X0R */
+                3'b010: alu_ctrl = 4'b0101; /* SLT */
+                3'b011: alu_ctrl = 4'b0110; /* SLTU */
+                3'b001: alu_ctrl = 4'b0111; /* SLL */
+                3'b101: alu_ctrl = (funct7[5] == 1) ? 4'b1001 : 4'b1000; /* ? SRA : SRL */
+                default: alu_ctrl = 4'b0000; /* default to add */
+            endcase
+        end 
         else
             case ({funct7[5], funct3})
                 4'b0000: alu_ctrl = 4'b0000; /* ADD */
