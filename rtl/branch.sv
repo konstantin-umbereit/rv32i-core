@@ -14,13 +14,16 @@ module branch #(
     input  logic                  jalr,         /* from control modul */
     input  logic                  take_branch,  /* from control modul */
     
-    output logic [DATA_WIDTH-1:0] pc_target,    /*  branch/jump target address */
+    output logic [DATA_WIDTH-1:0] pc_target,    /* branch/jump target address */
     
     output logic                  pc_src        /* src for next PC value */
 );
 
     /* PC_TARGET */
-    assign pc_target = imm_ext + ((jalr) ? rs1: pc);
+    always_comb begin
+        if(take_branch || jal) pc_target = pc + imm_ext;  /* branch permitted or jal */
+        else pc_target = rs1 + imm_ext;                            /* jalr */
+    end 
 
     /* PC_SRC */
     always_comb begin

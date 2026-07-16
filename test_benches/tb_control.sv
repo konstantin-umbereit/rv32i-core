@@ -1,6 +1,6 @@
 /* test_benches/tb_control.sv
  *
- * Test bench for rtl/controlsv
+ * Test bench for rtl/control.sv
  */
 
  module tb_control;

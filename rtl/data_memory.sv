@@ -6,7 +6,7 @@
  module data_memory #(
     parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 32,
-    parameter MEM_SIZE = 1024
+    parameter MEM_SIZE = 1024 /* 4 KB data memory */
  ) (
     input  logic                  clk,          /* rising edge */ 
     input  logic                  we,           /* write enable */
@@ -14,7 +14,7 @@
     input  logic [ADDR_WIDTH-1:0] alu_result,   /* write destination */
     input  logic [DATA_WIDTH-1:0] wd,           /* write data */
 
-    output logic [DATA_WIDTH-1:0] read_data
+    output logic [DATA_WIDTH-1:0] load_data
  );
     /* Memory: 1024 x 8bit */
     logic [7:0] mem [0:MEM_SIZE-1];
@@ -47,6 +47,6 @@
     end
 
     /* Read logic (combinational) */
-    assign read_data = {mem[alu_result + 3], mem[alu_result + 2], mem[alu_result + 1], mem[alu_result]};
+    assign load_data = {mem[alu_result + 3], mem[alu_result + 2], mem[alu_result + 1], mem[alu_result]};
  endmodule
 

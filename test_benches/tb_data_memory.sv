@@ -10,7 +10,7 @@
     logic [31:0] alu_result;  
     logic [31:0] wd;  
 
-    logic [31:0] read_data;
+    logic [31:0] load_data;
 
     data_memory dut (.*);
 
@@ -41,7 +41,7 @@
 
     end
 
-    initial $monitor("$time=0d%0t we=0b%b data_mask=0b%b alu_result=0h%h wd=0h%h | read_data=0h%h",
-                      $time, we, data_mask, alu_result, wd, read_data); 
+    initial $monitor("$time=0d%0t we=0b%b data_mask=0b%b alu_result=0h%h wd=0h%h | load_data=0h%h",
+                      $time, we, data_mask, alu_result, wd, load_data); 
 
  endmodule

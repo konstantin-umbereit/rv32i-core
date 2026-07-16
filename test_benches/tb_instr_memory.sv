@@ -35,18 +35,16 @@
         dut.mem[32'h0000_00c3] = 8'hDE;
 
         /* Change program counter */
-        #10 rst_n = 1;              /* release reset */
         #10 pc = 32'h0000_0000;     /* get first    32bit instruction */
         #10 pc = 32'h0000_0004;     /* get second   32bit instruction */
         #10 pc = 32'h0000_00c0;     /* get a target 32bit instruction */
-        #10 rst_n = 0;              /* push reset */
 
         #10 $finish;
 
     end
 
-    initial $monitor("$time=0d%0t rst_n=0b%b pc=0h%h| instr=0h%h",
-                      $time, rst_n, pc, instr); 
+    initial $monitor("$time=0d%0t pc=0h%h| instr=0h%h",
+                      $time, pc, instr); 
 
  endmodule
 
