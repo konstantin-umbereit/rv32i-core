@@ -3,7 +3,9 @@
  
 docs/ 
 obj_dir
-waveforms/
+
+waveforms/*
+!waveforms/.gitkeep
 
 !README.md       
 !Makefile         
