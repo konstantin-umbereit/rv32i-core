@@ -211,9 +211,16 @@
     /* ALU Decoder */
     always_comb begin
         if (op == 7'b1100011)begin /* = branch instruction */
-            if(funct3 == 3'b000 || funct3 == 3'b001 ) alu_ctrl = 4'b0001; /* SUB  for beq,  bne */
-            if(funct3 == 3'b100 || funct3 == 3'b101 ) alu_ctrl = 4'b0101; /* SLT  for blt,  bge*/
-            else                                      alu_ctrl = 4'b0110; /* SLTU for bltu, bgeu*/
+            case (funct3)
+                3'b000:  alu_ctrl = 4'b0001; /* SUB for beq */
+                3'b001:  alu_ctrl = 4'b0001; /* SUB for bne */
+                3'b100:  alu_ctrl = 4'b0101; /* SLT for blt */
+                3'b101:  alu_ctrl = 4'b0101; /* SLT for bge */
+                3'b110:  alu_ctrl = 4'b0110; /* SLTU for bltu */
+                3'b111:  alu_ctrl = 4'b0110; /* SLTU for bgeu */
+
+                default: alu_ctrl = 4'b0001; /* default = SUB */
+            endcase  
         end
         else if(op ==7'b0100011  || op ==7'b0000011) begin /* = store or load instruction */
             alu_ctrl = 4'b0000; /* ADD */
