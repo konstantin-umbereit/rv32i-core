@@ -21,7 +21,7 @@ module branch #(
 
     /* PC_TARGET */
     always_comb begin
-        if(jalr) pc_target = rs1 + imm_ext; /* jalr */
+        if(jalr) pc_target = (rs1 + imm_ext) & ~1; /* jalr */
         else pc_target = pc + imm_ext;      /* branch permitted or jal or aupic */
            
     end 
