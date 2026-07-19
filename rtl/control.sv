@@ -215,7 +215,7 @@
             if(funct3 == 3'b100 || funct3 == 3'b101 ) alu_ctrl = 4'b0101; /* SLT  for blt,  bge*/
             else                                      alu_ctrl = 4'b0110; /* SLTU for bltu, bgeu*/
         end
-        else if(op ==7'b0100011) begin /* = store instruction */
+        else if(op ==7'b0100011  || op ==7'b0000011) begin /* = store or load instruction */
             alu_ctrl = 4'b0000; /* ADD */
         end
         else if(op ==7'b0010011) begin /* = I-type instruction */
