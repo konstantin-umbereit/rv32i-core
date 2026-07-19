@@ -89,7 +89,7 @@
             7'b1100111: begin
                 result_src       = 3'b011;  /* = pc_plus4 */
                 alu_src          = 1;       /* = imm_ext */
-                imm_src          = 3'b100;  /* = J-type */
+                imm_src          = 3'b000;  /* = I-type */
                 reg_write        = 1;
                 mem_write        = 0;
                 data_mask        = 0;       /* no impact, because mem_write = 0 */
