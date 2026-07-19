@@ -13,7 +13,7 @@ The cpu passes basic self written test for all rv32i basic integer instructions:
 - sb, sh, sw,
 - beq, bne, blt, bge, bltu, bgeu,
 - jal, jalr
-- lui, auipic
+- lui, auipc
 - ecall, ebreak
 
 ## 2. Specifications
