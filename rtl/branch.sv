@@ -1,6 +1,6 @@
 /* rtl/branch.sv
  *
- * Single-cycle RV32I control unit
+ * Single-cycle RV32I branch control unit
  */
 
 module branch #(
@@ -21,8 +21,9 @@ module branch #(
 
     /* PC_TARGET */
     always_comb begin
-        if(take_branch || jal) pc_target = pc + imm_ext;  /* branch permitted or jal */
-        else pc_target = rs1 + imm_ext;                            /* jalr */
+        if(jalr) pc_target = rs1 + imm_ext; /* jalr */
+        else pc_target = pc + imm_ext;      /* branch permitted or jal or aupic */
+           
     end 
 
     /* PC_SRC */
