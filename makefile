@@ -1,4 +1,35 @@
-# Test benches
+# RV32I-CORE MAKEFILE
+
+
+# 1. TEST BENCHES
+
+
+# 1.1 RISC-V Architectural Certification Tests (ACTs)
+
+arch_tb_rv32i_core:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL --Wno-SYNCASYNCNET --Wno-UNOPTFLAT --Wno-WIDTHTRUNC\
+		--top-module arch_tb_rv32i_core \
+		rtl/alu.sv rtl/branch.sv rtl/control.sv rtl/data_memory.sv \
+		rtl/extend.sv rtl/instr_memory.sv rtl/pc.sv rtl/regfile.sv rtl/load_extend.sv \
+		rtl/rv32i_core.sv test_benches/arch_tb_rv32i_core.sv \
+		&& ./obj_dir/Varch_tb_rv32i_core
+
+
+# 1.2 Regular Top Module Testing
+
+tb_rv32i_core:
+	rm -rf obj_dir && \
+	verilator --cc --exe --build -Wall --trace --timing --main \
+		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL --Wno-SYNCASYNCNET --Wno-UNOPTFLAT --Wno-WIDTHTRUNC\
+		--top-module tb_rv32i_core \
+		rtl/alu.sv rtl/branch.sv rtl/control.sv rtl/data_memory.sv \
+		rtl/extend.sv rtl/instr_memory.sv rtl/pc.sv rtl/regfile.sv rtl/load_extend.sv \
+		rtl/rv32i_core.sv test_benches/tb_rv32i_core.sv \
+		&& ./obj_dir/Vtb_rv32i_core			
+
+# 1.3 Regular Sub Module Testing
 
 tb_regfile:
 	rm -rf obj_dir && \
@@ -72,24 +103,19 @@ tb_load_extend:
 		rtl/load_extend.sv test_benches/tb_load_extend.sv \
 		&& ./obj_dir/Vtb_load_extend
 
-tb_rv32i_core:
-	rm -rf obj_dir && \
-	verilator --cc --exe --build -Wall --trace --timing --main \
-		--Wno-BLKSEQ --Wno-UNUSEDSIGNAL --Wno-SYNCASYNCNET --Wno-UNOPTFLAT \
-		--top-module tb_rv32i_core \
-		rtl/alu.sv rtl/branch.sv rtl/control.sv rtl/data_memory.sv \
-		rtl/extend.sv rtl/instr_memory.sv rtl/pc.sv rtl/regfile.sv rtl/load_extend.sv \
-		rtl/rv32i_core.sv test_benches/tb_rv32i_core.sv \
-		&& ./obj_dir/Vtb_rv32i_core		
 
+# 2. SCRIPTS
 
+# 2.1 bin2hex
+#
 # Writes the raw opcode bytes of an .bin file as hexadecimal
-# in a .hex file, so that 'tb_rv32i_core.sv" can load the .hex
-# file and write the opcode in the instruction memory via '$readmemh' 
-test_programs/%.hex: test_programs/%.bin scripts/bin2hex.py
+# in a .hex file.
+# Replace '%' with the path to the .bin file.
+# Requires python3.
+
+%.hex: %.bin scripts/bin2hex.py
 	scripts/bin2hex.py $< $@
 	
-
 
 
 
