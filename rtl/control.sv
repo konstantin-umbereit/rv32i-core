@@ -203,7 +203,7 @@
                 jal              = 0;
                 jalr             = 0;
                 halt             = 0;
-                $display("control module received invalid op=0b%b at time-0d%0t", op, $time);
+                $display("control module received invalid op=0b%b at time-0d%0t, will be treated as NOP", op, $time);
             end
         endcase
     end      
@@ -220,7 +220,7 @@
                 3'b111:  alu_ctrl = 4'b0110; /* SLTU for bgeu */
 
                 default: alu_ctrl = 4'b0001; /* default = SUB */
-            endcase  
+            endcase               
         end
         else if(op ==7'b0100011  || op ==7'b0000011) begin /* = store or load instruction */
             alu_ctrl = 4'b0000; /* ADD */
