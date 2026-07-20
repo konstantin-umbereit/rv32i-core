@@ -6,13 +6,13 @@
  module instr_memory #(
     parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 32,
-    parameter MEM_SIZE = 1024 /* 4KB instruction memory */
+    parameter MEM_SIZE = 256 * 1024 /* 256KB instruction memory */
  ) (
     input  logic [ADDR_WIDTH-1:0] pc,           /* PC */
 
     output logic [DATA_WIDTH-1:0] instr         /* instruction output */
  );
-    /* Memory: 1024 x 8bit */
+    /* Memory: word addressable */
     logic [DATA_WIDTH-1:0] mem [0:MEM_SIZE-1];
 
     /* Instruction output */

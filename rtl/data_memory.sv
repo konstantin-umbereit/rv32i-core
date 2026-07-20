@@ -6,7 +6,7 @@
  module data_memory #(
     parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 32,
-    parameter MEM_SIZE = 1024 /* 4 KB data memory */
+    parameter MEM_SIZE = 256 * 1024 /* 256 KB data memory */
  ) (
     input  logic                  clk,          /* rising edge */ 
     input  logic                  we,           /* write enable */
@@ -16,7 +16,7 @@
 
     output logic [DATA_WIDTH-1:0] load_data
  );
-    /* Memory: 1024 x 8bit */
+    /* Memory: byte addressable */
     logic [7:0] mem [0:MEM_SIZE-1];
 
     /* Write logic */
