@@ -5,20 +5,26 @@
 
  module tb_control;
 
-    logic [6:0] op;
-    logic [2:0] funct3;
-    logic [6:0] funct7;
-    logic       zero;
+    logic [6:0]            op;
+    logic [2:0]            funct3;
+    logic [6:0]            funct7;
 
-    logic [1:0] pc_src;      
-    logic [2:0] result_src;  
-    logic       mem_write;   
-    logic       alu_src;     
-    logic [2:0] imm_src;     
-    logic       reg_write;   
+    logic                  zero;      
+    logic [2:0]            result_src; 
+    logic                  alu_src;
+    logic [2:0]            imm_src;    
 
-    logic [3:0] alu_ctrl;
+    logic                  reg_write;  
 
+    logic                  mem_write;  
+    logic [2:0]            data_mask;  
+    logic                  take_branch;
+    logic                  jal;        
+    logic                  jalr;       
+    logic                  halt;
+ 
+    logic [3:0]            alu_ctrl;                
+    
     control dut (.*);
 
     initial begin
@@ -35,12 +41,13 @@
         #10 op = 7'b0010111; funct3 = 3'b000; funct7 = 7'b0000000; zero = 0; /* U-type auipc */
         #10 op = 7'b1101111; funct3 = 3'b000; funct7 = 7'b0000000; zero = 0; /* J-type jal */
         #10 op = 7'b1100111; funct3 = 3'b000; funct7 = 7'b0000000; zero = 0; /* I-type jalr */
+        #10 op = 7'b1110011; funct3 = 3'b000; funct7 = 7'b0000000; zero = 0; /* I-type ecall */
         
 
         #10 $finish;
     end
 
-    initial $monitor("Time=0d%0t op=0b%b funct3=0b%b funct7=0b%b zero=0b%b | pc_src=0b%b  result_src=0b%b mem_write=0b%b  alu_src=0b%b imm_src=0b%b reg_write=0b%b alu_ctrl=0b%b",
-                     $time, op, funct3, funct7, zero, pc_src, result_src, mem_write, alu_src, imm_src, reg_write, alu_ctrl);
+    initial $monitor("Time=0d%0t op=0b%b funct3=0b%b funct7=0b%b zero=0b%b | result_src=0b%b mem_write=0b%b  alu_src=0b%b imm_src=0b%b reg_write=0b%b alu_ctrl=0b%b \n data_mask=0b%b take_branch=0b%b jal=0b%b jalr=0b%b halt=0b%b",
+                     $time, op, funct3, funct7, zero , result_src, mem_write, alu_src, imm_src, reg_write, alu_ctrl, data_mask, take_branch, jal, jalr, halt);
 
 endmodule

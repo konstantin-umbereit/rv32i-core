@@ -15,24 +15,14 @@
         $dumpvars(0, tb_instr_memory);
 
         /* Memory Initialisation */
-        for (int i = 0; i < dut.MEM_SIZE; i++) begin
-            dut.mem[i] = 8'b0;
+        for (int i = 0; i < dut.MEM_SIZE / 4; i = i + 4) begin
+            dut.mem[i] = 32'b0;
         end
-
-        dut.mem[32'h0000_0000] = 8'hEF;
-        dut.mem[32'h0000_0001] = 8'hBE;
-        dut.mem[32'h0000_0002] = 8'hAD;
-        dut.mem[32'h0000_0003] = 8'hDE;
-
-        dut.mem[32'h0000_0004] = 8'hEF;
-        dut.mem[32'h0000_0005] = 8'hBE;
-        dut.mem[32'h0000_0006] = 8'hAD;
-        dut.mem[32'h0000_0007] = 8'hDE;
-
-        dut.mem[32'h0000_00c0] = 8'hEF;
-        dut.mem[32'h0000_00c1] = 8'hBE;
-        dut.mem[32'h0000_00c2] = 8'hAD;
-        dut.mem[32'h0000_00c3] = 8'hDE;
+        
+        dut.mem[32'h0000_0000] = 32'hDEAD_BEEF;
+        dut.mem[32'h0000_0001] = 32'HBEEF_DEAD;
+        dut.mem[32'h0000_0030] = 32'hAABB_CCDD;
+        
 
         /* Change program counter */
         #10 pc = 32'h0000_0000;     /* get first    32bit instruction */
