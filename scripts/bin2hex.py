@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+# scripts/bin2hex.py
+#
+# Writes the raw opcode bytes of an .bin file as hexadecimal
+# in a .hex file, so that 'tb_rv32i_core.sv" can load the .hex
+# file and write the opcode in the instruction memory via '$readmemh' 
+
 import sys
 
 if len(sys.argv) !=3:
