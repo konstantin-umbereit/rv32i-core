@@ -1,0 +1,3362 @@
+
+/home/dev/github/clones/riscv-arch-test/work/rv32i-core/elfs/rv32i/I/I-lui-00.elf:     file format elf32-littleriscv
+/home/dev/github/clones/riscv-arch-test/work/rv32i-core/elfs/rv32i/I/I-lui-00.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00000000
+
+Program Header:
+0x70000003 off    0x00016240 vaddr 0x00000000 paddr 0x00000000 align 2**0
+         filesz 0x00000033 memsz 0x00000000 flags r--
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x000021c0 memsz 0x000021c0 flags r-x
+    LOAD off    0x00004000 vaddr 0x00004000 paddr 0x00004000 align 2**12
+         filesz 0x00012240 memsz 0x00012240 flags rwx
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text.init    00000040  00000000  00000000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text.rvtest  00002180  00000040  00000040  00001040  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .data         00011580  00004000  00004000  00004000  2**8
+                  CONTENTS, ALLOC, LOAD, DATA
+  3 .text.rvmodel 00000240  00016000  00016000  00016000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  4 .riscv.attributes 00000033  00000000  00000000  00016240  2**0
+                  CONTENTS, READONLY
+  5 .debug_line   00000366  00000000  00000000  00016273  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  6 .debug_line_str 00000069  00000000  00000000  000165d9  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  7 .debug_info   00000023  00000000  00000000  00016642  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  8 .debug_abbrev 00000012  00000000  00000000  00016665  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_aranges 00000028  00000000  00000000  00016678  2**3
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_str    00000075  00000000  00000000  000166a0  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_rnglists 0000001a  00000000  00000000  00016715  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000 l    d  .text.init	00000000 .text.init
+00000040 l    d  .text.rvtest	00000000 .text.rvtest
+00004000 l    d  .data	00000000 .data
+00016000 l    d  .text.rvmodel	00000000 .text.rvmodel
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_line_str	00000000 .debug_line_str
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_rnglists	00000000 .debug_rnglists
+00000000 l    df *ABS*	00000000 ccBrFHqG.o
+00000003 l       *ABS*	00000000 MMODE_SIG
+00000001 l       *ABS*	00000000 SMODE_SIG
+00000001 l       *ABS*	00000000 HMODE_SIG
+00000002 l       *ABS*	00000000 VMODE_SIG
+00016000 l       .text.rvmodel	00000000 rvmodel_boot
+00000040 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b0
+0000073c l       .text.rvtest	00000000 failedtest_x5_x4
+00004110 l       .data	00000000 I_lui_cg_cp_rd_b0_str
+0000005c l       .text.rvtest	00000000 I_lui_cg_cp_rd_b1
+0000413c l       .data	00000000 I_lui_cg_cp_rd_b1_str
+0000007c l       .text.rvtest	00000000 I_lui_cg_cp_rd_b2
+00004168 l       .data	00000000 I_lui_cg_cp_rd_b2_str
+0000009c l       .text.rvtest	00000000 I_lui_cg_cp_rd_b3
+00004194 l       .data	00000000 I_lui_cg_cp_rd_b3_str
+000000c0 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b4
+00000754 l       .text.rvtest	00000000 failedtest_x8_x7
+000041c0 l       .data	00000000 I_lui_cg_cp_rd_b4_str
+000000dc l       .text.rvtest	00000000 I_lui_cg_cp_rd_b5
+000041ec l       .data	00000000 I_lui_cg_cp_rd_b5_str
+000000f8 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b6
+00004218 l       .data	00000000 I_lui_cg_cp_rd_b6_str
+0000011c l       .text.rvtest	00000000 I_lui_cg_cp_rd_b7
+0000077c l       .text.rvtest	00000000 failedtest_x14_x13
+00004244 l       .data	00000000 I_lui_cg_cp_rd_b7_str
+00000138 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b8
+00004270 l       .data	00000000 I_lui_cg_cp_rd_b8_str
+00000154 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b9
+0000429c l       .data	00000000 I_lui_cg_cp_rd_b9_str
+00000174 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b10
+000042c9 l       .data	00000000 I_lui_cg_cp_rd_b10_str
+00000190 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b11
+000042f7 l       .data	00000000 I_lui_cg_cp_rd_b11_str
+000001ac l       .text.rvtest	00000000 I_lui_cg_cp_rd_b12
+00004325 l       .data	00000000 I_lui_cg_cp_rd_b12_str
+000001d0 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b13
+00004353 l       .data	00000000 I_lui_cg_cp_rd_b13_str
+000001ec l       .text.rvtest	00000000 I_lui_cg_cp_rd_b14
+00004381 l       .data	00000000 I_lui_cg_cp_rd_b14_str
+00000208 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b15
+000043af l       .data	00000000 I_lui_cg_cp_rd_b15_str
+00000224 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b16
+000043dd l       .data	00000000 I_lui_cg_cp_rd_b16_str
+00000240 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b17
+0000440b l       .data	00000000 I_lui_cg_cp_rd_b17_str
+0000025c l       .text.rvtest	00000000 I_lui_cg_cp_rd_b18
+00004439 l       .data	00000000 I_lui_cg_cp_rd_b18_str
+00000278 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b19
+00004467 l       .data	00000000 I_lui_cg_cp_rd_b19_str
+00000294 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b20
+00004495 l       .data	00000000 I_lui_cg_cp_rd_b20_str
+000002b4 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b21
+000044c3 l       .data	00000000 I_lui_cg_cp_rd_b21_str
+000002d0 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b22
+000044f1 l       .data	00000000 I_lui_cg_cp_rd_b22_str
+000002ec l       .text.rvtest	00000000 I_lui_cg_cp_rd_b23
+0000451f l       .data	00000000 I_lui_cg_cp_rd_b23_str
+00000308 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b24
+0000454d l       .data	00000000 I_lui_cg_cp_rd_b24_str
+00000324 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b25
+0000457b l       .data	00000000 I_lui_cg_cp_rd_b25_str
+00000340 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b26
+000045a9 l       .data	00000000 I_lui_cg_cp_rd_b26_str
+0000035c l       .text.rvtest	00000000 I_lui_cg_cp_rd_b27
+000045d7 l       .data	00000000 I_lui_cg_cp_rd_b27_str
+00000378 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b28
+00004605 l       .data	00000000 I_lui_cg_cp_rd_b28_str
+00000398 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b29
+00004633 l       .data	00000000 I_lui_cg_cp_rd_b29_str
+000003b4 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b30
+00004661 l       .data	00000000 I_lui_cg_cp_rd_b30_str
+000003d0 l       .text.rvtest	00000000 I_lui_cg_cp_rd_b31
+0000468f l       .data	00000000 I_lui_cg_cp_rd_b31_str
+000003ec l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x0
+000046bd l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x0_str
+00000408 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x1
+000046f8 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x1_str
+00000424 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x2
+00004733 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x2_str
+00000440 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x3
+0000476e l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x3_str
+0000045c l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x4
+000047a9 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x4_str
+00000478 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x8
+000047e4 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x8_str
+00000494 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x10
+0000481f l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x10_str
+000004b0 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x20
+0000485b l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x20_str
+000004cc l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x40
+00004897 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x40_str
+000004e8 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x80
+000048d3 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x80_str
+00000504 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x100
+0000490f l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x100_str
+00000520 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x200
+0000494c l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x200_str
+0000053c l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x400
+00004989 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x400_str
+00000558 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x800
+000049c6 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x800_str
+00000574 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x1000
+00004a03 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x1000_str
+00000590 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x2000
+00004a41 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x2000_str
+000005ac l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x4000
+00004a7f l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x4000_str
+000005c8 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x8000
+00004abd l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x8000_str
+000005e4 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x10000
+00004afb l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x10000_str
+00000600 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x20000
+00004b3a l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x20000_str
+0000061c l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x40000
+00004b79 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x40000_str
+00000638 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x7fffe
+00004bb8 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x7fffe_str
+00000654 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x7ffff
+00004bf7 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x7ffff_str
+00000670 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x80000
+00004c36 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x80000_str
+0000068c l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0x80001
+00004c75 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0x80001_str
+000006a8 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0xffffe
+00004cb4 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0xffffe_str
+000006c4 l       .text.rvtest	00000000 I_lui_cg_cp_imm_edges_20bit_0xfffff
+00004cf3 l       .data	00000000 I_lui_cg_cp_imm_edges_20bit_0xfffff_str
+000006e4 l       .text.rvtest	00000000 exit_cleanup
+000053a4 l       .data	00000000 successstr
+00016204 l       .text.rvmodel	00000000 rvmodel_io_write_str
+00016208 l       .text.rvmodel	00000000 rvmodel_halt_pass
+00000730 l       .text.rvtest	00000000 abort_test
+6f5ca309 l       *ABS*	00000000 immx
+6f5ca309 l       *ABS*	00000000 absimm
+00000000 l       *ABS*	00000000 cry
+00000309 l       *ABS*	00000000 imm12
+00004d40 l       .data	00000000 begin_failure_scratch
+00000800 l       .text.rvtest	00000000 failedtest_saveregs
+000007a4 l       .text.rvtest	00000000 failedtest_trap_x7_x9
+00004eb0 l       .data	00000000 saved_mcause
+00004eb8 l       .data	00000000 saved_mtval
+00004ec0 l       .data	00000000 saved_mstatus
+00000870 l       .text.rvtest	00000000 failedtest_saveresults
+00004d40 l       .data	00000000 failure_type
+000008ec l       .text.rvtest	00000000 failedtest_saveresults_trap
+00000880 l       .text.rvtest	00000000 failedtest_saveresults_int
+00000cc0 l       .text.rvtest	00000000 failedtest_saveresults_common
+00004e98 l       .data	00000000 trap_diag_fail_str_ptr
+0000556a l       .data	00000000 trap_sig_offset_mismatch
+00000ba0 l       .text.rvtest	00000000 trap_diag_offset_mismatch
+00004e70 l       .data	00000000 trap_diag_subtype
+000055ce l       .data	00000000 sv_Mvect_str
+00000c20 l       .text.rvtest	00000000 trap_diag_field_identified
+000056d0 l       .data	00000000 sv_Mcause_str
+000057cb l       .data	00000000 sv_Mepc_str
+000058be l       .data	00000000 sv_Mtval_str
+00005a31 l       .data	00000000 sv_Mip_str
+000059b5 l       .data	00000000 sv_Mtval2_str
+000059f3 l       .data	00000000 sv_Mtinst_str
+0000560e l       .data	00000000 sv_Svect_str
+0000570e l       .data	00000000 sv_Scause_str
+00005807 l       .data	00000000 sv_Sepc_str
+000058fb l       .data	00000000 sv_Stval_str
+00005a6c l       .data	00000000 sv_Sip_str
+0000564e l       .data	00000000 sv_Hvect_str
+0000574c l       .data	00000000 sv_Hcause_str
+00005843 l       .data	00000000 sv_Hepc_str
+00005938 l       .data	00000000 sv_Htval_str
+00005aa7 l       .data	00000000 sv_Hip_str
+0000568f l       .data	00000000 sv_Vvect_str
+0000578b l       .data	00000000 sv_Vcause_str
+00005880 l       .data	00000000 sv_Vepc_str
+00005976 l       .data	00000000 sv_Vtval_str
+00005ae3 l       .data	00000000 sv_Vip_str
+00005b20 l       .data	00000000 Mclr_Mext_int_str
+00005b6f l       .data	00000000 Mclr_Sext_int_str
+00005c6a l       .data	00000000 Sclr_Sext_int_str
+00005d66 l       .data	00000000 Hclr_Sext_int_str
+00000cb0 l       .text.rvtest	00000000 trap_diag_generic_report
+00004e88 l       .data	00000000 trap_diag_actual_offset
+00004e90 l       .data	00000000 trap_diag_expected_offset
+00004e74 l       .data	00000000 trap_diag_mode
+00004e78 l       .data	00000000 trap_diag_actual_value
+00004e80 l       .data	00000000 trap_diag_expected_value
+00000cf0 l       .text.rvtest	00000000 failedtest_report
+00000cf0 l       .text.rvtest	00000000 print_failstr
+000053da l       .data	00000000 failstr
+00000d28 l       .text.rvtest	00000000 print_testnamestr
+0000546d l       .data	00000000 testnamestr
+00000d68 l       .text.rvtest	00000000 print_failure_test_name_str
+00004e60 l       .data	00000000 failure_string_ptr
+00000d78 l       .text.rvtest	00000000 print_newline_str
+0000547f l       .data	00000000 newlinestr
+000011ac l       .text.rvtest	00000000 failedtest_report_trap_detailed
+00005481 l       .data	00000000 inststr
+00004e40 l       .data	00000000 failing_instruction
+000020f8 l       .text.rvtest	00000000 failedtest_hex_to_str
+00004ec8 l       .data	00000000 ascii_buffer
+00005495 l       .data	00000000 addrstr
+00004e48 l       .data	00000000 failing_addr
+00005f12 l       .data	00000000 regstr
+00000f58 l       .text.rvtest	00000000 failedtest_report_not_intreg
+00004e44 l       .data	00000000 failing_reg
+00002174 l       .text.rvtest	00000000 failedtest_dec_to_str
+00001034 l       .text.rvtest	00000000 failedtest_report_print_regstr
+00000fac l       .text.rvtest	00000000 failedtest_report_fpreg
+00000ff8 l       .text.rvtest	00000000 failedtest_report_vecreg
+00005f72 l       .data	00000000 fflagsstr
+00001068 l       .text.rvtest	00000000 failedtest_report_after_reg
+00005f23 l       .data	00000000 badvalstr
+000010cc l       .text.rvtest	00000000 failedtest_report_badval_not_fp
+00004e50 l       .data	00000000 failing_value
+000010dc l       .text.rvtest	00000000 failedtest_report_badval_done
+00005f3a l       .data	00000000 expvalstr
+0000116c l       .text.rvtest	00000000 failedtest_report_expval_not_fp
+00004e58 l       .data	00000000 expected_value
+0000117c l       .text.rvtest	00000000 failedtest_report_expval_done
+00001ea4 l       .text.rvtest	00000000 failedtest_report_end
+00005f9e l       .data	00000000 trap_diag_header_str
+00005fca l       .data	00000000 trap_diag_origstr_label
+00001280 l       .text.rvtest	00000000 trap_report_offset_mismatch
+00001d30 l       .text.rvtest	00000000 trap_report_generic
+000015f4 l       .text.rvtest	00000000 trap_report_field_mismatch
+00005fda l       .data	00000000 trap_diag_count_mismatch_str
+0000603b l       .data	00000000 trap_diag_expected_offset_str
+00006062 l       .data	00000000 trap_diag_actual_offset_str
+000014d4 l       .text.rvtest	00000000 trap_report_missing_traps
+000013bc l       .text.rvtest	00000000 trap_report_extra_traps
+00006089 l       .data	00000000 trap_diag_extra_traps_str
+0000610e l       .data	00000000 trap_diag_extra_bytes_str
+00006139 l       .data	00000000 trap_diag_extra_hint_str
+00001ef0 l       .text.rvtest	00000000 failedtest_print_csr_context
+000060c3 l       .data	00000000 trap_diag_missing_traps_str
+00006221 l       .data	00000000 trap_diag_missing_hint_str
+00006308 l       .data	00000000 trap_diag_handler_mode_str
+00001684 l       .text.rvtest	00000000 trap_mode_m
+000016c4 l       .text.rvtest	00000000 trap_mode_s
+00001704 l       .text.rvtest	00000000 trap_mode_h
+00001744 l       .text.rvtest	00000000 trap_mode_v
+00006344 l       .data	00000000 trap_diag_mode_unknown_str
+00001780 l       .text.rvtest	00000000 trap_mode_print
+00006322 l       .data	00000000 trap_diag_mode_m_str
+0000632a l       .data	00000000 trap_diag_mode_s_str
+00006332 l       .data	00000000 trap_diag_mode_hs_str
+0000633b l       .data	00000000 trap_diag_mode_vs_str
+0000634d l       .data	00000000 trap_diag_field_str
+00001844 l       .text.rvtest	00000000 trap_field_vect
+00001884 l       .text.rvtest	00000000 trap_field_cause
+000018c4 l       .text.rvtest	00000000 trap_field_epc
+00001904 l       .text.rvtest	00000000 trap_field_tval
+00001944 l       .text.rvtest	00000000 trap_field_ip
+00001984 l       .text.rvtest	00000000 trap_field_tval2
+000019c4 l       .text.rvtest	00000000 trap_field_tinst
+00001a04 l       .text.rvtest	00000000 trap_field_intid
+000064a4 l       .data	00000000 trap_diag_field_unknown_str
+00001a40 l       .text.rvtest	00000000 trap_field_print
+00006367 l       .data	00000000 trap_diag_field_vect_str
+00006398 l       .data	00000000 trap_diag_field_cause_str
+000063b8 l       .data	00000000 trap_diag_field_epc_str
+000063d6 l       .data	00000000 trap_diag_field_tval_str
+000063f5 l       .data	00000000 trap_diag_field_ip_str
+0000641d l       .data	00000000 trap_diag_field_tval2_str
+00006449 l       .data	00000000 trap_diag_field_tinst_str
+00006475 l       .data	00000000 trap_diag_field_intid_str
+000064b3 l       .data	00000000 trap_diag_expected_str
+000064ca l       .data	00000000 trap_diag_actual_str
+00001bdc l       .text.rvtest	00000000 trap_field_not_cause
+000064e1 l       .data	00000000 trap_diag_expected_cause_name_str
+00001e14 l       .text.rvtest	00000000 trap_cause_to_str
+000064f8 l       .data	00000000 trap_diag_actual_cause_name_str
+00001bdc l       .text.rvtest	00000000 trap_field_not_epc
+0000656e l       .data	00000000 trap_diag_hint_vect_str
+00006644 l       .data	00000000 trap_diag_hint_cause_str
+00006737 l       .data	00000000 trap_diag_hint_epc_str
+00006832 l       .data	00000000 trap_diag_hint_tval_str
+00006919 l       .data	00000000 trap_diag_hint_ip_str
+00006526 l       .data	00000000 trap_diag_generic_str
+00004ea8 l       .data	00000000 saved_mepc
+00005509 l       .data	00000000 xepcinstrstr
+00001e38 l       .text.rvtest	00000000 trap_cause_interrupt
+00001e18 l       .text.rvtest	00000000 trap_cause_exception
+00001e64 l       .text.rvtest	00000000 trap_cause_unknown
+00004ef0 l       .data	00000000 trap_excpt_name_tbl
+00004f50 l       .data	00000000 trap_int_name_tbl
+0000538e l       .data	00000000 trap_cause_unknown_str
+00005f51 l       .data	00000000 endstr
+00001ee8 l       .text.rvtest	00000000 failedtest_terminate
+00016214 l       .text.rvmodel	00000000 rvmodel_halt_fail
+00004ea0 l       .data	00000000 csr_context_ret_addr
+0000552a l       .data	00000000 mepcstr
+0000553a l       .data	00000000 mcausestr
+0000554a l       .data	00000000 mtvalstr
+0000555a l       .data	00000000 mstatusstr
+00002138 l       .text.rvtest	00000000 failedtest_hex_to_str_loop
+00002154 l       .text.rvtest	00000000 failedtest_hex_to_str_digit
+00002158 l       .text.rvtest	00000000 failedtest_hex_to_str_write
+00016000 l       .text.rvmodel	00000000 rvtest_boot_to_mmode
+00016000 l       .text.rvmodel	00000000 rvtest_init_regs
+00006a00 l       .data	00000000 signature_base
+000161a0 l       .text.rvmodel	00000000 canary_check
+00005f7a l       .data	00000000 canary_mismatch
+00004000 l       .data	00000000 scratch
+00004ef0 l       .data	00000000 end_failure_scratch
+00004f90 l       .data	00000000 trap_excpt_name_0
+00004fb0 l       .data	00000000 trap_excpt_name_1
+00004fca l       .data	00000000 trap_excpt_name_2
+00004fdf l       .data	00000000 trap_excpt_name_3
+00004feb l       .data	00000000 trap_excpt_name_4
+00005004 l       .data	00000000 trap_excpt_name_5
+00005017 l       .data	00000000 trap_excpt_name_6
+00005035 l       .data	00000000 trap_excpt_name_7
+0000504d l       .data	00000000 trap_excpt_name_8
+0000506b l       .data	00000000 trap_excpt_name_9
+00005089 l       .data	00000000 trap_excpt_name_10
+000050a8 l       .data	00000000 trap_excpt_name_11
+000050c6 l       .data	00000000 trap_excpt_name_12
+000050de l       .data	00000000 trap_excpt_name_13
+000050ef l       .data	00000000 trap_excpt_name_14
+000050fe l       .data	00000000 trap_excpt_name_15
+00005114 l       .data	00000000 trap_excpt_name_16
+00005121 l       .data	00000000 trap_excpt_name_17
+00005130 l       .data	00000000 trap_excpt_name_18
+00005140 l       .data	00000000 trap_excpt_name_19
+00005150 l       .data	00000000 trap_excpt_name_20
+0000516e l       .data	00000000 trap_excpt_name_21
+00005185 l       .data	00000000 trap_excpt_name_22
+0000519a l       .data	00000000 trap_excpt_name_23
+000051b6 l       .data	00000000 trap_int_name_0
+000051ce l       .data	00000000 trap_int_name_1
+000051ed l       .data	00000000 trap_int_name_2
+00005214 l       .data	00000000 trap_int_name_3
+00005230 l       .data	00000000 trap_int_name_4
+00005248 l       .data	00000000 trap_int_name_5
+00005264 l       .data	00000000 trap_int_name_6
+00005288 l       .data	00000000 trap_int_name_7
+000052a1 l       .data	00000000 trap_int_name_8
+000052b9 l       .data	00000000 trap_int_name_9
+000052d8 l       .data	00000000 trap_int_name_10
+000052ff l       .data	00000000 trap_int_name_11
+0000531b l       .data	00000000 trap_int_name_12
+00005340 l       .data	00000000 trap_int_name_13
+0000535c l       .data	00000000 trap_int_name_14
+00005375 l       .data	00000000 trap_int_name_15
+0000542f l       .data	00000000 abortstr
+000054d6 l       .data	00000000 xepcstr
+00005bc1 l       .data	00000000 Mclr_Vext_int_str
+00005c1b l       .data	00000000 Sclr_Mext_int_str
+00005cbc l       .data	00000000 Sclr_Vext_int_str
+00005d16 l       .data	00000000 Hclr_Mext_int_str
+00005db9 l       .data	00000000 Hclr_Vext_int_str
+00005e14 l       .data	00000000 Vclr_Mext_int_str
+00005e64 l       .data	00000000 Vclr_Sext_int_str
+00005eb7 l       .data	00000000 Vclr_Vext_int_str
+0000650f l       .data	00000000 trap_diag_curr_xepc_str
+00006b1c l       .data	00000000 trap_sigptr
+00015580 g       .data	00000000 end_signature
+00015580 g       .data	00000000 rvtest_sig_end
+00000000 g       .text.init	00000000 rvtest_entry_point
+00006a00 g       .data	00000000 begin_signature
+000006e4 g       .text.rvtest	00000000 rvtest_code_end
+00000040 g       .text.rvtest	00000000 rvtest_code_begin
+00006a00 g       .data	00000000 rvtest_sig_begin
+00004110 g       .data	00000000 rvtest_data_begin
+000069fe g       .data	00000000 rvtest_data_end
+000006e4 g       .text.rvtest	00000000 cleanup_epilogs
+00017000 g       .text.rvmodel	00000000 _end
+
+
+
+Disassembly of section .text.init:
+
+00000000 <rvtest_entry_point>:
+
+// Include framework macros
+#include "riscv_arch_test.h"
+
+// Set up test environment and declare main entry point
+RVTEST_BEGIN
+   0:	00016097          	auipc	x1,0x16
+   4:	00008093          	addi	x1,x1,0 # 16000 <rvmodel_boot>
+   8:	00000013          	addi	x0,x0,0
+   c:	00000013          	addi	x0,x0,0
+  10:	00000013          	addi	x0,x0,0
+  14:	00000013          	addi	x0,x0,0
+  18:	00000013          	addi	x0,x0,0
+  1c:	00000013          	addi	x0,x0,0
+  20:	000080e7          	jalr	x1,0(x1)
+  24:	00000013          	addi	x0,x0,0
+  28:	00000013          	addi	x0,x0,0
+  2c:	00000013          	addi	x0,x0,0
+  30:	00000013          	addi	x0,x0,0
+  34:	00000013          	addi	x0,x0,0
+  38:	00000013          	addi	x0,x0,0
+  3c:	00000013          	addi	x0,x0,0
+
+Disassembly of section .text.rvtest:
+
+00000040 <rvtest_code_begin>:
+// cp_rd
+/////////////////////////////////
+
+# Testcase cp_rd (Test destination rd = x0)
+I_lui_cg_cp_rd_b0:
+  lui x0, 115871 # perform operation
+      40:	1c49f037          	lui	x0,0x1c49f
+  # Check if x0 contains the expected result. x2 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x2, x5, x4, x0, I_lui_cg_cp_rd_b0, I_lui_cg_cp_rd_b0_str)
+      44:	00012203          	lw	x4,0(x2)
+      48:	00020863          	beq	x4,x0,58 <rvtest_code_begin+0x18>
+      4c:	6f0002ef          	jal	x5,73c <failedtest_x5_x4>
+      50:	00000040          	.word	0x00000040
+      54:	00004110          	.word	0x00004110
+      58:	00410113          	addi	x2,x2,4
+
+0000005c <I_lui_cg_cp_rd_b1>:
+
+# Testcase cp_rd (Test destination rd = x1)
+I_lui_cg_cp_rd_b1:
+  lui x1, 592207 # perform operation
+      5c:	9094f0b7          	lui	x1,0x9094f
+  # Check if x1 contains the expected result. x2 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x2, x5, x4, x1, I_lui_cg_cp_rd_b1, I_lui_cg_cp_rd_b1_str)
+      60:	00012203          	lw	x4,0(x2)
+      64:	00120863          	beq	x4,x1,74 <I_lui_cg_cp_rd_b1+0x18>
+      68:	6d4002ef          	jal	x5,73c <failedtest_x5_x4>
+      6c:	0000005c          	.word	0x0000005c
+      70:	0000413c          	.word	0x0000413c
+      74:	00410113          	addi	x2,x2,4
+
+  mv x29, x2 # switch signature pointer register to avoid conflict with test
+      78:	00010e93          	addi	x29,x2,0
+
+0000007c <I_lui_cg_cp_rd_b2>:
+# Testcase cp_rd (Test destination rd = x2)
+I_lui_cg_cp_rd_b2:
+  lui x2, 394359 # perform operation
+      7c:	60477137          	lui	x2,0x60477
+  # Check if x2 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x2, I_lui_cg_cp_rd_b2, I_lui_cg_cp_rd_b2_str)
+      80:	000ea203          	lw	x4,0(x29)
+      84:	00220863          	beq	x4,x2,94 <I_lui_cg_cp_rd_b2+0x18>
+      88:	6b4002ef          	jal	x5,73c <failedtest_x5_x4>
+      8c:	0000007c          	.word	0x0000007c
+      90:	00004168          	.word	0x00004168
+      94:	004e8e93          	addi	x29,x29,4
+
+  mv x10, x3 # switch data pointer register to avoid conflict with test
+      98:	00018513          	addi	x10,x3,0
+
+0000009c <I_lui_cg_cp_rd_b3>:
+# Testcase cp_rd (Test destination rd = x3)
+I_lui_cg_cp_rd_b3:
+  lui x3, 350200 # perform operation
+      9c:	557f81b7          	lui	x3,0x557f8
+  # Check if x3 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x3, I_lui_cg_cp_rd_b3, I_lui_cg_cp_rd_b3_str)
+      a0:	000ea203          	lw	x4,0(x29)
+      a4:	00320863          	beq	x4,x3,b4 <I_lui_cg_cp_rd_b3+0x18>
+      a8:	694002ef          	jal	x5,73c <failedtest_x5_x4>
+      ac:	0000009c          	.word	0x0000009c
+      b0:	00004194          	.word	0x00004194
+      b4:	004e8e93          	addi	x29,x29,4
+
+  mv x7, x4 # switch temp register to avoid conflict with test
+      b8:	00020393          	addi	x7,x4,0 # 0 <rvtest_entry_point>
+  mv x8, x5 # switch link pointer register to avoid conflict with test
+      bc:	00028413          	addi	x8,x5,0
+
+000000c0 <I_lui_cg_cp_rd_b4>:
+# Testcase cp_rd (Test destination rd = x4)
+I_lui_cg_cp_rd_b4:
+  lui x4, 771053 # perform operation
+      c0:	bc3ed237          	lui	x4,0xbc3ed
+  # Check if x4 contains the expected result. x29 is the signature ptr, x8 is the link ptr, x7 is a temp reg.
+  RVTEST_SIGUPD(x29, x8, x7, x4, I_lui_cg_cp_rd_b4, I_lui_cg_cp_rd_b4_str)
+      c4:	000ea383          	lw	x7,0(x29)
+      c8:	00438863          	beq	x7,x4,d8 <I_lui_cg_cp_rd_b4+0x18>
+      cc:	6880046f          	jal	x8,754 <failedtest_x8_x7>
+      d0:	000000c0          	.word	0x000000c0
+      d4:	000041c0          	.word	0x000041c0
+      d8:	004e8e93          	addi	x29,x29,4
+
+000000dc <I_lui_cg_cp_rd_b5>:
+
+# Testcase cp_rd (Test destination rd = x5)
+I_lui_cg_cp_rd_b5:
+  lui x5, 867543 # perform operation
+      dc:	d3cd72b7          	lui	x5,0xd3cd7
+  # Check if x5 contains the expected result. x29 is the signature ptr, x8 is the link ptr, x7 is a temp reg.
+  RVTEST_SIGUPD(x29, x8, x7, x5, I_lui_cg_cp_rd_b5, I_lui_cg_cp_rd_b5_str)
+      e0:	000ea383          	lw	x7,0(x29)
+      e4:	00538863          	beq	x7,x5,f4 <I_lui_cg_cp_rd_b5+0x18>
+      e8:	66c0046f          	jal	x8,754 <failedtest_x8_x7>
+      ec:	000000dc          	.word	0x000000dc
+      f0:	000041ec          	.word	0x000041ec
+      f4:	004e8e93          	addi	x29,x29,4
+
+000000f8 <I_lui_cg_cp_rd_b6>:
+
+# Testcase cp_rd (Test destination rd = x6)
+I_lui_cg_cp_rd_b6:
+  lui x6, 29618 # perform operation
+      f8:	073b2337          	lui	x6,0x73b2
+  # Check if x6 contains the expected result. x29 is the signature ptr, x8 is the link ptr, x7 is a temp reg.
+  RVTEST_SIGUPD(x29, x8, x7, x6, I_lui_cg_cp_rd_b6, I_lui_cg_cp_rd_b6_str)
+      fc:	000ea383          	lw	x7,0(x29)
+     100:	00638863          	beq	x7,x6,110 <I_lui_cg_cp_rd_b6+0x18>
+     104:	6500046f          	jal	x8,754 <failedtest_x8_x7>
+     108:	000000f8          	.word	0x000000f8
+     10c:	00004218          	.word	0x00004218
+     110:	004e8e93          	addi	x29,x29,4
+
+  mv x13, x7 # switch temp register to avoid conflict with test
+     114:	00038693          	addi	x13,x7,0
+  mv x14, x8 # switch link pointer register to avoid conflict with test
+     118:	00040713          	addi	x14,x8,0
+
+0000011c <I_lui_cg_cp_rd_b7>:
+# Testcase cp_rd (Test destination rd = x7)
+I_lui_cg_cp_rd_b7:
+  lui x7, 872419 # perform operation
+     11c:	d4fe33b7          	lui	x7,0xd4fe3
+  # Check if x7 contains the expected result. x29 is the signature ptr, x14 is the link ptr, x13 is a temp reg.
+  RVTEST_SIGUPD(x29, x14, x13, x7, I_lui_cg_cp_rd_b7, I_lui_cg_cp_rd_b7_str)
+     120:	000ea683          	lw	x13,0(x29)
+     124:	00768863          	beq	x13,x7,134 <I_lui_cg_cp_rd_b7+0x18>
+     128:	6540076f          	jal	x14,77c <failedtest_x14_x13>
+     12c:	0000011c          	.word	0x0000011c
+     130:	00004244          	.word	0x00004244
+     134:	004e8e93          	addi	x29,x29,4
+
+00000138 <I_lui_cg_cp_rd_b8>:
+
+# Testcase cp_rd (Test destination rd = x8)
+I_lui_cg_cp_rd_b8:
+  lui x8, 935840 # perform operation
+     138:	e47a0437          	lui	x8,0xe47a0
+  # Check if x8 contains the expected result. x29 is the signature ptr, x14 is the link ptr, x13 is a temp reg.
+  RVTEST_SIGUPD(x29, x14, x13, x8, I_lui_cg_cp_rd_b8, I_lui_cg_cp_rd_b8_str)
+     13c:	000ea683          	lw	x13,0(x29)
+     140:	00868863          	beq	x13,x8,150 <I_lui_cg_cp_rd_b8+0x18>
+     144:	6380076f          	jal	x14,77c <failedtest_x14_x13>
+     148:	00000138          	.word	0x00000138
+     14c:	00004270          	.word	0x00004270
+     150:	004e8e93          	addi	x29,x29,4
+
+00000154 <I_lui_cg_cp_rd_b9>:
+
+# Testcase cp_rd (Test destination rd = x9)
+I_lui_cg_cp_rd_b9:
+  lui x9, 255126 # perform operation
+     154:	3e4964b7          	lui	x9,0x3e496
+  # Check if x9 contains the expected result. x29 is the signature ptr, x14 is the link ptr, x13 is a temp reg.
+  RVTEST_SIGUPD(x29, x14, x13, x9, I_lui_cg_cp_rd_b9, I_lui_cg_cp_rd_b9_str)
+     158:	000ea683          	lw	x13,0(x29)
+     15c:	00968863          	beq	x13,x9,16c <I_lui_cg_cp_rd_b9+0x18>
+     160:	61c0076f          	jal	x14,77c <failedtest_x14_x13>
+     164:	00000154          	.word	0x00000154
+     168:	0000429c          	.word	0x0000429c
+     16c:	004e8e93          	addi	x29,x29,4
+
+  mv x21, x10 # switch data pointer register to avoid conflict with test
+     170:	00050a93          	addi	x21,x10,0
+
+00000174 <I_lui_cg_cp_rd_b10>:
+# Testcase cp_rd (Test destination rd = x10)
+I_lui_cg_cp_rd_b10:
+  lui x10, 793941 # perform operation
+     174:	c1d55537          	lui	x10,0xc1d55
+  # Check if x10 contains the expected result. x29 is the signature ptr, x14 is the link ptr, x13 is a temp reg.
+  RVTEST_SIGUPD(x29, x14, x13, x10, I_lui_cg_cp_rd_b10, I_lui_cg_cp_rd_b10_str)
+     178:	000ea683          	lw	x13,0(x29)
+     17c:	00a68863          	beq	x13,x10,18c <I_lui_cg_cp_rd_b10+0x18>
+     180:	5fc0076f          	jal	x14,77c <failedtest_x14_x13>
+     184:	00000174          	.word	0x00000174
+     188:	000042c9          	.word	0x000042c9
+     18c:	004e8e93          	addi	x29,x29,4
+
+00000190 <I_lui_cg_cp_rd_b11>:
+
+# Testcase cp_rd (Test destination rd = x11)
+I_lui_cg_cp_rd_b11:
+  lui x11, 908224 # perform operation
+     190:	ddbc05b7          	lui	x11,0xddbc0
+  # Check if x11 contains the expected result. x29 is the signature ptr, x14 is the link ptr, x13 is a temp reg.
+  RVTEST_SIGUPD(x29, x14, x13, x11, I_lui_cg_cp_rd_b11, I_lui_cg_cp_rd_b11_str)
+     194:	000ea683          	lw	x13,0(x29)
+     198:	00b68863          	beq	x13,x11,1a8 <I_lui_cg_cp_rd_b11+0x18>
+     19c:	5e00076f          	jal	x14,77c <failedtest_x14_x13>
+     1a0:	00000190          	.word	0x00000190
+     1a4:	000042f7          	.word	0x000042f7
+     1a8:	004e8e93          	addi	x29,x29,4
+
+000001ac <I_lui_cg_cp_rd_b12>:
+
+# Testcase cp_rd (Test destination rd = x12)
+I_lui_cg_cp_rd_b12:
+  lui x12, 159994 # perform operation
+     1ac:	270fa637          	lui	x12,0x270fa
+  # Check if x12 contains the expected result. x29 is the signature ptr, x14 is the link ptr, x13 is a temp reg.
+  RVTEST_SIGUPD(x29, x14, x13, x12, I_lui_cg_cp_rd_b12, I_lui_cg_cp_rd_b12_str)
+     1b0:	000ea683          	lw	x13,0(x29)
+     1b4:	00c68863          	beq	x13,x12,1c4 <I_lui_cg_cp_rd_b12+0x18>
+     1b8:	5c40076f          	jal	x14,77c <failedtest_x14_x13>
+     1bc:	000001ac          	.word	0x000001ac
+     1c0:	00004325          	.word	0x00004325
+     1c4:	004e8e93          	addi	x29,x29,4
+
+  mv x4, x13 # switch temp register to avoid conflict with test
+     1c8:	00068213          	addi	x4,x13,0
+  mv x5, x14 # switch link pointer register to avoid conflict with test
+     1cc:	00070293          	addi	x5,x14,0
+
+000001d0 <I_lui_cg_cp_rd_b13>:
+# Testcase cp_rd (Test destination rd = x13)
+I_lui_cg_cp_rd_b13:
+  lui x13, 1010785 # perform operation
+     1d0:	f6c616b7          	lui	x13,0xf6c61
+  # Check if x13 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x13, I_lui_cg_cp_rd_b13, I_lui_cg_cp_rd_b13_str)
+     1d4:	000ea203          	lw	x4,0(x29)
+     1d8:	00d20863          	beq	x4,x13,1e8 <I_lui_cg_cp_rd_b13+0x18>
+     1dc:	560002ef          	jal	x5,73c <failedtest_x5_x4>
+     1e0:	000001d0          	.word	0x000001d0
+     1e4:	00004353          	.word	0x00004353
+     1e8:	004e8e93          	addi	x29,x29,4
+
+000001ec <I_lui_cg_cp_rd_b14>:
+
+# Testcase cp_rd (Test destination rd = x14)
+I_lui_cg_cp_rd_b14:
+  lui x14, 511075 # perform operation
+     1ec:	7cc63737          	lui	x14,0x7cc63
+  # Check if x14 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x14, I_lui_cg_cp_rd_b14, I_lui_cg_cp_rd_b14_str)
+     1f0:	000ea203          	lw	x4,0(x29)
+     1f4:	00e20863          	beq	x4,x14,204 <I_lui_cg_cp_rd_b14+0x18>
+     1f8:	544002ef          	jal	x5,73c <failedtest_x5_x4>
+     1fc:	000001ec          	.word	0x000001ec
+     200:	00004381          	.word	0x00004381
+     204:	004e8e93          	addi	x29,x29,4
+
+00000208 <I_lui_cg_cp_rd_b15>:
+
+# Testcase cp_rd (Test destination rd = x15)
+I_lui_cg_cp_rd_b15:
+  lui x15, 905905 # perform operation
+     208:	dd2b17b7          	lui	x15,0xdd2b1
+  # Check if x15 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x15, I_lui_cg_cp_rd_b15, I_lui_cg_cp_rd_b15_str)
+     20c:	000ea203          	lw	x4,0(x29)
+     210:	00f20863          	beq	x4,x15,220 <I_lui_cg_cp_rd_b15+0x18>
+     214:	528002ef          	jal	x5,73c <failedtest_x5_x4>
+     218:	00000208          	.word	0x00000208
+     21c:	000043af          	.word	0x000043af
+     220:	004e8e93          	addi	x29,x29,4
+
+00000224 <I_lui_cg_cp_rd_b16>:
+
+# Testcase cp_rd (Test destination rd = x16)
+I_lui_cg_cp_rd_b16:
+  lui x16, 274598 # perform operation
+     224:	430a6837          	lui	x16,0x430a6
+  # Check if x16 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x16, I_lui_cg_cp_rd_b16, I_lui_cg_cp_rd_b16_str)
+     228:	000ea203          	lw	x4,0(x29)
+     22c:	01020863          	beq	x4,x16,23c <I_lui_cg_cp_rd_b16+0x18>
+     230:	50c002ef          	jal	x5,73c <failedtest_x5_x4>
+     234:	00000224          	.word	0x00000224
+     238:	000043dd          	.word	0x000043dd
+     23c:	004e8e93          	addi	x29,x29,4
+
+00000240 <I_lui_cg_cp_rd_b17>:
+
+# Testcase cp_rd (Test destination rd = x17)
+I_lui_cg_cp_rd_b17:
+  lui x17, 84471 # perform operation
+     240:	149f78b7          	lui	x17,0x149f7
+  # Check if x17 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x17, I_lui_cg_cp_rd_b17, I_lui_cg_cp_rd_b17_str)
+     244:	000ea203          	lw	x4,0(x29)
+     248:	01120863          	beq	x4,x17,258 <I_lui_cg_cp_rd_b17+0x18>
+     24c:	4f0002ef          	jal	x5,73c <failedtest_x5_x4>
+     250:	00000240          	.word	0x00000240
+     254:	0000440b          	.word	0x0000440b
+     258:	004e8e93          	addi	x29,x29,4
+
+0000025c <I_lui_cg_cp_rd_b18>:
+
+# Testcase cp_rd (Test destination rd = x18)
+I_lui_cg_cp_rd_b18:
+  lui x18, 331564 # perform operation
+     25c:	50f2c937          	lui	x18,0x50f2c
+  # Check if x18 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x18, I_lui_cg_cp_rd_b18, I_lui_cg_cp_rd_b18_str)
+     260:	000ea203          	lw	x4,0(x29)
+     264:	01220863          	beq	x4,x18,274 <I_lui_cg_cp_rd_b18+0x18>
+     268:	4d4002ef          	jal	x5,73c <failedtest_x5_x4>
+     26c:	0000025c          	.word	0x0000025c
+     270:	00004439          	.word	0x00004439
+     274:	004e8e93          	addi	x29,x29,4
+
+00000278 <I_lui_cg_cp_rd_b19>:
+
+# Testcase cp_rd (Test destination rd = x19)
+I_lui_cg_cp_rd_b19:
+  lui x19, 310024 # perform operation
+     278:	4bb089b7          	lui	x19,0x4bb08
+  # Check if x19 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x19, I_lui_cg_cp_rd_b19, I_lui_cg_cp_rd_b19_str)
+     27c:	000ea203          	lw	x4,0(x29)
+     280:	01320863          	beq	x4,x19,290 <I_lui_cg_cp_rd_b19+0x18>
+     284:	4b8002ef          	jal	x5,73c <failedtest_x5_x4>
+     288:	00000278          	.word	0x00000278
+     28c:	00004467          	.word	0x00004467
+     290:	004e8e93          	addi	x29,x29,4
+
+00000294 <I_lui_cg_cp_rd_b20>:
+
+# Testcase cp_rd (Test destination rd = x20)
+I_lui_cg_cp_rd_b20:
+  lui x20, 580555 # perform operation
+     294:	8dbcba37          	lui	x20,0x8dbcb
+  # Check if x20 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x20, I_lui_cg_cp_rd_b20, I_lui_cg_cp_rd_b20_str)
+     298:	000ea203          	lw	x4,0(x29)
+     29c:	01420863          	beq	x4,x20,2ac <I_lui_cg_cp_rd_b20+0x18>
+     2a0:	49c002ef          	jal	x5,73c <failedtest_x5_x4>
+     2a4:	00000294          	.word	0x00000294
+     2a8:	00004495          	.word	0x00004495
+     2ac:	004e8e93          	addi	x29,x29,4
+
+  mv x9, x21 # switch data pointer register to avoid conflict with test
+     2b0:	000a8493          	addi	x9,x21,0
+
+000002b4 <I_lui_cg_cp_rd_b21>:
+# Testcase cp_rd (Test destination rd = x21)
+I_lui_cg_cp_rd_b21:
+  lui x21, 965640 # perform operation
+     2b4:	ebc08ab7          	lui	x21,0xebc08
+  # Check if x21 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x21, I_lui_cg_cp_rd_b21, I_lui_cg_cp_rd_b21_str)
+     2b8:	000ea203          	lw	x4,0(x29)
+     2bc:	01520863          	beq	x4,x21,2cc <I_lui_cg_cp_rd_b21+0x18>
+     2c0:	47c002ef          	jal	x5,73c <failedtest_x5_x4>
+     2c4:	000002b4          	.word	0x000002b4
+     2c8:	000044c3          	.word	0x000044c3
+     2cc:	004e8e93          	addi	x29,x29,4
+
+000002d0 <I_lui_cg_cp_rd_b22>:
+
+# Testcase cp_rd (Test destination rd = x22)
+I_lui_cg_cp_rd_b22:
+  lui x22, 829822 # perform operation
+     2d0:	ca97eb37          	lui	x22,0xca97e
+  # Check if x22 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x22, I_lui_cg_cp_rd_b22, I_lui_cg_cp_rd_b22_str)
+     2d4:	000ea203          	lw	x4,0(x29)
+     2d8:	01620863          	beq	x4,x22,2e8 <I_lui_cg_cp_rd_b22+0x18>
+     2dc:	460002ef          	jal	x5,73c <failedtest_x5_x4>
+     2e0:	000002d0          	.word	0x000002d0
+     2e4:	000044f1          	.word	0x000044f1
+     2e8:	004e8e93          	addi	x29,x29,4
+
+000002ec <I_lui_cg_cp_rd_b23>:
+
+# Testcase cp_rd (Test destination rd = x23)
+I_lui_cg_cp_rd_b23:
+  lui x23, 526826 # perform operation
+     2ec:	809eabb7          	lui	x23,0x809ea
+  # Check if x23 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x23, I_lui_cg_cp_rd_b23, I_lui_cg_cp_rd_b23_str)
+     2f0:	000ea203          	lw	x4,0(x29)
+     2f4:	01720863          	beq	x4,x23,304 <I_lui_cg_cp_rd_b23+0x18>
+     2f8:	444002ef          	jal	x5,73c <failedtest_x5_x4>
+     2fc:	000002ec          	.word	0x000002ec
+     300:	0000451f          	.word	0x0000451f
+     304:	004e8e93          	addi	x29,x29,4
+
+00000308 <I_lui_cg_cp_rd_b24>:
+
+# Testcase cp_rd (Test destination rd = x24)
+I_lui_cg_cp_rd_b24:
+  lui x24, 855902 # perform operation
+     308:	d0f5ec37          	lui	x24,0xd0f5e
+  # Check if x24 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x24, I_lui_cg_cp_rd_b24, I_lui_cg_cp_rd_b24_str)
+     30c:	000ea203          	lw	x4,0(x29)
+     310:	01820863          	beq	x4,x24,320 <imm12+0x17>
+     314:	428002ef          	jal	x5,73c <failedtest_x5_x4>
+     318:	00000308          	.word	0x00000308
+     31c:	0000454d          	.word	0x0000454d
+     320:	004e8e93          	addi	x29,x29,4
+
+00000324 <I_lui_cg_cp_rd_b25>:
+
+# Testcase cp_rd (Test destination rd = x25)
+I_lui_cg_cp_rd_b25:
+  lui x25, 152106 # perform operation
+     324:	2522acb7          	lui	x25,0x2522a
+  # Check if x25 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x25, I_lui_cg_cp_rd_b25, I_lui_cg_cp_rd_b25_str)
+     328:	000ea203          	lw	x4,0(x29)
+     32c:	01920863          	beq	x4,x25,33c <I_lui_cg_cp_rd_b25+0x18>
+     330:	40c002ef          	jal	x5,73c <failedtest_x5_x4>
+     334:	00000324          	.word	0x00000324
+     338:	0000457b          	.word	0x0000457b
+     33c:	004e8e93          	addi	x29,x29,4
+
+00000340 <I_lui_cg_cp_rd_b26>:
+
+# Testcase cp_rd (Test destination rd = x26)
+I_lui_cg_cp_rd_b26:
+  lui x26, 978574 # perform operation
+     340:	eee8ed37          	lui	x26,0xeee8e
+  # Check if x26 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x26, I_lui_cg_cp_rd_b26, I_lui_cg_cp_rd_b26_str)
+     344:	000ea203          	lw	x4,0(x29)
+     348:	01a20863          	beq	x4,x26,358 <I_lui_cg_cp_rd_b26+0x18>
+     34c:	3f0002ef          	jal	x5,73c <failedtest_x5_x4>
+     350:	00000340          	.word	0x00000340
+     354:	000045a9          	.word	0x000045a9
+     358:	004e8e93          	addi	x29,x29,4
+
+0000035c <I_lui_cg_cp_rd_b27>:
+
+# Testcase cp_rd (Test destination rd = x27)
+I_lui_cg_cp_rd_b27:
+  lui x27, 505836 # perform operation
+     35c:	7b7ecdb7          	lui	x27,0x7b7ec
+  # Check if x27 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x27, I_lui_cg_cp_rd_b27, I_lui_cg_cp_rd_b27_str)
+     360:	000ea203          	lw	x4,0(x29)
+     364:	01b20863          	beq	x4,x27,374 <I_lui_cg_cp_rd_b27+0x18>
+     368:	3d4002ef          	jal	x5,73c <failedtest_x5_x4>
+     36c:	0000035c          	.word	0x0000035c
+     370:	000045d7          	.word	0x000045d7
+     374:	004e8e93          	addi	x29,x29,4
+
+00000378 <I_lui_cg_cp_rd_b28>:
+
+# Testcase cp_rd (Test destination rd = x28)
+I_lui_cg_cp_rd_b28:
+  lui x28, 173680 # perform operation
+     378:	2a670e37          	lui	x28,0x2a670
+  # Check if x28 contains the expected result. x29 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x29, x5, x4, x28, I_lui_cg_cp_rd_b28, I_lui_cg_cp_rd_b28_str)
+     37c:	000ea203          	lw	x4,0(x29)
+     380:	01c20863          	beq	x4,x28,390 <I_lui_cg_cp_rd_b28+0x18>
+     384:	3b8002ef          	jal	x5,73c <failedtest_x5_x4>
+     388:	00000378          	.word	0x00000378
+     38c:	00004605          	.word	0x00004605
+     390:	004e8e93          	addi	x29,x29,4
+
+  mv x19, x29 # switch signature pointer register to avoid conflict with test
+     394:	000e8993          	addi	x19,x29,0
+
+00000398 <I_lui_cg_cp_rd_b29>:
+# Testcase cp_rd (Test destination rd = x29)
+I_lui_cg_cp_rd_b29:
+  lui x29, 48003 # perform operation
+     398:	0bb83eb7          	lui	x29,0xbb83
+  # Check if x29 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x29, I_lui_cg_cp_rd_b29, I_lui_cg_cp_rd_b29_str)
+     39c:	0009a203          	lw	x4,0(x19) # 4bb08000 <_end+0x4baf1000>
+     3a0:	01d20863          	beq	x4,x29,3b0 <I_lui_cg_cp_rd_b29+0x18>
+     3a4:	398002ef          	jal	x5,73c <failedtest_x5_x4>
+     3a8:	00000398          	.word	0x00000398
+     3ac:	00004633          	.word	0x00004633
+     3b0:	00498993          	addi	x19,x19,4
+
+000003b4 <I_lui_cg_cp_rd_b30>:
+
+# Testcase cp_rd (Test destination rd = x30)
+I_lui_cg_cp_rd_b30:
+  lui x30, 629220 # perform operation
+     3b4:	999e4f37          	lui	x30,0x999e4
+  # Check if x30 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x30, I_lui_cg_cp_rd_b30, I_lui_cg_cp_rd_b30_str)
+     3b8:	0009a203          	lw	x4,0(x19)
+     3bc:	01e20863          	beq	x4,x30,3cc <I_lui_cg_cp_rd_b30+0x18>
+     3c0:	37c002ef          	jal	x5,73c <failedtest_x5_x4>
+     3c4:	000003b4          	.word	0x000003b4
+     3c8:	00004661          	.word	0x00004661
+     3cc:	00498993          	addi	x19,x19,4
+
+000003d0 <I_lui_cg_cp_rd_b31>:
+
+# Testcase cp_rd (Test destination rd = x31)
+I_lui_cg_cp_rd_b31:
+  lui x31, 151487 # perform operation
+     3d0:	24fbffb7          	lui	x31,0x24fbf
+  # Check if x31 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x31, I_lui_cg_cp_rd_b31, I_lui_cg_cp_rd_b31_str)
+     3d4:	0009a203          	lw	x4,0(x19)
+     3d8:	01f20863          	beq	x4,x31,3e8 <I_lui_cg_cp_rd_b31+0x18>
+     3dc:	360002ef          	jal	x5,73c <failedtest_x5_x4>
+     3e0:	000003d0          	.word	0x000003d0
+     3e4:	0000468f          	.word	0x0000468f
+     3e8:	00498993          	addi	x19,x19,4
+
+000003ec <I_lui_cg_cp_imm_edges_20bit_0x0>:
+// cp_imm_edges_20bit
+/////////////////////////////////
+
+# Testcase cp_imm_edges_20bit (imm = 0)
+I_lui_cg_cp_imm_edges_20bit_0x0:
+  lui x17, 0 # perform operation
+     3ec:	000008b7          	lui	x17,0x0
+  # Check if x17 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x17, I_lui_cg_cp_imm_edges_20bit_0x0, I_lui_cg_cp_imm_edges_20bit_0x0_str)
+     3f0:	0009a203          	lw	x4,0(x19)
+     3f4:	01120863          	beq	x4,x17,404 <I_lui_cg_cp_imm_edges_20bit_0x0+0x18>
+     3f8:	344002ef          	jal	x5,73c <failedtest_x5_x4>
+     3fc:	000003ec          	.word	0x000003ec
+     400:	000046bd          	.word	0x000046bd
+     404:	00498993          	addi	x19,x19,4
+
+00000408 <I_lui_cg_cp_imm_edges_20bit_0x1>:
+
+# Testcase cp_imm_edges_20bit (imm = 1)
+I_lui_cg_cp_imm_edges_20bit_0x1:
+  lui x11, 1 # perform operation
+     408:	000015b7          	lui	x11,0x1
+  # Check if x11 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x11, I_lui_cg_cp_imm_edges_20bit_0x1, I_lui_cg_cp_imm_edges_20bit_0x1_str)
+     40c:	0009a203          	lw	x4,0(x19)
+     410:	00b20863          	beq	x4,x11,420 <I_lui_cg_cp_imm_edges_20bit_0x1+0x18>
+     414:	328002ef          	jal	x5,73c <failedtest_x5_x4>
+     418:	00000408          	.word	0x00000408
+     41c:	000046f8          	.word	0x000046f8
+     420:	00498993          	addi	x19,x19,4
+
+00000424 <I_lui_cg_cp_imm_edges_20bit_0x2>:
+
+# Testcase cp_imm_edges_20bit (imm = 2)
+I_lui_cg_cp_imm_edges_20bit_0x2:
+  lui x11, 2 # perform operation
+     424:	000025b7          	lui	x11,0x2
+  # Check if x11 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x11, I_lui_cg_cp_imm_edges_20bit_0x2, I_lui_cg_cp_imm_edges_20bit_0x2_str)
+     428:	0009a203          	lw	x4,0(x19)
+     42c:	00b20863          	beq	x4,x11,43c <I_lui_cg_cp_imm_edges_20bit_0x2+0x18>
+     430:	30c002ef          	jal	x5,73c <failedtest_x5_x4>
+     434:	00000424          	.word	0x00000424
+     438:	00004733          	.word	0x00004733
+     43c:	00498993          	addi	x19,x19,4
+
+00000440 <I_lui_cg_cp_imm_edges_20bit_0x3>:
+
+# Testcase cp_imm_edges_20bit (imm = 3)
+I_lui_cg_cp_imm_edges_20bit_0x3:
+  lui x14, 3 # perform operation
+     440:	00003737          	lui	x14,0x3
+  # Check if x14 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x14, I_lui_cg_cp_imm_edges_20bit_0x3, I_lui_cg_cp_imm_edges_20bit_0x3_str)
+     444:	0009a203          	lw	x4,0(x19)
+     448:	00e20863          	beq	x4,x14,458 <I_lui_cg_cp_imm_edges_20bit_0x3+0x18>
+     44c:	2f0002ef          	jal	x5,73c <failedtest_x5_x4>
+     450:	00000440          	.word	0x00000440
+     454:	0000476e          	.word	0x0000476e
+     458:	00498993          	addi	x19,x19,4
+
+0000045c <I_lui_cg_cp_imm_edges_20bit_0x4>:
+
+# Testcase cp_imm_edges_20bit (imm = 4)
+I_lui_cg_cp_imm_edges_20bit_0x4:
+  lui x30, 4 # perform operation
+     45c:	00004f37          	lui	x30,0x4
+  # Check if x30 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x30, I_lui_cg_cp_imm_edges_20bit_0x4, I_lui_cg_cp_imm_edges_20bit_0x4_str)
+     460:	0009a203          	lw	x4,0(x19)
+     464:	01e20863          	beq	x4,x30,474 <I_lui_cg_cp_imm_edges_20bit_0x4+0x18>
+     468:	2d4002ef          	jal	x5,73c <failedtest_x5_x4>
+     46c:	0000045c          	.word	0x0000045c
+     470:	000047a9          	.word	0x000047a9
+     474:	00498993          	addi	x19,x19,4
+
+00000478 <I_lui_cg_cp_imm_edges_20bit_0x8>:
+
+# Testcase cp_imm_edges_20bit (imm = 8)
+I_lui_cg_cp_imm_edges_20bit_0x8:
+  lui x6, 8 # perform operation
+     478:	00008337          	lui	x6,0x8
+  # Check if x6 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x6, I_lui_cg_cp_imm_edges_20bit_0x8, I_lui_cg_cp_imm_edges_20bit_0x8_str)
+     47c:	0009a203          	lw	x4,0(x19)
+     480:	00620863          	beq	x4,x6,490 <I_lui_cg_cp_imm_edges_20bit_0x8+0x18>
+     484:	2b8002ef          	jal	x5,73c <failedtest_x5_x4>
+     488:	00000478          	.word	0x00000478
+     48c:	000047e4          	.word	0x000047e4
+     490:	00498993          	addi	x19,x19,4
+
+00000494 <I_lui_cg_cp_imm_edges_20bit_0x10>:
+
+# Testcase cp_imm_edges_20bit (imm = 16)
+I_lui_cg_cp_imm_edges_20bit_0x10:
+  lui x10, 16 # perform operation
+     494:	00010537          	lui	x10,0x10
+  # Check if x10 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x10, I_lui_cg_cp_imm_edges_20bit_0x10, I_lui_cg_cp_imm_edges_20bit_0x10_str)
+     498:	0009a203          	lw	x4,0(x19)
+     49c:	00a20863          	beq	x4,x10,4ac <I_lui_cg_cp_imm_edges_20bit_0x10+0x18>
+     4a0:	29c002ef          	jal	x5,73c <failedtest_x5_x4>
+     4a4:	00000494          	.word	0x00000494
+     4a8:	0000481f          	.word	0x0000481f
+     4ac:	00498993          	addi	x19,x19,4
+
+000004b0 <I_lui_cg_cp_imm_edges_20bit_0x20>:
+
+# Testcase cp_imm_edges_20bit (imm = 32)
+I_lui_cg_cp_imm_edges_20bit_0x20:
+  lui x13, 32 # perform operation
+     4b0:	000206b7          	lui	x13,0x20
+  # Check if x13 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x13, I_lui_cg_cp_imm_edges_20bit_0x20, I_lui_cg_cp_imm_edges_20bit_0x20_str)
+     4b4:	0009a203          	lw	x4,0(x19)
+     4b8:	00d20863          	beq	x4,x13,4c8 <I_lui_cg_cp_imm_edges_20bit_0x20+0x18>
+     4bc:	280002ef          	jal	x5,73c <failedtest_x5_x4>
+     4c0:	000004b0          	.word	0x000004b0
+     4c4:	0000485b          	.word	0x0000485b
+     4c8:	00498993          	addi	x19,x19,4
+
+000004cc <I_lui_cg_cp_imm_edges_20bit_0x40>:
+
+# Testcase cp_imm_edges_20bit (imm = 64)
+I_lui_cg_cp_imm_edges_20bit_0x40:
+  lui x30, 64 # perform operation
+     4cc:	00040f37          	lui	x30,0x40
+  # Check if x30 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x30, I_lui_cg_cp_imm_edges_20bit_0x40, I_lui_cg_cp_imm_edges_20bit_0x40_str)
+     4d0:	0009a203          	lw	x4,0(x19)
+     4d4:	01e20863          	beq	x4,x30,4e4 <I_lui_cg_cp_imm_edges_20bit_0x40+0x18>
+     4d8:	264002ef          	jal	x5,73c <failedtest_x5_x4>
+     4dc:	000004cc          	.word	0x000004cc
+     4e0:	00004897          	.word	0x00004897
+     4e4:	00498993          	addi	x19,x19,4
+
+000004e8 <I_lui_cg_cp_imm_edges_20bit_0x80>:
+
+# Testcase cp_imm_edges_20bit (imm = 128)
+I_lui_cg_cp_imm_edges_20bit_0x80:
+  lui x25, 128 # perform operation
+     4e8:	00080cb7          	lui	x25,0x80
+  # Check if x25 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x25, I_lui_cg_cp_imm_edges_20bit_0x80, I_lui_cg_cp_imm_edges_20bit_0x80_str)
+     4ec:	0009a203          	lw	x4,0(x19)
+     4f0:	01920863          	beq	x4,x25,500 <I_lui_cg_cp_imm_edges_20bit_0x80+0x18>
+     4f4:	248002ef          	jal	x5,73c <failedtest_x5_x4>
+     4f8:	000004e8          	.word	0x000004e8
+     4fc:	000048d3          	.word	0x000048d3
+     500:	00498993          	addi	x19,x19,4
+
+00000504 <I_lui_cg_cp_imm_edges_20bit_0x100>:
+
+# Testcase cp_imm_edges_20bit (imm = 256)
+I_lui_cg_cp_imm_edges_20bit_0x100:
+  lui x16, 256 # perform operation
+     504:	00100837          	lui	x16,0x100
+  # Check if x16 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x16, I_lui_cg_cp_imm_edges_20bit_0x100, I_lui_cg_cp_imm_edges_20bit_0x100_str)
+     508:	0009a203          	lw	x4,0(x19)
+     50c:	01020863          	beq	x4,x16,51c <I_lui_cg_cp_imm_edges_20bit_0x100+0x18>
+     510:	22c002ef          	jal	x5,73c <failedtest_x5_x4>
+     514:	00000504          	.word	0x00000504
+     518:	0000490f          	.word	0x0000490f
+     51c:	00498993          	addi	x19,x19,4
+
+00000520 <I_lui_cg_cp_imm_edges_20bit_0x200>:
+
+# Testcase cp_imm_edges_20bit (imm = 512)
+I_lui_cg_cp_imm_edges_20bit_0x200:
+  lui x26, 512 # perform operation
+     520:	00200d37          	lui	x26,0x200
+  # Check if x26 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x26, I_lui_cg_cp_imm_edges_20bit_0x200, I_lui_cg_cp_imm_edges_20bit_0x200_str)
+     524:	0009a203          	lw	x4,0(x19)
+     528:	01a20863          	beq	x4,x26,538 <I_lui_cg_cp_imm_edges_20bit_0x200+0x18>
+     52c:	210002ef          	jal	x5,73c <failedtest_x5_x4>
+     530:	00000520          	.word	0x00000520
+     534:	0000494c          	.word	0x0000494c
+     538:	00498993          	addi	x19,x19,4
+
+0000053c <I_lui_cg_cp_imm_edges_20bit_0x400>:
+
+# Testcase cp_imm_edges_20bit (imm = 1024)
+I_lui_cg_cp_imm_edges_20bit_0x400:
+  lui x25, 1024 # perform operation
+     53c:	00400cb7          	lui	x25,0x400
+  # Check if x25 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x25, I_lui_cg_cp_imm_edges_20bit_0x400, I_lui_cg_cp_imm_edges_20bit_0x400_str)
+     540:	0009a203          	lw	x4,0(x19)
+     544:	01920863          	beq	x4,x25,554 <I_lui_cg_cp_imm_edges_20bit_0x400+0x18>
+     548:	1f4002ef          	jal	x5,73c <failedtest_x5_x4>
+     54c:	0000053c          	.word	0x0000053c
+     550:	00004989          	.word	0x00004989
+     554:	00498993          	addi	x19,x19,4
+
+00000558 <I_lui_cg_cp_imm_edges_20bit_0x800>:
+
+# Testcase cp_imm_edges_20bit (imm = 2048)
+I_lui_cg_cp_imm_edges_20bit_0x800:
+  lui x11, 2048 # perform operation
+     558:	008005b7          	lui	x11,0x800
+  # Check if x11 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x11, I_lui_cg_cp_imm_edges_20bit_0x800, I_lui_cg_cp_imm_edges_20bit_0x800_str)
+     55c:	0009a203          	lw	x4,0(x19)
+     560:	00b20863          	beq	x4,x11,570 <I_lui_cg_cp_imm_edges_20bit_0x800+0x18>
+     564:	1d8002ef          	jal	x5,73c <failedtest_x5_x4>
+     568:	00000558          	.word	0x00000558
+     56c:	000049c6          	.word	0x000049c6
+     570:	00498993          	addi	x19,x19,4
+
+00000574 <I_lui_cg_cp_imm_edges_20bit_0x1000>:
+
+# Testcase cp_imm_edges_20bit (imm = 4096)
+I_lui_cg_cp_imm_edges_20bit_0x1000:
+  lui x25, 4096 # perform operation
+     574:	01000cb7          	lui	x25,0x1000
+  # Check if x25 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x25, I_lui_cg_cp_imm_edges_20bit_0x1000, I_lui_cg_cp_imm_edges_20bit_0x1000_str)
+     578:	0009a203          	lw	x4,0(x19)
+     57c:	01920863          	beq	x4,x25,58c <I_lui_cg_cp_imm_edges_20bit_0x1000+0x18>
+     580:	1bc002ef          	jal	x5,73c <failedtest_x5_x4>
+     584:	00000574          	.word	0x00000574
+     588:	00004a03          	.word	0x00004a03
+     58c:	00498993          	addi	x19,x19,4
+
+00000590 <I_lui_cg_cp_imm_edges_20bit_0x2000>:
+
+# Testcase cp_imm_edges_20bit (imm = 8192)
+I_lui_cg_cp_imm_edges_20bit_0x2000:
+  lui x15, 8192 # perform operation
+     590:	020007b7          	lui	x15,0x2000
+  # Check if x15 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x15, I_lui_cg_cp_imm_edges_20bit_0x2000, I_lui_cg_cp_imm_edges_20bit_0x2000_str)
+     594:	0009a203          	lw	x4,0(x19)
+     598:	00f20863          	beq	x4,x15,5a8 <I_lui_cg_cp_imm_edges_20bit_0x2000+0x18>
+     59c:	1a0002ef          	jal	x5,73c <failedtest_x5_x4>
+     5a0:	00000590          	.word	0x00000590
+     5a4:	00004a41          	.word	0x00004a41
+     5a8:	00498993          	addi	x19,x19,4
+
+000005ac <I_lui_cg_cp_imm_edges_20bit_0x4000>:
+
+# Testcase cp_imm_edges_20bit (imm = 16384)
+I_lui_cg_cp_imm_edges_20bit_0x4000:
+  lui x25, 16384 # perform operation
+     5ac:	04000cb7          	lui	x25,0x4000
+  # Check if x25 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x25, I_lui_cg_cp_imm_edges_20bit_0x4000, I_lui_cg_cp_imm_edges_20bit_0x4000_str)
+     5b0:	0009a203          	lw	x4,0(x19)
+     5b4:	01920863          	beq	x4,x25,5c4 <I_lui_cg_cp_imm_edges_20bit_0x4000+0x18>
+     5b8:	184002ef          	jal	x5,73c <failedtest_x5_x4>
+     5bc:	000005ac          	.word	0x000005ac
+     5c0:	00004a7f          	.word	0x00004a7f
+     5c4:	00498993          	addi	x19,x19,4
+
+000005c8 <I_lui_cg_cp_imm_edges_20bit_0x8000>:
+
+# Testcase cp_imm_edges_20bit (imm = 32768)
+I_lui_cg_cp_imm_edges_20bit_0x8000:
+  lui x2, 32768 # perform operation
+     5c8:	08000137          	lui	x2,0x8000
+  # Check if x2 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x2, I_lui_cg_cp_imm_edges_20bit_0x8000, I_lui_cg_cp_imm_edges_20bit_0x8000_str)
+     5cc:	0009a203          	lw	x4,0(x19)
+     5d0:	00220863          	beq	x4,x2,5e0 <I_lui_cg_cp_imm_edges_20bit_0x8000+0x18>
+     5d4:	168002ef          	jal	x5,73c <failedtest_x5_x4>
+     5d8:	000005c8          	.word	0x000005c8
+     5dc:	00004abd          	.word	0x00004abd
+     5e0:	00498993          	addi	x19,x19,4
+
+000005e4 <I_lui_cg_cp_imm_edges_20bit_0x10000>:
+
+# Testcase cp_imm_edges_20bit (imm = 65536)
+I_lui_cg_cp_imm_edges_20bit_0x10000:
+  lui x21, 65536 # perform operation
+     5e4:	10000ab7          	lui	x21,0x10000
+  # Check if x21 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x21, I_lui_cg_cp_imm_edges_20bit_0x10000, I_lui_cg_cp_imm_edges_20bit_0x10000_str)
+     5e8:	0009a203          	lw	x4,0(x19)
+     5ec:	01520863          	beq	x4,x21,5fc <I_lui_cg_cp_imm_edges_20bit_0x10000+0x18>
+     5f0:	14c002ef          	jal	x5,73c <failedtest_x5_x4>
+     5f4:	000005e4          	.word	0x000005e4
+     5f8:	00004afb          	.word	0x00004afb
+     5fc:	00498993          	addi	x19,x19,4
+
+00000600 <I_lui_cg_cp_imm_edges_20bit_0x20000>:
+
+# Testcase cp_imm_edges_20bit (imm = 131072)
+I_lui_cg_cp_imm_edges_20bit_0x20000:
+  lui x7, 131072 # perform operation
+     600:	200003b7          	lui	x7,0x20000
+  # Check if x7 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x7, I_lui_cg_cp_imm_edges_20bit_0x20000, I_lui_cg_cp_imm_edges_20bit_0x20000_str)
+     604:	0009a203          	lw	x4,0(x19)
+     608:	00720863          	beq	x4,x7,618 <I_lui_cg_cp_imm_edges_20bit_0x20000+0x18>
+     60c:	130002ef          	jal	x5,73c <failedtest_x5_x4>
+     610:	00000600          	.word	0x00000600
+     614:	00004b3a          	.word	0x00004b3a
+     618:	00498993          	addi	x19,x19,4
+
+0000061c <I_lui_cg_cp_imm_edges_20bit_0x40000>:
+
+# Testcase cp_imm_edges_20bit (imm = 262144)
+I_lui_cg_cp_imm_edges_20bit_0x40000:
+  lui x16, 262144 # perform operation
+     61c:	40000837          	lui	x16,0x40000
+  # Check if x16 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x16, I_lui_cg_cp_imm_edges_20bit_0x40000, I_lui_cg_cp_imm_edges_20bit_0x40000_str)
+     620:	0009a203          	lw	x4,0(x19)
+     624:	01020863          	beq	x4,x16,634 <I_lui_cg_cp_imm_edges_20bit_0x40000+0x18>
+     628:	114002ef          	jal	x5,73c <failedtest_x5_x4>
+     62c:	0000061c          	.word	0x0000061c
+     630:	00004b79          	.word	0x00004b79
+     634:	00498993          	addi	x19,x19,4
+
+00000638 <I_lui_cg_cp_imm_edges_20bit_0x7fffe>:
+
+# Testcase cp_imm_edges_20bit (imm = 524286)
+I_lui_cg_cp_imm_edges_20bit_0x7fffe:
+  lui x6, 524286 # perform operation
+     638:	7fffe337          	lui	x6,0x7fffe
+  # Check if x6 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x6, I_lui_cg_cp_imm_edges_20bit_0x7fffe, I_lui_cg_cp_imm_edges_20bit_0x7fffe_str)
+     63c:	0009a203          	lw	x4,0(x19)
+     640:	00620863          	beq	x4,x6,650 <I_lui_cg_cp_imm_edges_20bit_0x7fffe+0x18>
+     644:	0f8002ef          	jal	x5,73c <failedtest_x5_x4>
+     648:	00000638          	.word	0x00000638
+     64c:	00004bb8          	.word	0x00004bb8
+     650:	00498993          	addi	x19,x19,4
+
+00000654 <I_lui_cg_cp_imm_edges_20bit_0x7ffff>:
+
+# Testcase cp_imm_edges_20bit (imm = 524287)
+I_lui_cg_cp_imm_edges_20bit_0x7ffff:
+  lui x29, 524287 # perform operation
+     654:	7ffffeb7          	lui	x29,0x7ffff
+  # Check if x29 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x29, I_lui_cg_cp_imm_edges_20bit_0x7ffff, I_lui_cg_cp_imm_edges_20bit_0x7ffff_str)
+     658:	0009a203          	lw	x4,0(x19)
+     65c:	01d20863          	beq	x4,x29,66c <I_lui_cg_cp_imm_edges_20bit_0x7ffff+0x18>
+     660:	0dc002ef          	jal	x5,73c <failedtest_x5_x4>
+     664:	00000654          	.word	0x00000654
+     668:	00004bf7          	.word	0x00004bf7
+     66c:	00498993          	addi	x19,x19,4
+
+00000670 <I_lui_cg_cp_imm_edges_20bit_0x80000>:
+
+# Testcase cp_imm_edges_20bit (imm = 524288)
+I_lui_cg_cp_imm_edges_20bit_0x80000:
+  lui x1, 524288 # perform operation
+     670:	800000b7          	lui	x1,0x80000
+  # Check if x1 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x1, I_lui_cg_cp_imm_edges_20bit_0x80000, I_lui_cg_cp_imm_edges_20bit_0x80000_str)
+     674:	0009a203          	lw	x4,0(x19)
+     678:	00120863          	beq	x4,x1,688 <I_lui_cg_cp_imm_edges_20bit_0x80000+0x18>
+     67c:	0c0002ef          	jal	x5,73c <failedtest_x5_x4>
+     680:	00000670          	.word	0x00000670
+     684:	00004c36          	.word	0x00004c36
+     688:	00498993          	addi	x19,x19,4
+
+0000068c <I_lui_cg_cp_imm_edges_20bit_0x80001>:
+
+# Testcase cp_imm_edges_20bit (imm = 524289)
+I_lui_cg_cp_imm_edges_20bit_0x80001:
+  lui x25, 524289 # perform operation
+     68c:	80001cb7          	lui	x25,0x80001
+  # Check if x25 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x25, I_lui_cg_cp_imm_edges_20bit_0x80001, I_lui_cg_cp_imm_edges_20bit_0x80001_str)
+     690:	0009a203          	lw	x4,0(x19)
+     694:	01920863          	beq	x4,x25,6a4 <I_lui_cg_cp_imm_edges_20bit_0x80001+0x18>
+     698:	0a4002ef          	jal	x5,73c <failedtest_x5_x4>
+     69c:	0000068c          	.word	0x0000068c
+     6a0:	00004c75          	.word	0x00004c75
+     6a4:	00498993          	addi	x19,x19,4
+
+000006a8 <I_lui_cg_cp_imm_edges_20bit_0xffffe>:
+
+# Testcase cp_imm_edges_20bit (imm = 1048574)
+I_lui_cg_cp_imm_edges_20bit_0xffffe:
+  lui x7, 1048574 # perform operation
+     6a8:	ffffe3b7          	lui	x7,0xffffe
+  # Check if x7 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x7, I_lui_cg_cp_imm_edges_20bit_0xffffe, I_lui_cg_cp_imm_edges_20bit_0xffffe_str)
+     6ac:	0009a203          	lw	x4,0(x19)
+     6b0:	00720863          	beq	x4,x7,6c0 <I_lui_cg_cp_imm_edges_20bit_0xffffe+0x18>
+     6b4:	088002ef          	jal	x5,73c <failedtest_x5_x4>
+     6b8:	000006a8          	.word	0x000006a8
+     6bc:	00004cb4          	.word	0x00004cb4
+     6c0:	00498993          	addi	x19,x19,4
+
+000006c4 <I_lui_cg_cp_imm_edges_20bit_0xfffff>:
+
+# Testcase cp_imm_edges_20bit (imm = 1048575)
+I_lui_cg_cp_imm_edges_20bit_0xfffff:
+  lui x30, 1048575 # perform operation
+     6c4:	ffffff37          	lui	x30,0xfffff
+  # Check if x30 contains the expected result. x19 is the signature ptr, x5 is the link ptr, x4 is a temp reg.
+  RVTEST_SIGUPD(x19, x5, x4, x30, I_lui_cg_cp_imm_edges_20bit_0xfffff, I_lui_cg_cp_imm_edges_20bit_0xfffff_str)
+     6c8:	0009a203          	lw	x4,0(x19)
+     6cc:	01e20863          	beq	x4,x30,6dc <I_lui_cg_cp_imm_edges_20bit_0xfffff+0x18>
+     6d0:	06c002ef          	jal	x5,73c <failedtest_x5_x4>
+     6d4:	000006c4          	.word	0x000006c4
+     6d8:	00004cf3          	.word	0x00004cf3
+     6dc:	00498993          	addi	x19,x19,4
+
+  mv x2, x19 # restore signature pointer to default register for teardown
+     6e0:	00098113          	addi	x2,x19,0
+
+000006e4 <cleanup_epilogs>:
+     6e4:	00000013          	addi	x0,x0,0
+     6e8:	00000013          	addi	x0,x0,0
+     6ec:	00000013          	addi	x0,x0,0
+     6f0:	00000013          	addi	x0,x0,0
+     6f4:	00000013          	addi	x0,x0,0
+     6f8:	00000013          	addi	x0,x0,0
+     6fc:	00000013          	addi	x0,x0,0
+
+// Instantiate trap handlers and other epilog code, call RVMODEL_HALT at end of test
+RVTEST_CODE_END
+     700:	00005517          	auipc	x10,0x5
+     704:	ca450513          	addi	x10,x10,-860 # 53a4 <successstr>
+     708:	00000013          	addi	x0,x0,0
+     70c:	00000013          	addi	x0,x0,0
+     710:	00000013          	addi	x0,x0,0
+     714:	00000013          	addi	x0,x0,0
+     718:	00000013          	addi	x0,x0,0
+     71c:	00000013          	addi	x0,x0,0
+     720:	00016097          	auipc	x1,0x16
+     724:	ae4080e7          	jalr	x1,-1308(x1) # 16204 <rvmodel_io_write_str>
+     728:	00016097          	auipc	x1,0x16
+     72c:	ae0080e7          	jalr	x1,-1312(x1) # 16208 <rvmodel_halt_pass>
+
+00000730 <abort_test>:
+     730:	bad0e737          	lui	x14,0xbad0e
+     734:	ead70713          	addi	x14,x14,-339 # bad0dead <absimm+0x4b743ba4>
+     738:	fadff06f          	jal	x0,6e4 <cleanup_epilogs>
+
+0000073c <failedtest_x5_x4>:
+     73c:	00004217          	auipc	x4,0x4
+     740:	60420213          	addi	x4,x4,1540 # 4d40 <begin_failure_scratch>
+     744:	02522423          	sw	x5,40(x4) # 28 <MMODE_SIG+0x25>
+     748:	00122423          	sw	x1,8(x4) # 8 <MMODE_SIG+0x5>
+     74c:	00022023          	sw	x0,0(x4) # 0 <rvtest_entry_point>
+     750:	0b00006f          	jal	x0,800 <failedtest_saveregs>
+
+00000754 <failedtest_x8_x7>:
+     754:	00004397          	auipc	x7,0x4
+     758:	5ec38393          	addi	x7,x7,1516 # 4d40 <begin_failure_scratch>
+     75c:	0483a023          	sw	x8,64(x7)
+     760:	0243a023          	sw	x4,32(x7)
+     764:	0253a423          	sw	x5,40(x7)
+     768:	0013a423          	sw	x1,8(x7)
+     76c:	0003a023          	sw	x0,0(x7)
+     770:	00038213          	addi	x4,x7,0
+     774:	00040293          	addi	x5,x8,0 # e47a0000 <absimm+0x751d5cf7>
+     778:	0880006f          	jal	x0,800 <failedtest_saveregs>
+
+0000077c <failedtest_x14_x13>:
+     77c:	00004697          	auipc	x13,0x4
+     780:	5c468693          	addi	x13,x13,1476 # 4d40 <begin_failure_scratch>
+     784:	06e6a823          	sw	x14,112(x13)
+     788:	0246a023          	sw	x4,32(x13)
+     78c:	0256a423          	sw	x5,40(x13)
+     790:	0016a423          	sw	x1,8(x13)
+     794:	0006a023          	sw	x0,0(x13)
+     798:	00068213          	addi	x4,x13,0
+     79c:	00070293          	addi	x5,x14,0
+     7a0:	0600006f          	jal	x0,800 <failedtest_saveregs>
+
+000007a4 <failedtest_trap_x7_x9>:
+     7a4:	00004497          	auipc	x9,0x4
+     7a8:	59c48493          	addi	x9,x9,1436 # 4d40 <begin_failure_scratch>
+     7ac:	0674a423          	sw	x7,104(x9)
+     7b0:	0244a023          	sw	x4,32(x9)
+     7b4:	0254a423          	sw	x5,40(x9)
+     7b8:	0014a423          	sw	x1,8(x9)
+     7bc:	00300093          	addi	x1,x0,3
+     7c0:	0014a023          	sw	x1,0(x9)
+     7c4:	00048213          	addi	x4,x9,0
+     7c8:	00038293          	addi	x5,x7,0
+     7cc:	342020f3          	csrrs	x1,mcause,x0
+     7d0:	00004497          	auipc	x9,0x4
+     7d4:	6e048493          	addi	x9,x9,1760 # 4eb0 <saved_mcause>
+     7d8:	0014a023          	sw	x1,0(x9)
+     7dc:	343020f3          	csrrs	x1,mtval,x0
+     7e0:	00004497          	auipc	x9,0x4
+     7e4:	6d848493          	addi	x9,x9,1752 # 4eb8 <saved_mtval>
+     7e8:	0014a023          	sw	x1,0(x9)
+     7ec:	300020f3          	csrrs	x1,mstatus,x0
+     7f0:	00004497          	auipc	x9,0x4
+     7f4:	6d048493          	addi	x9,x9,1744 # 4ec0 <saved_mstatus>
+     7f8:	0014a023          	sw	x1,0(x9)
+     7fc:	0040006f          	jal	x0,800 <failedtest_saveregs>
+
+00000800 <failedtest_saveregs>:
+     800:	00222823          	sw	x2,16(x4) # 10 <MMODE_SIG+0xd>
+     804:	00322c23          	sw	x3,24(x4) # 18 <MMODE_SIG+0x15>
+     808:	02622823          	sw	x6,48(x4) # 30 <MMODE_SIG+0x2d>
+     80c:	02722c23          	sw	x7,56(x4) # 38 <MMODE_SIG+0x35>
+     810:	04822023          	sw	x8,64(x4) # 40 <rvtest_code_begin>
+     814:	04922423          	sw	x9,72(x4) # 48 <rvtest_code_begin+0x8>
+     818:	04a22823          	sw	x10,80(x4) # 50 <rvtest_code_begin+0x10>
+     81c:	04b22c23          	sw	x11,88(x4) # 58 <rvtest_code_begin+0x18>
+     820:	06c22023          	sw	x12,96(x4) # 60 <I_lui_cg_cp_rd_b1+0x4>
+     824:	06d22423          	sw	x13,104(x4) # 68 <I_lui_cg_cp_rd_b1+0xc>
+     828:	06e22823          	sw	x14,112(x4) # 70 <I_lui_cg_cp_rd_b1+0x14>
+     82c:	06f22c23          	sw	x15,120(x4) # 78 <I_lui_cg_cp_rd_b1+0x1c>
+     830:	09022023          	sw	x16,128(x4) # 80 <I_lui_cg_cp_rd_b2+0x4>
+     834:	09122423          	sw	x17,136(x4) # 88 <I_lui_cg_cp_rd_b2+0xc>
+     838:	09222823          	sw	x18,144(x4) # 90 <I_lui_cg_cp_rd_b2+0x14>
+     83c:	09322c23          	sw	x19,152(x4) # 98 <I_lui_cg_cp_rd_b2+0x1c>
+     840:	0b422023          	sw	x20,160(x4) # a0 <I_lui_cg_cp_rd_b3+0x4>
+     844:	0b522423          	sw	x21,168(x4) # a8 <I_lui_cg_cp_rd_b3+0xc>
+     848:	0b622823          	sw	x22,176(x4) # b0 <I_lui_cg_cp_rd_b3+0x14>
+     84c:	0b722c23          	sw	x23,184(x4) # b8 <I_lui_cg_cp_rd_b3+0x1c>
+     850:	0d822023          	sw	x24,192(x4) # c0 <I_lui_cg_cp_rd_b4>
+     854:	0d922423          	sw	x25,200(x4) # c8 <I_lui_cg_cp_rd_b4+0x8>
+     858:	0da22823          	sw	x26,208(x4) # d0 <I_lui_cg_cp_rd_b4+0x10>
+     85c:	0db22c23          	sw	x27,216(x4) # d8 <I_lui_cg_cp_rd_b4+0x18>
+     860:	0fc22023          	sw	x28,224(x4) # e0 <I_lui_cg_cp_rd_b5+0x4>
+     864:	0fd22423          	sw	x29,232(x4) # e8 <I_lui_cg_cp_rd_b5+0xc>
+     868:	0fe22823          	sw	x30,240(x4) # f0 <I_lui_cg_cp_rd_b5+0x14>
+     86c:	0ff22c23          	sw	x31,248(x4) # f8 <I_lui_cg_cp_rd_b6>
+
+00000870 <failedtest_saveresults>:
+     870:	00004497          	auipc	x9,0x4
+     874:	4d04a483          	lw	x9,1232(x9) # 4d40 <begin_failure_scratch>
+     878:	00300513          	addi	x10,x0,3
+     87c:	06a48863          	beq	x9,x10,8ec <failedtest_saveresults_trap>
+
+00000880 <failedtest_saveresults_int>:
+     880:	ffa2d303          	lhu	x6,-6(x5) # d3cd6ffa <absimm+0x6470ccf1>
+     884:	ff82d383          	lhu	x7,-8(x5)
+     888:	01031313          	slli	x6,x6,0x10
+     88c:	00736333          	or	x6,x6,x7
+     890:	00f35393          	srli	x7,x6,0xf
+     894:	01f3f393          	andi	x7,x7,31
+     898:	01435413          	srli	x8,x6,0x14
+     89c:	01f47413          	andi	x8,x8,31
+     8a0:	10822223          	sw	x8,260(x4) # 104 <I_lui_cg_cp_rd_b6+0xc>
+     8a4:	00341313          	slli	x6,x8,0x3
+     8a8:	00620333          	add	x6,x4,x6
+     8ac:	00032303          	lw	x6,0(x6) # 7fffe000 <absimm+0x10a33cf7>
+     8b0:	10622823          	sw	x6,272(x4) # 110 <I_lui_cg_cp_rd_b6+0x18>
+     8b4:	ff62d303          	lhu	x6,-10(x5)
+     8b8:	ff42d383          	lhu	x7,-12(x5)
+     8bc:	01031313          	slli	x6,x6,0x10
+     8c0:	00736333          	or	x6,x6,x7
+     8c4:	41435393          	srai	x7,x6,0x14
+     8c8:	00f35313          	srli	x6,x6,0xf
+     8cc:	01f37313          	andi	x6,x6,31
+     8d0:	00331313          	slli	x6,x6,0x3
+     8d4:	00620333          	add	x6,x4,x6
+     8d8:	00032303          	lw	x6,0(x6)
+     8dc:	00730333          	add	x6,x6,x7
+     8e0:	00032303          	lw	x6,0(x6)
+     8e4:	10622c23          	sw	x6,280(x4) # 118 <I_lui_cg_cp_rd_b6+0x20>
+     8e8:	3d80006f          	jal	x0,cc0 <failedtest_saveresults_common>
+
+000008ec <failedtest_saveresults_trap>:
+     8ec:	0042a303          	lw	x6,4(x5)
+     8f0:	00004817          	auipc	x16,0x4
+     8f4:	5a880813          	addi	x16,x16,1448 # 4e98 <trap_diag_fail_str_ptr>
+     8f8:	00682023          	sw	x6,0(x16)
+     8fc:	0002a303          	lw	x6,0(x5)
+     900:	10622423          	sw	x6,264(x4) # 108 <I_lui_cg_cp_rd_b6+0x10>
+     904:	00004817          	auipc	x16,0x4
+     908:	59480813          	addi	x16,x16,1428 # 4e98 <trap_diag_fail_str_ptr>
+     90c:	00082303          	lw	x6,0(x16)
+     910:	00005397          	auipc	x7,0x5
+     914:	c5a38393          	addi	x7,x7,-934 # 556a <trap_sig_offset_mismatch>
+     918:	28730463          	beq	x6,x7,ba0 <trap_diag_offset_mismatch>
+     91c:	00000413          	addi	x8,x0,0
+     920:	00004817          	auipc	x16,0x4
+     924:	55080813          	addi	x16,x16,1360 # 4e70 <trap_diag_subtype>
+     928:	00882023          	sw	x8,0(x16)
+     92c:	00005397          	auipc	x7,0x5
+     930:	ca238393          	addi	x7,x7,-862 # 55ce <sv_Mvect_str>
+     934:	00731863          	bne	x6,x7,944 <failedtest_saveresults_trap+0x58>
+     938:	00100413          	addi	x8,x0,1
+     93c:	00000493          	addi	x9,x0,0
+     940:	2e00006f          	jal	x0,c20 <trap_diag_field_identified>
+     944:	00005397          	auipc	x7,0x5
+     948:	d8c38393          	addi	x7,x7,-628 # 56d0 <sv_Mcause_str>
+     94c:	00731863          	bne	x6,x7,95c <failedtest_saveresults_trap+0x70>
+     950:	00200413          	addi	x8,x0,2
+     954:	00000493          	addi	x9,x0,0
+     958:	2c80006f          	jal	x0,c20 <trap_diag_field_identified>
+     95c:	00005397          	auipc	x7,0x5
+     960:	e6f38393          	addi	x7,x7,-401 # 57cb <sv_Mepc_str>
+     964:	00731863          	bne	x6,x7,974 <failedtest_saveresults_trap+0x88>
+     968:	00300413          	addi	x8,x0,3
+     96c:	00000493          	addi	x9,x0,0
+     970:	2b00006f          	jal	x0,c20 <trap_diag_field_identified>
+     974:	00005397          	auipc	x7,0x5
+     978:	f4a38393          	addi	x7,x7,-182 # 58be <sv_Mtval_str>
+     97c:	00731863          	bne	x6,x7,98c <failedtest_saveresults_trap+0xa0>
+     980:	00400413          	addi	x8,x0,4
+     984:	00000493          	addi	x9,x0,0
+     988:	2980006f          	jal	x0,c20 <trap_diag_field_identified>
+     98c:	00005397          	auipc	x7,0x5
+     990:	0a538393          	addi	x7,x7,165 # 5a31 <sv_Mip_str>
+     994:	00731863          	bne	x6,x7,9a4 <failedtest_saveresults_trap+0xb8>
+     998:	00500413          	addi	x8,x0,5
+     99c:	00000493          	addi	x9,x0,0
+     9a0:	2800006f          	jal	x0,c20 <trap_diag_field_identified>
+     9a4:	00005397          	auipc	x7,0x5
+     9a8:	01138393          	addi	x7,x7,17 # 59b5 <sv_Mtval2_str>
+     9ac:	00731863          	bne	x6,x7,9bc <failedtest_saveresults_trap+0xd0>
+     9b0:	00600413          	addi	x8,x0,6
+     9b4:	00000493          	addi	x9,x0,0
+     9b8:	2680006f          	jal	x0,c20 <trap_diag_field_identified>
+     9bc:	00005397          	auipc	x7,0x5
+     9c0:	03738393          	addi	x7,x7,55 # 59f3 <sv_Mtinst_str>
+     9c4:	00731863          	bne	x6,x7,9d4 <failedtest_saveresults_trap+0xe8>
+     9c8:	00700413          	addi	x8,x0,7
+     9cc:	00000493          	addi	x9,x0,0
+     9d0:	2500006f          	jal	x0,c20 <trap_diag_field_identified>
+     9d4:	00005397          	auipc	x7,0x5
+     9d8:	c3a38393          	addi	x7,x7,-966 # 560e <sv_Svect_str>
+     9dc:	00731863          	bne	x6,x7,9ec <failedtest_saveresults_trap+0x100>
+     9e0:	00100413          	addi	x8,x0,1
+     9e4:	00100493          	addi	x9,x0,1
+     9e8:	2380006f          	jal	x0,c20 <trap_diag_field_identified>
+     9ec:	00005397          	auipc	x7,0x5
+     9f0:	d2238393          	addi	x7,x7,-734 # 570e <sv_Scause_str>
+     9f4:	00731863          	bne	x6,x7,a04 <failedtest_saveresults_trap+0x118>
+     9f8:	00200413          	addi	x8,x0,2
+     9fc:	00100493          	addi	x9,x0,1
+     a00:	2200006f          	jal	x0,c20 <trap_diag_field_identified>
+     a04:	00005397          	auipc	x7,0x5
+     a08:	e0338393          	addi	x7,x7,-509 # 5807 <sv_Sepc_str>
+     a0c:	00731863          	bne	x6,x7,a1c <failedtest_saveresults_trap+0x130>
+     a10:	00300413          	addi	x8,x0,3
+     a14:	00100493          	addi	x9,x0,1
+     a18:	2080006f          	jal	x0,c20 <trap_diag_field_identified>
+     a1c:	00005397          	auipc	x7,0x5
+     a20:	edf38393          	addi	x7,x7,-289 # 58fb <sv_Stval_str>
+     a24:	00731863          	bne	x6,x7,a34 <failedtest_saveresults_trap+0x148>
+     a28:	00400413          	addi	x8,x0,4
+     a2c:	00100493          	addi	x9,x0,1
+     a30:	1f00006f          	jal	x0,c20 <trap_diag_field_identified>
+     a34:	00005397          	auipc	x7,0x5
+     a38:	03838393          	addi	x7,x7,56 # 5a6c <sv_Sip_str>
+     a3c:	00731863          	bne	x6,x7,a4c <failedtest_saveresults_trap+0x160>
+     a40:	00500413          	addi	x8,x0,5
+     a44:	00100493          	addi	x9,x0,1
+     a48:	1d80006f          	jal	x0,c20 <trap_diag_field_identified>
+     a4c:	00005397          	auipc	x7,0x5
+     a50:	c0238393          	addi	x7,x7,-1022 # 564e <sv_Hvect_str>
+     a54:	00731863          	bne	x6,x7,a64 <failedtest_saveresults_trap+0x178>
+     a58:	00100413          	addi	x8,x0,1
+     a5c:	00200493          	addi	x9,x0,2
+     a60:	1c00006f          	jal	x0,c20 <trap_diag_field_identified>
+     a64:	00005397          	auipc	x7,0x5
+     a68:	ce838393          	addi	x7,x7,-792 # 574c <sv_Hcause_str>
+     a6c:	00731863          	bne	x6,x7,a7c <failedtest_saveresults_trap+0x190>
+     a70:	00200413          	addi	x8,x0,2
+     a74:	00200493          	addi	x9,x0,2
+     a78:	1a80006f          	jal	x0,c20 <trap_diag_field_identified>
+     a7c:	00005397          	auipc	x7,0x5
+     a80:	dc738393          	addi	x7,x7,-569 # 5843 <sv_Hepc_str>
+     a84:	00731863          	bne	x6,x7,a94 <failedtest_saveresults_trap+0x1a8>
+     a88:	00300413          	addi	x8,x0,3
+     a8c:	00200493          	addi	x9,x0,2
+     a90:	1900006f          	jal	x0,c20 <trap_diag_field_identified>
+     a94:	00005397          	auipc	x7,0x5
+     a98:	ea438393          	addi	x7,x7,-348 # 5938 <sv_Htval_str>
+     a9c:	00731863          	bne	x6,x7,aac <failedtest_saveresults_trap+0x1c0>
+     aa0:	00400413          	addi	x8,x0,4
+     aa4:	00200493          	addi	x9,x0,2
+     aa8:	1780006f          	jal	x0,c20 <trap_diag_field_identified>
+     aac:	00005397          	auipc	x7,0x5
+     ab0:	ffb38393          	addi	x7,x7,-5 # 5aa7 <sv_Hip_str>
+     ab4:	00731863          	bne	x6,x7,ac4 <failedtest_saveresults_trap+0x1d8>
+     ab8:	00500413          	addi	x8,x0,5
+     abc:	00200493          	addi	x9,x0,2
+     ac0:	1600006f          	jal	x0,c20 <trap_diag_field_identified>
+     ac4:	00005397          	auipc	x7,0x5
+     ac8:	bcb38393          	addi	x7,x7,-1077 # 568f <sv_Vvect_str>
+     acc:	00731863          	bne	x6,x7,adc <failedtest_saveresults_trap+0x1f0>
+     ad0:	00100413          	addi	x8,x0,1
+     ad4:	00300493          	addi	x9,x0,3
+     ad8:	1480006f          	jal	x0,c20 <trap_diag_field_identified>
+     adc:	00005397          	auipc	x7,0x5
+     ae0:	caf38393          	addi	x7,x7,-849 # 578b <sv_Vcause_str>
+     ae4:	00731863          	bne	x6,x7,af4 <failedtest_saveresults_trap+0x208>
+     ae8:	00200413          	addi	x8,x0,2
+     aec:	00300493          	addi	x9,x0,3
+     af0:	1300006f          	jal	x0,c20 <trap_diag_field_identified>
+     af4:	00005397          	auipc	x7,0x5
+     af8:	d8c38393          	addi	x7,x7,-628 # 5880 <sv_Vepc_str>
+     afc:	00731863          	bne	x6,x7,b0c <failedtest_saveresults_trap+0x220>
+     b00:	00300413          	addi	x8,x0,3
+     b04:	00300493          	addi	x9,x0,3
+     b08:	1180006f          	jal	x0,c20 <trap_diag_field_identified>
+     b0c:	00005397          	auipc	x7,0x5
+     b10:	e6a38393          	addi	x7,x7,-406 # 5976 <sv_Vtval_str>
+     b14:	00731863          	bne	x6,x7,b24 <failedtest_saveresults_trap+0x238>
+     b18:	00400413          	addi	x8,x0,4
+     b1c:	00300493          	addi	x9,x0,3
+     b20:	1000006f          	jal	x0,c20 <trap_diag_field_identified>
+     b24:	00005397          	auipc	x7,0x5
+     b28:	fbf38393          	addi	x7,x7,-65 # 5ae3 <sv_Vip_str>
+     b2c:	00731863          	bne	x6,x7,b3c <failedtest_saveresults_trap+0x250>
+     b30:	00500413          	addi	x8,x0,5
+     b34:	00300493          	addi	x9,x0,3
+     b38:	0e80006f          	jal	x0,c20 <trap_diag_field_identified>
+     b3c:	00005397          	auipc	x7,0x5
+     b40:	fe438393          	addi	x7,x7,-28 # 5b20 <Mclr_Mext_int_str>
+     b44:	00731863          	bne	x6,x7,b54 <failedtest_saveresults_trap+0x268>
+     b48:	00800413          	addi	x8,x0,8
+     b4c:	00000493          	addi	x9,x0,0
+     b50:	0d00006f          	jal	x0,c20 <trap_diag_field_identified>
+     b54:	00005397          	auipc	x7,0x5
+     b58:	01b38393          	addi	x7,x7,27 # 5b6f <Mclr_Sext_int_str>
+     b5c:	00731863          	bne	x6,x7,b6c <failedtest_saveresults_trap+0x280>
+     b60:	00800413          	addi	x8,x0,8
+     b64:	00000493          	addi	x9,x0,0
+     b68:	0b80006f          	jal	x0,c20 <trap_diag_field_identified>
+     b6c:	00005397          	auipc	x7,0x5
+     b70:	0fe38393          	addi	x7,x7,254 # 5c6a <Sclr_Sext_int_str>
+     b74:	00731863          	bne	x6,x7,b84 <failedtest_saveresults_trap+0x298>
+     b78:	00800413          	addi	x8,x0,8
+     b7c:	00100493          	addi	x9,x0,1
+     b80:	0a00006f          	jal	x0,c20 <trap_diag_field_identified>
+     b84:	00005397          	auipc	x7,0x5
+     b88:	1e238393          	addi	x7,x7,482 # 5d66 <Hclr_Sext_int_str>
+     b8c:	00731863          	bne	x6,x7,b9c <failedtest_saveresults_trap+0x2b0>
+     b90:	00800413          	addi	x8,x0,8
+     b94:	00200493          	addi	x9,x0,2
+     b98:	0880006f          	jal	x0,c20 <trap_diag_field_identified>
+     b9c:	1140006f          	jal	x0,cb0 <trap_diag_generic_report>
+
+00000ba0 <trap_diag_offset_mismatch>:
+     ba0:	00900413          	addi	x8,x0,9
+     ba4:	00004817          	auipc	x16,0x4
+     ba8:	2cc80813          	addi	x16,x16,716 # 4e70 <trap_diag_subtype>
+     bac:	00882023          	sw	x8,0(x16)
+     bb0:	ffa2d303          	lhu	x6,-6(x5)
+     bb4:	ff82d383          	lhu	x7,-8(x5)
+     bb8:	01031313          	slli	x6,x6,0x10
+     bbc:	00736333          	or	x6,x6,x7
+     bc0:	01435413          	srli	x8,x6,0x14
+     bc4:	01f47413          	andi	x8,x8,31
+     bc8:	00341313          	slli	x6,x8,0x3
+     bcc:	00620333          	add	x6,x4,x6
+     bd0:	00032303          	lw	x6,0(x6)
+     bd4:	00004817          	auipc	x16,0x4
+     bd8:	2b480813          	addi	x16,x16,692 # 4e88 <trap_diag_actual_offset>
+     bdc:	00682023          	sw	x6,0(x16)
+     be0:	ff62d303          	lhu	x6,-10(x5)
+     be4:	ff42d383          	lhu	x7,-12(x5)
+     be8:	01031313          	slli	x6,x6,0x10
+     bec:	00736333          	or	x6,x6,x7
+     bf0:	41435393          	srai	x7,x6,0x14
+     bf4:	00f35313          	srli	x6,x6,0xf
+     bf8:	01f37313          	andi	x6,x6,31
+     bfc:	00331313          	slli	x6,x6,0x3
+     c00:	00620333          	add	x6,x4,x6
+     c04:	00032303          	lw	x6,0(x6)
+     c08:	00730333          	add	x6,x6,x7
+     c0c:	00032303          	lw	x6,0(x6)
+     c10:	00004817          	auipc	x16,0x4
+     c14:	28080813          	addi	x16,x16,640 # 4e90 <trap_diag_expected_offset>
+     c18:	00682023          	sw	x6,0(x16)
+     c1c:	0a40006f          	jal	x0,cc0 <failedtest_saveresults_common>
+
+00000c20 <trap_diag_field_identified>:
+     c20:	00004817          	auipc	x16,0x4
+     c24:	25080813          	addi	x16,x16,592 # 4e70 <trap_diag_subtype>
+     c28:	00882023          	sw	x8,0(x16)
+     c2c:	00004817          	auipc	x16,0x4
+     c30:	24880813          	addi	x16,x16,584 # 4e74 <trap_diag_mode>
+     c34:	00982023          	sw	x9,0(x16)
+     c38:	ffa2d303          	lhu	x6,-6(x5)
+     c3c:	ff82d383          	lhu	x7,-8(x5)
+     c40:	01031313          	slli	x6,x6,0x10
+     c44:	00736333          	or	x6,x6,x7
+     c48:	01435713          	srli	x14,x6,0x14
+     c4c:	01f77713          	andi	x14,x14,31
+     c50:	00371313          	slli	x6,x14,0x3
+     c54:	00620333          	add	x6,x4,x6
+     c58:	00032303          	lw	x6,0(x6)
+     c5c:	10622823          	sw	x6,272(x4) # 110 <I_lui_cg_cp_rd_b6+0x18>
+     c60:	00004817          	auipc	x16,0x4
+     c64:	21880813          	addi	x16,x16,536 # 4e78 <trap_diag_actual_value>
+     c68:	00682023          	sw	x6,0(x16)
+     c6c:	ff62d303          	lhu	x6,-10(x5)
+     c70:	ff42d383          	lhu	x7,-12(x5)
+     c74:	01031313          	slli	x6,x6,0x10
+     c78:	00736333          	or	x6,x6,x7
+     c7c:	41435393          	srai	x7,x6,0x14
+     c80:	00f35313          	srli	x6,x6,0xf
+     c84:	01f37313          	andi	x6,x6,31
+     c88:	00331313          	slli	x6,x6,0x3
+     c8c:	00620333          	add	x6,x4,x6
+     c90:	00032303          	lw	x6,0(x6)
+     c94:	00730333          	add	x6,x6,x7
+     c98:	00032303          	lw	x6,0(x6)
+     c9c:	10622c23          	sw	x6,280(x4) # 118 <I_lui_cg_cp_rd_b6+0x20>
+     ca0:	00004817          	auipc	x16,0x4
+     ca4:	1e080813          	addi	x16,x16,480 # 4e80 <trap_diag_expected_value>
+     ca8:	00682023          	sw	x6,0(x16)
+     cac:	0140006f          	jal	x0,cc0 <failedtest_saveresults_common>
+
+00000cb0 <trap_diag_generic_report>:
+     cb0:	00004817          	auipc	x16,0x4
+     cb4:	1c080813          	addi	x16,x16,448 # 4e70 <trap_diag_subtype>
+     cb8:	00082023          	sw	x0,0(x16)
+     cbc:	0040006f          	jal	x0,cc0 <failedtest_saveresults_common>
+
+00000cc0 <failedtest_saveresults_common>:
+     cc0:	0002a303          	lw	x6,0(x5)
+     cc4:	10622423          	sw	x6,264(x4) # 108 <I_lui_cg_cp_rd_b6+0x10>
+     cc8:	00035383          	lhu	x7,0(x6)
+     ccc:	0033f413          	andi	x8,x7,3
+     cd0:	00300493          	addi	x9,x0,3
+     cd4:	00941863          	bne	x8,x9,ce4 <failedtest_saveresults_common+0x24>
+     cd8:	00235403          	lhu	x8,2(x6)
+     cdc:	01041413          	slli	x8,x8,0x10
+     ce0:	0083e3b3          	or	x7,x7,x8
+     ce4:	10722023          	sw	x7,256(x4) # 100 <I_lui_cg_cp_rd_b6+0x8>
+     ce8:	0042a303          	lw	x6,4(x5)
+     cec:	12622023          	sw	x6,288(x4) # 120 <I_lui_cg_cp_rd_b7+0x4>
+
+00000cf0 <failedtest_report>:
+     cf0:	00000013          	addi	x0,x0,0
+     cf4:	00000013          	addi	x0,x0,0
+     cf8:	00000013          	addi	x0,x0,0
+     cfc:	00000013          	addi	x0,x0,0
+     d00:	00004517          	auipc	x10,0x4
+     d04:	6da50513          	addi	x10,x10,1754 # 53da <failstr>
+     d08:	00000013          	addi	x0,x0,0
+     d0c:	00000013          	addi	x0,x0,0
+     d10:	00000013          	addi	x0,x0,0
+     d14:	00000013          	addi	x0,x0,0
+     d18:	00000013          	addi	x0,x0,0
+     d1c:	00000013          	addi	x0,x0,0
+     d20:	00015097          	auipc	x1,0x15
+     d24:	4e4080e7          	jalr	x1,1252(x1) # 16204 <rvmodel_io_write_str>
+
+00000d28 <print_testnamestr>:
+     d28:	00000013          	addi	x0,x0,0
+     d2c:	00000013          	addi	x0,x0,0
+     d30:	00000013          	addi	x0,x0,0
+     d34:	00000013          	addi	x0,x0,0
+     d38:	00000013          	addi	x0,x0,0
+     d3c:	00000013          	addi	x0,x0,0
+     d40:	00004517          	auipc	x10,0x4
+     d44:	72d50513          	addi	x10,x10,1837 # 546d <testnamestr>
+     d48:	00000013          	addi	x0,x0,0
+     d4c:	00000013          	addi	x0,x0,0
+     d50:	00000013          	addi	x0,x0,0
+     d54:	00000013          	addi	x0,x0,0
+     d58:	00000013          	addi	x0,x0,0
+     d5c:	00000013          	addi	x0,x0,0
+     d60:	00015097          	auipc	x1,0x15
+     d64:	4a4080e7          	jalr	x1,1188(x1) # 16204 <rvmodel_io_write_str>
+
+00000d68 <print_failure_test_name_str>:
+     d68:	00004517          	auipc	x10,0x4
+     d6c:	0f852503          	lw	x10,248(x10) # 4e60 <failure_string_ptr>
+     d70:	00015097          	auipc	x1,0x15
+     d74:	494080e7          	jalr	x1,1172(x1) # 16204 <rvmodel_io_write_str>
+
+00000d78 <print_newline_str>:
+     d78:	00000013          	addi	x0,x0,0
+     d7c:	00000013          	addi	x0,x0,0
+     d80:	00004517          	auipc	x10,0x4
+     d84:	6ff50513          	addi	x10,x10,1791 # 547f <newlinestr>
+     d88:	00000013          	addi	x0,x0,0
+     d8c:	00000013          	addi	x0,x0,0
+     d90:	00000013          	addi	x0,x0,0
+     d94:	00000013          	addi	x0,x0,0
+     d98:	00000013          	addi	x0,x0,0
+     d9c:	00000013          	addi	x0,x0,0
+     da0:	00015097          	auipc	x1,0x15
+     da4:	464080e7          	jalr	x1,1124(x1) # 16204 <rvmodel_io_write_str>
+     da8:	00004517          	auipc	x10,0x4
+     dac:	f9852503          	lw	x10,-104(x10) # 4d40 <begin_failure_scratch>
+     db0:	00300593          	addi	x11,x0,3
+     db4:	3eb50c63          	beq	x10,x11,11ac <failedtest_report_trap_detailed>
+     db8:	00000013          	addi	x0,x0,0
+     dbc:	00000013          	addi	x0,x0,0
+     dc0:	00004517          	auipc	x10,0x4
+     dc4:	6c150513          	addi	x10,x10,1729 # 5481 <inststr>
+     dc8:	00000013          	addi	x0,x0,0
+     dcc:	00000013          	addi	x0,x0,0
+     dd0:	00000013          	addi	x0,x0,0
+     dd4:	00000013          	addi	x0,x0,0
+     dd8:	00000013          	addi	x0,x0,0
+     ddc:	00000013          	addi	x0,x0,0
+     de0:	00015097          	auipc	x1,0x15
+     de4:	424080e7          	jalr	x1,1060(x1) # 16204 <rvmodel_io_write_str>
+     de8:	00004517          	auipc	x10,0x4
+     dec:	05852503          	lw	x10,88(x10) # 4e40 <failing_instruction>
+     df0:	02000593          	addi	x11,x0,32
+     df4:	00357613          	andi	x12,x10,3
+     df8:	00300693          	addi	x13,x0,3
+     dfc:	00d60463          	beq	x12,x13,e04 <print_newline_str+0x8c>
+     e00:	01000593          	addi	x11,x0,16
+     e04:	2f4010ef          	jal	x1,20f8 <failedtest_hex_to_str>
+     e08:	00000013          	addi	x0,x0,0
+     e0c:	00000013          	addi	x0,x0,0
+     e10:	00000013          	addi	x0,x0,0
+     e14:	00000013          	addi	x0,x0,0
+     e18:	00000013          	addi	x0,x0,0
+     e1c:	00000013          	addi	x0,x0,0
+     e20:	00004517          	auipc	x10,0x4
+     e24:	0a850513          	addi	x10,x10,168 # 4ec8 <ascii_buffer>
+     e28:	00000013          	addi	x0,x0,0
+     e2c:	00000013          	addi	x0,x0,0
+     e30:	00000013          	addi	x0,x0,0
+     e34:	00000013          	addi	x0,x0,0
+     e38:	00000013          	addi	x0,x0,0
+     e3c:	00000013          	addi	x0,x0,0
+     e40:	00015097          	auipc	x1,0x15
+     e44:	3c4080e7          	jalr	x1,964(x1) # 16204 <rvmodel_io_write_str>
+     e48:	00000013          	addi	x0,x0,0
+     e4c:	00000013          	addi	x0,x0,0
+     e50:	00000013          	addi	x0,x0,0
+     e54:	00000013          	addi	x0,x0,0
+     e58:	00000013          	addi	x0,x0,0
+     e5c:	00000013          	addi	x0,x0,0
+     e60:	00004517          	auipc	x10,0x4
+     e64:	63550513          	addi	x10,x10,1589 # 5495 <addrstr>
+     e68:	00000013          	addi	x0,x0,0
+     e6c:	00000013          	addi	x0,x0,0
+     e70:	00000013          	addi	x0,x0,0
+     e74:	00000013          	addi	x0,x0,0
+     e78:	00000013          	addi	x0,x0,0
+     e7c:	00000013          	addi	x0,x0,0
+     e80:	00015097          	auipc	x1,0x15
+     e84:	384080e7          	jalr	x1,900(x1) # 16204 <rvmodel_io_write_str>
+     e88:	00004517          	auipc	x10,0x4
+     e8c:	fc052503          	lw	x10,-64(x10) # 4e48 <failing_addr>
+     e90:	02000593          	addi	x11,x0,32
+     e94:	264010ef          	jal	x1,20f8 <failedtest_hex_to_str>
+     e98:	00000013          	addi	x0,x0,0
+     e9c:	00000013          	addi	x0,x0,0
+     ea0:	00004517          	auipc	x10,0x4
+     ea4:	02850513          	addi	x10,x10,40 # 4ec8 <ascii_buffer>
+     ea8:	00000013          	addi	x0,x0,0
+     eac:	00000013          	addi	x0,x0,0
+     eb0:	00000013          	addi	x0,x0,0
+     eb4:	00000013          	addi	x0,x0,0
+     eb8:	00000013          	addi	x0,x0,0
+     ebc:	00000013          	addi	x0,x0,0
+     ec0:	00015097          	auipc	x1,0x15
+     ec4:	344080e7          	jalr	x1,836(x1) # 16204 <rvmodel_io_write_str>
+     ec8:	00000013          	addi	x0,x0,0
+     ecc:	00000013          	addi	x0,x0,0
+     ed0:	00000013          	addi	x0,x0,0
+     ed4:	00000013          	addi	x0,x0,0
+     ed8:	00000013          	addi	x0,x0,0
+     edc:	00000013          	addi	x0,x0,0
+     ee0:	00005517          	auipc	x10,0x5
+     ee4:	03250513          	addi	x10,x10,50 # 5f12 <regstr>
+     ee8:	00000013          	addi	x0,x0,0
+     eec:	00000013          	addi	x0,x0,0
+     ef0:	00000013          	addi	x0,x0,0
+     ef4:	00000013          	addi	x0,x0,0
+     ef8:	00000013          	addi	x0,x0,0
+     efc:	00000013          	addi	x0,x0,0
+     f00:	00015097          	auipc	x1,0x15
+     f04:	304080e7          	jalr	x1,772(x1) # 16204 <rvmodel_io_write_str>
+     f08:	00004517          	auipc	x10,0x4
+     f0c:	e3852503          	lw	x10,-456(x10) # 4d40 <begin_failure_scratch>
+     f10:	00050663          	beq	x10,x0,f1c <print_newline_str+0x1a4>
+     f14:	00300593          	addi	x11,x0,3
+     f18:	04b51063          	bne	x10,x11,f58 <failedtest_report_not_intreg>
+     f1c:	07800593          	addi	x11,x0,120
+     f20:	00004617          	auipc	x12,0x4
+     f24:	fa860613          	addi	x12,x12,-88 # 4ec8 <ascii_buffer>
+     f28:	00000013          	addi	x0,x0,0
+     f2c:	00000013          	addi	x0,x0,0
+     f30:	00000013          	addi	x0,x0,0
+     f34:	00000013          	addi	x0,x0,0
+     f38:	00000013          	addi	x0,x0,0
+     f3c:	00000013          	addi	x0,x0,0
+     f40:	00b60023          	sb	x11,0(x12)
+     f44:	00160613          	addi	x12,x12,1
+     f48:	00004517          	auipc	x10,0x4
+     f4c:	efc52503          	lw	x10,-260(x10) # 4e44 <failing_reg>
+     f50:	224010ef          	jal	x1,2174 <failedtest_dec_to_str>
+     f54:	0e00006f          	jal	x0,1034 <failedtest_report_print_regstr>
+
+00000f58 <failedtest_report_not_intreg>:
+     f58:	00100593          	addi	x11,x0,1
+     f5c:	04b50863          	beq	x10,x11,fac <failedtest_report_fpreg>
+     f60:	00400593          	addi	x11,x0,4
+     f64:	08b50a63          	beq	x10,x11,ff8 <failedtest_report_vecreg>
+     f68:	00000013          	addi	x0,x0,0
+     f6c:	00000013          	addi	x0,x0,0
+     f70:	00000013          	addi	x0,x0,0
+     f74:	00000013          	addi	x0,x0,0
+     f78:	00000013          	addi	x0,x0,0
+     f7c:	00000013          	addi	x0,x0,0
+     f80:	00005517          	auipc	x10,0x5
+     f84:	ff250513          	addi	x10,x10,-14 # 5f72 <fflagsstr>
+     f88:	00000013          	addi	x0,x0,0
+     f8c:	00000013          	addi	x0,x0,0
+     f90:	00000013          	addi	x0,x0,0
+     f94:	00000013          	addi	x0,x0,0
+     f98:	00000013          	addi	x0,x0,0
+     f9c:	00000013          	addi	x0,x0,0
+     fa0:	00015097          	auipc	x1,0x15
+     fa4:	264080e7          	jalr	x1,612(x1) # 16204 <rvmodel_io_write_str>
+     fa8:	0c00006f          	jal	x0,1068 <failedtest_report_after_reg>
+
+00000fac <failedtest_report_fpreg>:
+     fac:	06600593          	addi	x11,x0,102
+     fb0:	00000013          	addi	x0,x0,0
+     fb4:	00000013          	addi	x0,x0,0
+     fb8:	00000013          	addi	x0,x0,0
+     fbc:	00000013          	addi	x0,x0,0
+     fc0:	00004617          	auipc	x12,0x4
+     fc4:	f0860613          	addi	x12,x12,-248 # 4ec8 <ascii_buffer>
+     fc8:	00000013          	addi	x0,x0,0
+     fcc:	00000013          	addi	x0,x0,0
+     fd0:	00000013          	addi	x0,x0,0
+     fd4:	00000013          	addi	x0,x0,0
+     fd8:	00000013          	addi	x0,x0,0
+     fdc:	00000013          	addi	x0,x0,0
+     fe0:	00b60023          	sb	x11,0(x12)
+     fe4:	00160613          	addi	x12,x12,1
+     fe8:	00004517          	auipc	x10,0x4
+     fec:	e5c52503          	lw	x10,-420(x10) # 4e44 <failing_reg>
+     ff0:	184010ef          	jal	x1,2174 <failedtest_dec_to_str>
+     ff4:	0400006f          	jal	x0,1034 <failedtest_report_print_regstr>
+
+00000ff8 <failedtest_report_vecreg>:
+     ff8:	07600593          	addi	x11,x0,118
+     ffc:	00000013          	addi	x0,x0,0
+    1000:	00004617          	auipc	x12,0x4
+    1004:	ec860613          	addi	x12,x12,-312 # 4ec8 <ascii_buffer>
+    1008:	00000013          	addi	x0,x0,0
+    100c:	00000013          	addi	x0,x0,0
+    1010:	00000013          	addi	x0,x0,0
+    1014:	00000013          	addi	x0,x0,0
+    1018:	00000013          	addi	x0,x0,0
+    101c:	00000013          	addi	x0,x0,0
+    1020:	00b60023          	sb	x11,0(x12)
+    1024:	00160613          	addi	x12,x12,1
+    1028:	00004517          	auipc	x10,0x4
+    102c:	e1c52503          	lw	x10,-484(x10) # 4e44 <failing_reg>
+    1030:	144010ef          	jal	x1,2174 <failedtest_dec_to_str>
+
+00001034 <failedtest_report_print_regstr>:
+    1034:	00000013          	addi	x0,x0,0
+    1038:	00000013          	addi	x0,x0,0
+    103c:	00000013          	addi	x0,x0,0
+    1040:	00004517          	auipc	x10,0x4
+    1044:	e8850513          	addi	x10,x10,-376 # 4ec8 <ascii_buffer>
+    1048:	00000013          	addi	x0,x0,0
+    104c:	00000013          	addi	x0,x0,0
+    1050:	00000013          	addi	x0,x0,0
+    1054:	00000013          	addi	x0,x0,0
+    1058:	00000013          	addi	x0,x0,0
+    105c:	00000013          	addi	x0,x0,0
+    1060:	00015097          	auipc	x1,0x15
+    1064:	1a4080e7          	jalr	x1,420(x1) # 16204 <rvmodel_io_write_str>
+
+00001068 <failedtest_report_after_reg>:
+    1068:	00000013          	addi	x0,x0,0
+    106c:	00000013          	addi	x0,x0,0
+    1070:	00000013          	addi	x0,x0,0
+    1074:	00000013          	addi	x0,x0,0
+    1078:	00000013          	addi	x0,x0,0
+    107c:	00000013          	addi	x0,x0,0
+    1080:	00005517          	auipc	x10,0x5
+    1084:	ea350513          	addi	x10,x10,-349 # 5f23 <badvalstr>
+    1088:	00000013          	addi	x0,x0,0
+    108c:	00000013          	addi	x0,x0,0
+    1090:	00000013          	addi	x0,x0,0
+    1094:	00000013          	addi	x0,x0,0
+    1098:	00000013          	addi	x0,x0,0
+    109c:	00000013          	addi	x0,x0,0
+    10a0:	00015097          	auipc	x1,0x15
+    10a4:	164080e7          	jalr	x1,356(x1) # 16204 <rvmodel_io_write_str>
+    10a8:	00004517          	auipc	x10,0x4
+    10ac:	c9852503          	lw	x10,-872(x10) # 4d40 <begin_failure_scratch>
+    10b0:	00100593          	addi	x11,x0,1
+    10b4:	00b51c63          	bne	x10,x11,10cc <failedtest_report_badval_not_fp>
+    10b8:	00004517          	auipc	x10,0x4
+    10bc:	d9852503          	lw	x10,-616(x10) # 4e50 <failing_value>
+    10c0:	02000593          	addi	x11,x0,32
+    10c4:	034010ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    10c8:	0140006f          	jal	x0,10dc <failedtest_report_badval_done>
+
+000010cc <failedtest_report_badval_not_fp>:
+    10cc:	00004517          	auipc	x10,0x4
+    10d0:	d8452503          	lw	x10,-636(x10) # 4e50 <failing_value>
+    10d4:	02000593          	addi	x11,x0,32
+    10d8:	020010ef          	jal	x1,20f8 <failedtest_hex_to_str>
+
+000010dc <failedtest_report_badval_done>:
+    10dc:	00000013          	addi	x0,x0,0
+    10e0:	00004517          	auipc	x10,0x4
+    10e4:	de850513          	addi	x10,x10,-536 # 4ec8 <ascii_buffer>
+    10e8:	00000013          	addi	x0,x0,0
+    10ec:	00000013          	addi	x0,x0,0
+    10f0:	00000013          	addi	x0,x0,0
+    10f4:	00000013          	addi	x0,x0,0
+    10f8:	00000013          	addi	x0,x0,0
+    10fc:	00000013          	addi	x0,x0,0
+    1100:	00015097          	auipc	x1,0x15
+    1104:	104080e7          	jalr	x1,260(x1) # 16204 <rvmodel_io_write_str>
+    1108:	00000013          	addi	x0,x0,0
+    110c:	00000013          	addi	x0,x0,0
+    1110:	00000013          	addi	x0,x0,0
+    1114:	00000013          	addi	x0,x0,0
+    1118:	00000013          	addi	x0,x0,0
+    111c:	00000013          	addi	x0,x0,0
+    1120:	00005517          	auipc	x10,0x5
+    1124:	e1a50513          	addi	x10,x10,-486 # 5f3a <expvalstr>
+    1128:	00000013          	addi	x0,x0,0
+    112c:	00000013          	addi	x0,x0,0
+    1130:	00000013          	addi	x0,x0,0
+    1134:	00000013          	addi	x0,x0,0
+    1138:	00000013          	addi	x0,x0,0
+    113c:	00000013          	addi	x0,x0,0
+    1140:	00015097          	auipc	x1,0x15
+    1144:	0c4080e7          	jalr	x1,196(x1) # 16204 <rvmodel_io_write_str>
+    1148:	00004517          	auipc	x10,0x4
+    114c:	bf852503          	lw	x10,-1032(x10) # 4d40 <begin_failure_scratch>
+    1150:	00100593          	addi	x11,x0,1
+    1154:	00b51c63          	bne	x10,x11,116c <failedtest_report_expval_not_fp>
+    1158:	00004517          	auipc	x10,0x4
+    115c:	d0052503          	lw	x10,-768(x10) # 4e58 <expected_value>
+    1160:	02000593          	addi	x11,x0,32
+    1164:	795000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    1168:	0140006f          	jal	x0,117c <failedtest_report_expval_done>
+
+0000116c <failedtest_report_expval_not_fp>:
+    116c:	00004517          	auipc	x10,0x4
+    1170:	cec52503          	lw	x10,-788(x10) # 4e58 <expected_value>
+    1174:	02000593          	addi	x11,x0,32
+    1178:	781000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+
+0000117c <failedtest_report_expval_done>:
+    117c:	00000013          	addi	x0,x0,0
+    1180:	00004517          	auipc	x10,0x4
+    1184:	d4850513          	addi	x10,x10,-696 # 4ec8 <ascii_buffer>
+    1188:	00000013          	addi	x0,x0,0
+    118c:	00000013          	addi	x0,x0,0
+    1190:	00000013          	addi	x0,x0,0
+    1194:	00000013          	addi	x0,x0,0
+    1198:	00000013          	addi	x0,x0,0
+    119c:	00000013          	addi	x0,x0,0
+    11a0:	00015097          	auipc	x1,0x15
+    11a4:	064080e7          	jalr	x1,100(x1) # 16204 <rvmodel_io_write_str>
+    11a8:	4fd0006f          	jal	x0,1ea4 <failedtest_report_end>
+
+000011ac <failedtest_report_trap_detailed>:
+    11ac:	00000013          	addi	x0,x0,0
+    11b0:	00000013          	addi	x0,x0,0
+    11b4:	00000013          	addi	x0,x0,0
+    11b8:	00000013          	addi	x0,x0,0
+    11bc:	00000013          	addi	x0,x0,0
+    11c0:	00005517          	auipc	x10,0x5
+    11c4:	dde50513          	addi	x10,x10,-546 # 5f9e <trap_diag_header_str>
+    11c8:	00000013          	addi	x0,x0,0
+    11cc:	00000013          	addi	x0,x0,0
+    11d0:	00000013          	addi	x0,x0,0
+    11d4:	00000013          	addi	x0,x0,0
+    11d8:	00000013          	addi	x0,x0,0
+    11dc:	00000013          	addi	x0,x0,0
+    11e0:	00015097          	auipc	x1,0x15
+    11e4:	024080e7          	jalr	x1,36(x1) # 16204 <rvmodel_io_write_str>
+    11e8:	00000013          	addi	x0,x0,0
+    11ec:	00000013          	addi	x0,x0,0
+    11f0:	00000013          	addi	x0,x0,0
+    11f4:	00000013          	addi	x0,x0,0
+    11f8:	00000013          	addi	x0,x0,0
+    11fc:	00000013          	addi	x0,x0,0
+    1200:	00005517          	auipc	x10,0x5
+    1204:	dca50513          	addi	x10,x10,-566 # 5fca <trap_diag_origstr_label>
+    1208:	00000013          	addi	x0,x0,0
+    120c:	00000013          	addi	x0,x0,0
+    1210:	00000013          	addi	x0,x0,0
+    1214:	00000013          	addi	x0,x0,0
+    1218:	00000013          	addi	x0,x0,0
+    121c:	00000013          	addi	x0,x0,0
+    1220:	00015097          	auipc	x1,0x15
+    1224:	fe4080e7          	jalr	x1,-28(x1) # 16204 <rvmodel_io_write_str>
+    1228:	00004817          	auipc	x16,0x4
+    122c:	c7080813          	addi	x16,x16,-912 # 4e98 <trap_diag_fail_str_ptr>
+    1230:	00082503          	lw	x10,0(x16)
+    1234:	00015097          	auipc	x1,0x15
+    1238:	fd0080e7          	jalr	x1,-48(x1) # 16204 <rvmodel_io_write_str>
+    123c:	00000013          	addi	x0,x0,0
+    1240:	00004517          	auipc	x10,0x4
+    1244:	23f50513          	addi	x10,x10,575 # 547f <newlinestr>
+    1248:	00000013          	addi	x0,x0,0
+    124c:	00000013          	addi	x0,x0,0
+    1250:	00000013          	addi	x0,x0,0
+    1254:	00000013          	addi	x0,x0,0
+    1258:	00000013          	addi	x0,x0,0
+    125c:	00000013          	addi	x0,x0,0
+    1260:	00015097          	auipc	x1,0x15
+    1264:	fa4080e7          	jalr	x1,-92(x1) # 16204 <rvmodel_io_write_str>
+    1268:	00004417          	auipc	x8,0x4
+    126c:	c0842403          	lw	x8,-1016(x8) # 4e70 <trap_diag_subtype>
+    1270:	00900493          	addi	x9,x0,9
+    1274:	00940663          	beq	x8,x9,1280 <trap_report_offset_mismatch>
+    1278:	2a040ce3          	beq	x8,x0,1d30 <trap_report_generic>
+    127c:	3780006f          	jal	x0,15f4 <trap_report_field_mismatch>
+
+00001280 <trap_report_offset_mismatch>:
+    1280:	00005517          	auipc	x10,0x5
+    1284:	d5a50513          	addi	x10,x10,-678 # 5fda <trap_diag_count_mismatch_str>
+    1288:	00000013          	addi	x0,x0,0
+    128c:	00000013          	addi	x0,x0,0
+    1290:	00000013          	addi	x0,x0,0
+    1294:	00000013          	addi	x0,x0,0
+    1298:	00000013          	addi	x0,x0,0
+    129c:	00000013          	addi	x0,x0,0
+    12a0:	00015097          	auipc	x1,0x15
+    12a4:	f64080e7          	jalr	x1,-156(x1) # 16204 <rvmodel_io_write_str>
+    12a8:	00000013          	addi	x0,x0,0
+    12ac:	00000013          	addi	x0,x0,0
+    12b0:	00000013          	addi	x0,x0,0
+    12b4:	00000013          	addi	x0,x0,0
+    12b8:	00000013          	addi	x0,x0,0
+    12bc:	00000013          	addi	x0,x0,0
+    12c0:	00005517          	auipc	x10,0x5
+    12c4:	d7b50513          	addi	x10,x10,-645 # 603b <trap_diag_expected_offset_str>
+    12c8:	00000013          	addi	x0,x0,0
+    12cc:	00000013          	addi	x0,x0,0
+    12d0:	00000013          	addi	x0,x0,0
+    12d4:	00000013          	addi	x0,x0,0
+    12d8:	00000013          	addi	x0,x0,0
+    12dc:	00000013          	addi	x0,x0,0
+    12e0:	00015097          	auipc	x1,0x15
+    12e4:	f24080e7          	jalr	x1,-220(x1) # 16204 <rvmodel_io_write_str>
+    12e8:	00004517          	auipc	x10,0x4
+    12ec:	ba852503          	lw	x10,-1112(x10) # 4e90 <trap_diag_expected_offset>
+    12f0:	02000593          	addi	x11,x0,32
+    12f4:	605000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    12f8:	00000013          	addi	x0,x0,0
+    12fc:	00000013          	addi	x0,x0,0
+    1300:	00004517          	auipc	x10,0x4
+    1304:	bc850513          	addi	x10,x10,-1080 # 4ec8 <ascii_buffer>
+    1308:	00000013          	addi	x0,x0,0
+    130c:	00000013          	addi	x0,x0,0
+    1310:	00000013          	addi	x0,x0,0
+    1314:	00000013          	addi	x0,x0,0
+    1318:	00000013          	addi	x0,x0,0
+    131c:	00000013          	addi	x0,x0,0
+    1320:	00015097          	auipc	x1,0x15
+    1324:	ee4080e7          	jalr	x1,-284(x1) # 16204 <rvmodel_io_write_str>
+    1328:	00000013          	addi	x0,x0,0
+    132c:	00000013          	addi	x0,x0,0
+    1330:	00000013          	addi	x0,x0,0
+    1334:	00000013          	addi	x0,x0,0
+    1338:	00000013          	addi	x0,x0,0
+    133c:	00000013          	addi	x0,x0,0
+    1340:	00005517          	auipc	x10,0x5
+    1344:	d2250513          	addi	x10,x10,-734 # 6062 <trap_diag_actual_offset_str>
+    1348:	00000013          	addi	x0,x0,0
+    134c:	00000013          	addi	x0,x0,0
+    1350:	00000013          	addi	x0,x0,0
+    1354:	00000013          	addi	x0,x0,0
+    1358:	00000013          	addi	x0,x0,0
+    135c:	00000013          	addi	x0,x0,0
+    1360:	00015097          	auipc	x1,0x15
+    1364:	ea4080e7          	jalr	x1,-348(x1) # 16204 <rvmodel_io_write_str>
+    1368:	00004517          	auipc	x10,0x4
+    136c:	b2052503          	lw	x10,-1248(x10) # 4e88 <trap_diag_actual_offset>
+    1370:	02000593          	addi	x11,x0,32
+    1374:	585000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    1378:	00000013          	addi	x0,x0,0
+    137c:	00000013          	addi	x0,x0,0
+    1380:	00004517          	auipc	x10,0x4
+    1384:	b4850513          	addi	x10,x10,-1208 # 4ec8 <ascii_buffer>
+    1388:	00000013          	addi	x0,x0,0
+    138c:	00000013          	addi	x0,x0,0
+    1390:	00000013          	addi	x0,x0,0
+    1394:	00000013          	addi	x0,x0,0
+    1398:	00000013          	addi	x0,x0,0
+    139c:	00000013          	addi	x0,x0,0
+    13a0:	00015097          	auipc	x1,0x15
+    13a4:	e64080e7          	jalr	x1,-412(x1) # 16204 <rvmodel_io_write_str>
+    13a8:	00004317          	auipc	x6,0x4
+    13ac:	ae032303          	lw	x6,-1312(x6) # 4e88 <trap_diag_actual_offset>
+    13b0:	00004397          	auipc	x7,0x4
+    13b4:	ae03a383          	lw	x7,-1312(x7) # 4e90 <trap_diag_expected_offset>
+    13b8:	10734e63          	blt	x6,x7,14d4 <trap_report_missing_traps>
+
+000013bc <trap_report_extra_traps>:
+    13bc:	00000013          	addi	x0,x0,0
+    13c0:	00005517          	auipc	x10,0x5
+    13c4:	cc950513          	addi	x10,x10,-823 # 6089 <trap_diag_extra_traps_str>
+    13c8:	00000013          	addi	x0,x0,0
+    13cc:	00000013          	addi	x0,x0,0
+    13d0:	00000013          	addi	x0,x0,0
+    13d4:	00000013          	addi	x0,x0,0
+    13d8:	00000013          	addi	x0,x0,0
+    13dc:	00000013          	addi	x0,x0,0
+    13e0:	00015097          	auipc	x1,0x15
+    13e4:	e24080e7          	jalr	x1,-476(x1) # 16204 <rvmodel_io_write_str>
+    13e8:	00004317          	auipc	x6,0x4
+    13ec:	aa032303          	lw	x6,-1376(x6) # 4e88 <trap_diag_actual_offset>
+    13f0:	00004397          	auipc	x7,0x4
+    13f4:	aa03a383          	lw	x7,-1376(x7) # 4e90 <trap_diag_expected_offset>
+    13f8:	40730333          	sub	x6,x6,x7
+    13fc:	00235313          	srli	x6,x6,0x2
+    1400:	00005517          	auipc	x10,0x5
+    1404:	d0e50513          	addi	x10,x10,-754 # 610e <trap_diag_extra_bytes_str>
+    1408:	00000013          	addi	x0,x0,0
+    140c:	00000013          	addi	x0,x0,0
+    1410:	00000013          	addi	x0,x0,0
+    1414:	00000013          	addi	x0,x0,0
+    1418:	00000013          	addi	x0,x0,0
+    141c:	00000013          	addi	x0,x0,0
+    1420:	00015097          	auipc	x1,0x15
+    1424:	de4080e7          	jalr	x1,-540(x1) # 16204 <rvmodel_io_write_str>
+    1428:	00004317          	auipc	x6,0x4
+    142c:	a6032303          	lw	x6,-1440(x6) # 4e88 <trap_diag_actual_offset>
+    1430:	00004397          	auipc	x7,0x4
+    1434:	a603a383          	lw	x7,-1440(x7) # 4e90 <trap_diag_expected_offset>
+    1438:	40730533          	sub	x10,x6,x7
+    143c:	02000593          	addi	x11,x0,32
+    1440:	4b9000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    1444:	00000013          	addi	x0,x0,0
+    1448:	00000013          	addi	x0,x0,0
+    144c:	00000013          	addi	x0,x0,0
+    1450:	00000013          	addi	x0,x0,0
+    1454:	00000013          	addi	x0,x0,0
+    1458:	00000013          	addi	x0,x0,0
+    145c:	00000013          	addi	x0,x0,0
+    1460:	00004517          	auipc	x10,0x4
+    1464:	a6850513          	addi	x10,x10,-1432 # 4ec8 <ascii_buffer>
+    1468:	00000013          	addi	x0,x0,0
+    146c:	00000013          	addi	x0,x0,0
+    1470:	00000013          	addi	x0,x0,0
+    1474:	00000013          	addi	x0,x0,0
+    1478:	00000013          	addi	x0,x0,0
+    147c:	00000013          	addi	x0,x0,0
+    1480:	00015097          	auipc	x1,0x15
+    1484:	d84080e7          	jalr	x1,-636(x1) # 16204 <rvmodel_io_write_str>
+    1488:	00000013          	addi	x0,x0,0
+    148c:	00000013          	addi	x0,x0,0
+    1490:	00000013          	addi	x0,x0,0
+    1494:	00000013          	addi	x0,x0,0
+    1498:	00000013          	addi	x0,x0,0
+    149c:	00000013          	addi	x0,x0,0
+    14a0:	00005517          	auipc	x10,0x5
+    14a4:	c9950513          	addi	x10,x10,-871 # 6139 <trap_diag_extra_hint_str>
+    14a8:	00000013          	addi	x0,x0,0
+    14ac:	00000013          	addi	x0,x0,0
+    14b0:	00000013          	addi	x0,x0,0
+    14b4:	00000013          	addi	x0,x0,0
+    14b8:	00000013          	addi	x0,x0,0
+    14bc:	00000013          	addi	x0,x0,0
+    14c0:	00015097          	auipc	x1,0x15
+    14c4:	d44080e7          	jalr	x1,-700(x1) # 16204 <rvmodel_io_write_str>
+    14c8:	00001097          	auipc	x1,0x1
+    14cc:	a28080e7          	jalr	x1,-1496(x1) # 1ef0 <failedtest_print_csr_context>
+    14d0:	1d50006f          	jal	x0,1ea4 <failedtest_report_end>
+
+000014d4 <trap_report_missing_traps>:
+    14d4:	00000013          	addi	x0,x0,0
+    14d8:	00000013          	addi	x0,x0,0
+    14dc:	00000013          	addi	x0,x0,0
+    14e0:	00005517          	auipc	x10,0x5
+    14e4:	be350513          	addi	x10,x10,-1053 # 60c3 <trap_diag_missing_traps_str>
+    14e8:	00000013          	addi	x0,x0,0
+    14ec:	00000013          	addi	x0,x0,0
+    14f0:	00000013          	addi	x0,x0,0
+    14f4:	00000013          	addi	x0,x0,0
+    14f8:	00000013          	addi	x0,x0,0
+    14fc:	00000013          	addi	x0,x0,0
+    1500:	00015097          	auipc	x1,0x15
+    1504:	d04080e7          	jalr	x1,-764(x1) # 16204 <rvmodel_io_write_str>
+    1508:	00000013          	addi	x0,x0,0
+    150c:	00000013          	addi	x0,x0,0
+    1510:	00000013          	addi	x0,x0,0
+    1514:	00000013          	addi	x0,x0,0
+    1518:	00000013          	addi	x0,x0,0
+    151c:	00000013          	addi	x0,x0,0
+    1520:	00005517          	auipc	x10,0x5
+    1524:	bee50513          	addi	x10,x10,-1042 # 610e <trap_diag_extra_bytes_str>
+    1528:	00000013          	addi	x0,x0,0
+    152c:	00000013          	addi	x0,x0,0
+    1530:	00000013          	addi	x0,x0,0
+    1534:	00000013          	addi	x0,x0,0
+    1538:	00000013          	addi	x0,x0,0
+    153c:	00000013          	addi	x0,x0,0
+    1540:	00015097          	auipc	x1,0x15
+    1544:	cc4080e7          	jalr	x1,-828(x1) # 16204 <rvmodel_io_write_str>
+    1548:	00004317          	auipc	x6,0x4
+    154c:	94832303          	lw	x6,-1720(x6) # 4e90 <trap_diag_expected_offset>
+    1550:	00004397          	auipc	x7,0x4
+    1554:	9383a383          	lw	x7,-1736(x7) # 4e88 <trap_diag_actual_offset>
+    1558:	40730533          	sub	x10,x6,x7
+    155c:	02000593          	addi	x11,x0,32
+    1560:	399000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    1564:	00000013          	addi	x0,x0,0
+    1568:	00000013          	addi	x0,x0,0
+    156c:	00000013          	addi	x0,x0,0
+    1570:	00000013          	addi	x0,x0,0
+    1574:	00000013          	addi	x0,x0,0
+    1578:	00000013          	addi	x0,x0,0
+    157c:	00000013          	addi	x0,x0,0
+    1580:	00004517          	auipc	x10,0x4
+    1584:	94850513          	addi	x10,x10,-1720 # 4ec8 <ascii_buffer>
+    1588:	00000013          	addi	x0,x0,0
+    158c:	00000013          	addi	x0,x0,0
+    1590:	00000013          	addi	x0,x0,0
+    1594:	00000013          	addi	x0,x0,0
+    1598:	00000013          	addi	x0,x0,0
+    159c:	00000013          	addi	x0,x0,0
+    15a0:	00015097          	auipc	x1,0x15
+    15a4:	c64080e7          	jalr	x1,-924(x1) # 16204 <rvmodel_io_write_str>
+    15a8:	00000013          	addi	x0,x0,0
+    15ac:	00000013          	addi	x0,x0,0
+    15b0:	00000013          	addi	x0,x0,0
+    15b4:	00000013          	addi	x0,x0,0
+    15b8:	00000013          	addi	x0,x0,0
+    15bc:	00000013          	addi	x0,x0,0
+    15c0:	00005517          	auipc	x10,0x5
+    15c4:	c6150513          	addi	x10,x10,-927 # 6221 <trap_diag_missing_hint_str>
+    15c8:	00000013          	addi	x0,x0,0
+    15cc:	00000013          	addi	x0,x0,0
+    15d0:	00000013          	addi	x0,x0,0
+    15d4:	00000013          	addi	x0,x0,0
+    15d8:	00000013          	addi	x0,x0,0
+    15dc:	00000013          	addi	x0,x0,0
+    15e0:	00015097          	auipc	x1,0x15
+    15e4:	c24080e7          	jalr	x1,-988(x1) # 16204 <rvmodel_io_write_str>
+    15e8:	00001097          	auipc	x1,0x1
+    15ec:	908080e7          	jalr	x1,-1784(x1) # 1ef0 <failedtest_print_csr_context>
+    15f0:	0b50006f          	jal	x0,1ea4 <failedtest_report_end>
+
+000015f4 <trap_report_field_mismatch>:
+    15f4:	00000013          	addi	x0,x0,0
+    15f8:	00000013          	addi	x0,x0,0
+    15fc:	00000013          	addi	x0,x0,0
+    1600:	00005517          	auipc	x10,0x5
+    1604:	d0850513          	addi	x10,x10,-760 # 6308 <trap_diag_handler_mode_str>
+    1608:	00000013          	addi	x0,x0,0
+    160c:	00000013          	addi	x0,x0,0
+    1610:	00000013          	addi	x0,x0,0
+    1614:	00000013          	addi	x0,x0,0
+    1618:	00000013          	addi	x0,x0,0
+    161c:	00000013          	addi	x0,x0,0
+    1620:	00015097          	auipc	x1,0x15
+    1624:	be4080e7          	jalr	x1,-1052(x1) # 16204 <rvmodel_io_write_str>
+    1628:	00004517          	auipc	x10,0x4
+    162c:	84c52503          	lw	x10,-1972(x10) # 4e74 <trap_diag_mode>
+    1630:	04050a63          	beq	x10,x0,1684 <trap_mode_m>
+    1634:	00100593          	addi	x11,x0,1
+    1638:	08b50663          	beq	x10,x11,16c4 <trap_mode_s>
+    163c:	00200593          	addi	x11,x0,2
+    1640:	0cb50263          	beq	x10,x11,1704 <trap_mode_h>
+    1644:	00300593          	addi	x11,x0,3
+    1648:	0eb50e63          	beq	x10,x11,1744 <trap_mode_v>
+    164c:	00000013          	addi	x0,x0,0
+    1650:	00000013          	addi	x0,x0,0
+    1654:	00000013          	addi	x0,x0,0
+    1658:	00000013          	addi	x0,x0,0
+    165c:	00000013          	addi	x0,x0,0
+    1660:	00005517          	auipc	x10,0x5
+    1664:	ce450513          	addi	x10,x10,-796 # 6344 <trap_diag_mode_unknown_str>
+    1668:	00000013          	addi	x0,x0,0
+    166c:	00000013          	addi	x0,x0,0
+    1670:	00000013          	addi	x0,x0,0
+    1674:	00000013          	addi	x0,x0,0
+    1678:	00000013          	addi	x0,x0,0
+    167c:	00000013          	addi	x0,x0,0
+    1680:	1000006f          	jal	x0,1780 <trap_mode_print>
+
+00001684 <trap_mode_m>:
+    1684:	00000013          	addi	x0,x0,0
+    1688:	00000013          	addi	x0,x0,0
+    168c:	00000013          	addi	x0,x0,0
+    1690:	00000013          	addi	x0,x0,0
+    1694:	00000013          	addi	x0,x0,0
+    1698:	00000013          	addi	x0,x0,0
+    169c:	00000013          	addi	x0,x0,0
+    16a0:	00005517          	auipc	x10,0x5
+    16a4:	c8250513          	addi	x10,x10,-894 # 6322 <trap_diag_mode_m_str>
+    16a8:	00000013          	addi	x0,x0,0
+    16ac:	00000013          	addi	x0,x0,0
+    16b0:	00000013          	addi	x0,x0,0
+    16b4:	00000013          	addi	x0,x0,0
+    16b8:	00000013          	addi	x0,x0,0
+    16bc:	00000013          	addi	x0,x0,0
+    16c0:	0c00006f          	jal	x0,1780 <trap_mode_print>
+
+000016c4 <trap_mode_s>:
+    16c4:	00000013          	addi	x0,x0,0
+    16c8:	00000013          	addi	x0,x0,0
+    16cc:	00000013          	addi	x0,x0,0
+    16d0:	00000013          	addi	x0,x0,0
+    16d4:	00000013          	addi	x0,x0,0
+    16d8:	00000013          	addi	x0,x0,0
+    16dc:	00000013          	addi	x0,x0,0
+    16e0:	00005517          	auipc	x10,0x5
+    16e4:	c4a50513          	addi	x10,x10,-950 # 632a <trap_diag_mode_s_str>
+    16e8:	00000013          	addi	x0,x0,0
+    16ec:	00000013          	addi	x0,x0,0
+    16f0:	00000013          	addi	x0,x0,0
+    16f4:	00000013          	addi	x0,x0,0
+    16f8:	00000013          	addi	x0,x0,0
+    16fc:	00000013          	addi	x0,x0,0
+    1700:	0800006f          	jal	x0,1780 <trap_mode_print>
+
+00001704 <trap_mode_h>:
+    1704:	00000013          	addi	x0,x0,0
+    1708:	00000013          	addi	x0,x0,0
+    170c:	00000013          	addi	x0,x0,0
+    1710:	00000013          	addi	x0,x0,0
+    1714:	00000013          	addi	x0,x0,0
+    1718:	00000013          	addi	x0,x0,0
+    171c:	00000013          	addi	x0,x0,0
+    1720:	00005517          	auipc	x10,0x5
+    1724:	c1250513          	addi	x10,x10,-1006 # 6332 <trap_diag_mode_hs_str>
+    1728:	00000013          	addi	x0,x0,0
+    172c:	00000013          	addi	x0,x0,0
+    1730:	00000013          	addi	x0,x0,0
+    1734:	00000013          	addi	x0,x0,0
+    1738:	00000013          	addi	x0,x0,0
+    173c:	00000013          	addi	x0,x0,0
+    1740:	0400006f          	jal	x0,1780 <trap_mode_print>
+
+00001744 <trap_mode_v>:
+    1744:	00000013          	addi	x0,x0,0
+    1748:	00000013          	addi	x0,x0,0
+    174c:	00000013          	addi	x0,x0,0
+    1750:	00000013          	addi	x0,x0,0
+    1754:	00000013          	addi	x0,x0,0
+    1758:	00000013          	addi	x0,x0,0
+    175c:	00000013          	addi	x0,x0,0
+    1760:	00005517          	auipc	x10,0x5
+    1764:	bdb50513          	addi	x10,x10,-1061 # 633b <trap_diag_mode_vs_str>
+    1768:	00000013          	addi	x0,x0,0
+    176c:	00000013          	addi	x0,x0,0
+    1770:	00000013          	addi	x0,x0,0
+    1774:	00000013          	addi	x0,x0,0
+    1778:	00000013          	addi	x0,x0,0
+    177c:	00000013          	addi	x0,x0,0
+
+00001780 <trap_mode_print>:
+    1780:	00015097          	auipc	x1,0x15
+    1784:	a84080e7          	jalr	x1,-1404(x1) # 16204 <rvmodel_io_write_str>
+    1788:	00000013          	addi	x0,x0,0
+    178c:	00000013          	addi	x0,x0,0
+    1790:	00000013          	addi	x0,x0,0
+    1794:	00000013          	addi	x0,x0,0
+    1798:	00000013          	addi	x0,x0,0
+    179c:	00000013          	addi	x0,x0,0
+    17a0:	00005517          	auipc	x10,0x5
+    17a4:	bad50513          	addi	x10,x10,-1107 # 634d <trap_diag_field_str>
+    17a8:	00000013          	addi	x0,x0,0
+    17ac:	00000013          	addi	x0,x0,0
+    17b0:	00000013          	addi	x0,x0,0
+    17b4:	00000013          	addi	x0,x0,0
+    17b8:	00000013          	addi	x0,x0,0
+    17bc:	00000013          	addi	x0,x0,0
+    17c0:	00015097          	auipc	x1,0x15
+    17c4:	a44080e7          	jalr	x1,-1468(x1) # 16204 <rvmodel_io_write_str>
+    17c8:	00003517          	auipc	x10,0x3
+    17cc:	6a852503          	lw	x10,1704(x10) # 4e70 <trap_diag_subtype>
+    17d0:	00100593          	addi	x11,x0,1
+    17d4:	06b50863          	beq	x10,x11,1844 <trap_field_vect>
+    17d8:	00200593          	addi	x11,x0,2
+    17dc:	0ab50463          	beq	x10,x11,1884 <trap_field_cause>
+    17e0:	00300593          	addi	x11,x0,3
+    17e4:	0eb50063          	beq	x10,x11,18c4 <trap_field_epc>
+    17e8:	00400593          	addi	x11,x0,4
+    17ec:	10b50c63          	beq	x10,x11,1904 <trap_field_tval>
+    17f0:	00500593          	addi	x11,x0,5
+    17f4:	14b50863          	beq	x10,x11,1944 <trap_field_ip>
+    17f8:	00600593          	addi	x11,x0,6
+    17fc:	18b50463          	beq	x10,x11,1984 <trap_field_tval2>
+    1800:	00700593          	addi	x11,x0,7
+    1804:	1cb50063          	beq	x10,x11,19c4 <trap_field_tinst>
+    1808:	00800593          	addi	x11,x0,8
+    180c:	1eb50c63          	beq	x10,x11,1a04 <trap_field_intid>
+    1810:	00000013          	addi	x0,x0,0
+    1814:	00000013          	addi	x0,x0,0
+    1818:	00000013          	addi	x0,x0,0
+    181c:	00000013          	addi	x0,x0,0
+    1820:	00005517          	auipc	x10,0x5
+    1824:	c8450513          	addi	x10,x10,-892 # 64a4 <trap_diag_field_unknown_str>
+    1828:	00000013          	addi	x0,x0,0
+    182c:	00000013          	addi	x0,x0,0
+    1830:	00000013          	addi	x0,x0,0
+    1834:	00000013          	addi	x0,x0,0
+    1838:	00000013          	addi	x0,x0,0
+    183c:	00000013          	addi	x0,x0,0
+    1840:	2000006f          	jal	x0,1a40 <trap_field_print>
+
+00001844 <trap_field_vect>:
+    1844:	00000013          	addi	x0,x0,0
+    1848:	00000013          	addi	x0,x0,0
+    184c:	00000013          	addi	x0,x0,0
+    1850:	00000013          	addi	x0,x0,0
+    1854:	00000013          	addi	x0,x0,0
+    1858:	00000013          	addi	x0,x0,0
+    185c:	00000013          	addi	x0,x0,0
+    1860:	00005517          	auipc	x10,0x5
+    1864:	b0750513          	addi	x10,x10,-1273 # 6367 <trap_diag_field_vect_str>
+    1868:	00000013          	addi	x0,x0,0
+    186c:	00000013          	addi	x0,x0,0
+    1870:	00000013          	addi	x0,x0,0
+    1874:	00000013          	addi	x0,x0,0
+    1878:	00000013          	addi	x0,x0,0
+    187c:	00000013          	addi	x0,x0,0
+    1880:	1c00006f          	jal	x0,1a40 <trap_field_print>
+
+00001884 <trap_field_cause>:
+    1884:	00000013          	addi	x0,x0,0
+    1888:	00000013          	addi	x0,x0,0
+    188c:	00000013          	addi	x0,x0,0
+    1890:	00000013          	addi	x0,x0,0
+    1894:	00000013          	addi	x0,x0,0
+    1898:	00000013          	addi	x0,x0,0
+    189c:	00000013          	addi	x0,x0,0
+    18a0:	00005517          	auipc	x10,0x5
+    18a4:	af850513          	addi	x10,x10,-1288 # 6398 <trap_diag_field_cause_str>
+    18a8:	00000013          	addi	x0,x0,0
+    18ac:	00000013          	addi	x0,x0,0
+    18b0:	00000013          	addi	x0,x0,0
+    18b4:	00000013          	addi	x0,x0,0
+    18b8:	00000013          	addi	x0,x0,0
+    18bc:	00000013          	addi	x0,x0,0
+    18c0:	1800006f          	jal	x0,1a40 <trap_field_print>
+
+000018c4 <trap_field_epc>:
+    18c4:	00000013          	addi	x0,x0,0
+    18c8:	00000013          	addi	x0,x0,0
+    18cc:	00000013          	addi	x0,x0,0
+    18d0:	00000013          	addi	x0,x0,0
+    18d4:	00000013          	addi	x0,x0,0
+    18d8:	00000013          	addi	x0,x0,0
+    18dc:	00000013          	addi	x0,x0,0
+    18e0:	00005517          	auipc	x10,0x5
+    18e4:	ad850513          	addi	x10,x10,-1320 # 63b8 <trap_diag_field_epc_str>
+    18e8:	00000013          	addi	x0,x0,0
+    18ec:	00000013          	addi	x0,x0,0
+    18f0:	00000013          	addi	x0,x0,0
+    18f4:	00000013          	addi	x0,x0,0
+    18f8:	00000013          	addi	x0,x0,0
+    18fc:	00000013          	addi	x0,x0,0
+    1900:	1400006f          	jal	x0,1a40 <trap_field_print>
+
+00001904 <trap_field_tval>:
+    1904:	00000013          	addi	x0,x0,0
+    1908:	00000013          	addi	x0,x0,0
+    190c:	00000013          	addi	x0,x0,0
+    1910:	00000013          	addi	x0,x0,0
+    1914:	00000013          	addi	x0,x0,0
+    1918:	00000013          	addi	x0,x0,0
+    191c:	00000013          	addi	x0,x0,0
+    1920:	00005517          	auipc	x10,0x5
+    1924:	ab650513          	addi	x10,x10,-1354 # 63d6 <trap_diag_field_tval_str>
+    1928:	00000013          	addi	x0,x0,0
+    192c:	00000013          	addi	x0,x0,0
+    1930:	00000013          	addi	x0,x0,0
+    1934:	00000013          	addi	x0,x0,0
+    1938:	00000013          	addi	x0,x0,0
+    193c:	00000013          	addi	x0,x0,0
+    1940:	1000006f          	jal	x0,1a40 <trap_field_print>
+
+00001944 <trap_field_ip>:
+    1944:	00000013          	addi	x0,x0,0
+    1948:	00000013          	addi	x0,x0,0
+    194c:	00000013          	addi	x0,x0,0
+    1950:	00000013          	addi	x0,x0,0
+    1954:	00000013          	addi	x0,x0,0
+    1958:	00000013          	addi	x0,x0,0
+    195c:	00000013          	addi	x0,x0,0
+    1960:	00005517          	auipc	x10,0x5
+    1964:	a9550513          	addi	x10,x10,-1387 # 63f5 <trap_diag_field_ip_str>
+    1968:	00000013          	addi	x0,x0,0
+    196c:	00000013          	addi	x0,x0,0
+    1970:	00000013          	addi	x0,x0,0
+    1974:	00000013          	addi	x0,x0,0
+    1978:	00000013          	addi	x0,x0,0
+    197c:	00000013          	addi	x0,x0,0
+    1980:	0c00006f          	jal	x0,1a40 <trap_field_print>
+
+00001984 <trap_field_tval2>:
+    1984:	00000013          	addi	x0,x0,0
+    1988:	00000013          	addi	x0,x0,0
+    198c:	00000013          	addi	x0,x0,0
+    1990:	00000013          	addi	x0,x0,0
+    1994:	00000013          	addi	x0,x0,0
+    1998:	00000013          	addi	x0,x0,0
+    199c:	00000013          	addi	x0,x0,0
+    19a0:	00005517          	auipc	x10,0x5
+    19a4:	a7d50513          	addi	x10,x10,-1411 # 641d <trap_diag_field_tval2_str>
+    19a8:	00000013          	addi	x0,x0,0
+    19ac:	00000013          	addi	x0,x0,0
+    19b0:	00000013          	addi	x0,x0,0
+    19b4:	00000013          	addi	x0,x0,0
+    19b8:	00000013          	addi	x0,x0,0
+    19bc:	00000013          	addi	x0,x0,0
+    19c0:	0800006f          	jal	x0,1a40 <trap_field_print>
+
+000019c4 <trap_field_tinst>:
+    19c4:	00000013          	addi	x0,x0,0
+    19c8:	00000013          	addi	x0,x0,0
+    19cc:	00000013          	addi	x0,x0,0
+    19d0:	00000013          	addi	x0,x0,0
+    19d4:	00000013          	addi	x0,x0,0
+    19d8:	00000013          	addi	x0,x0,0
+    19dc:	00000013          	addi	x0,x0,0
+    19e0:	00005517          	auipc	x10,0x5
+    19e4:	a6950513          	addi	x10,x10,-1431 # 6449 <trap_diag_field_tinst_str>
+    19e8:	00000013          	addi	x0,x0,0
+    19ec:	00000013          	addi	x0,x0,0
+    19f0:	00000013          	addi	x0,x0,0
+    19f4:	00000013          	addi	x0,x0,0
+    19f8:	00000013          	addi	x0,x0,0
+    19fc:	00000013          	addi	x0,x0,0
+    1a00:	0400006f          	jal	x0,1a40 <trap_field_print>
+
+00001a04 <trap_field_intid>:
+    1a04:	00000013          	addi	x0,x0,0
+    1a08:	00000013          	addi	x0,x0,0
+    1a0c:	00000013          	addi	x0,x0,0
+    1a10:	00000013          	addi	x0,x0,0
+    1a14:	00000013          	addi	x0,x0,0
+    1a18:	00000013          	addi	x0,x0,0
+    1a1c:	00000013          	addi	x0,x0,0
+    1a20:	00005517          	auipc	x10,0x5
+    1a24:	a5550513          	addi	x10,x10,-1451 # 6475 <trap_diag_field_intid_str>
+    1a28:	00000013          	addi	x0,x0,0
+    1a2c:	00000013          	addi	x0,x0,0
+    1a30:	00000013          	addi	x0,x0,0
+    1a34:	00000013          	addi	x0,x0,0
+    1a38:	00000013          	addi	x0,x0,0
+    1a3c:	00000013          	addi	x0,x0,0
+
+00001a40 <trap_field_print>:
+    1a40:	00014097          	auipc	x1,0x14
+    1a44:	7c4080e7          	jalr	x1,1988(x1) # 16204 <rvmodel_io_write_str>
+    1a48:	00000013          	addi	x0,x0,0
+    1a4c:	00000013          	addi	x0,x0,0
+    1a50:	00000013          	addi	x0,x0,0
+    1a54:	00000013          	addi	x0,x0,0
+    1a58:	00000013          	addi	x0,x0,0
+    1a5c:	00000013          	addi	x0,x0,0
+    1a60:	00005517          	auipc	x10,0x5
+    1a64:	a5350513          	addi	x10,x10,-1453 # 64b3 <trap_diag_expected_str>
+    1a68:	00000013          	addi	x0,x0,0
+    1a6c:	00000013          	addi	x0,x0,0
+    1a70:	00000013          	addi	x0,x0,0
+    1a74:	00000013          	addi	x0,x0,0
+    1a78:	00000013          	addi	x0,x0,0
+    1a7c:	00000013          	addi	x0,x0,0
+    1a80:	00014097          	auipc	x1,0x14
+    1a84:	784080e7          	jalr	x1,1924(x1) # 16204 <rvmodel_io_write_str>
+    1a88:	00003517          	auipc	x10,0x3
+    1a8c:	3f852503          	lw	x10,1016(x10) # 4e80 <trap_diag_expected_value>
+    1a90:	02000593          	addi	x11,x0,32
+    1a94:	664000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    1a98:	00000013          	addi	x0,x0,0
+    1a9c:	00000013          	addi	x0,x0,0
+    1aa0:	00003517          	auipc	x10,0x3
+    1aa4:	42850513          	addi	x10,x10,1064 # 4ec8 <ascii_buffer>
+    1aa8:	00000013          	addi	x0,x0,0
+    1aac:	00000013          	addi	x0,x0,0
+    1ab0:	00000013          	addi	x0,x0,0
+    1ab4:	00000013          	addi	x0,x0,0
+    1ab8:	00000013          	addi	x0,x0,0
+    1abc:	00000013          	addi	x0,x0,0
+    1ac0:	00014097          	auipc	x1,0x14
+    1ac4:	744080e7          	jalr	x1,1860(x1) # 16204 <rvmodel_io_write_str>
+    1ac8:	00000013          	addi	x0,x0,0
+    1acc:	00000013          	addi	x0,x0,0
+    1ad0:	00000013          	addi	x0,x0,0
+    1ad4:	00000013          	addi	x0,x0,0
+    1ad8:	00000013          	addi	x0,x0,0
+    1adc:	00000013          	addi	x0,x0,0
+    1ae0:	00005517          	auipc	x10,0x5
+    1ae4:	9ea50513          	addi	x10,x10,-1558 # 64ca <trap_diag_actual_str>
+    1ae8:	00000013          	addi	x0,x0,0
+    1aec:	00000013          	addi	x0,x0,0
+    1af0:	00000013          	addi	x0,x0,0
+    1af4:	00000013          	addi	x0,x0,0
+    1af8:	00000013          	addi	x0,x0,0
+    1afc:	00000013          	addi	x0,x0,0
+    1b00:	00014097          	auipc	x1,0x14
+    1b04:	704080e7          	jalr	x1,1796(x1) # 16204 <rvmodel_io_write_str>
+    1b08:	00003517          	auipc	x10,0x3
+    1b0c:	37052503          	lw	x10,880(x10) # 4e78 <trap_diag_actual_value>
+    1b10:	02000593          	addi	x11,x0,32
+    1b14:	5e4000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    1b18:	00000013          	addi	x0,x0,0
+    1b1c:	00000013          	addi	x0,x0,0
+    1b20:	00003517          	auipc	x10,0x3
+    1b24:	3a850513          	addi	x10,x10,936 # 4ec8 <ascii_buffer>
+    1b28:	00000013          	addi	x0,x0,0
+    1b2c:	00000013          	addi	x0,x0,0
+    1b30:	00000013          	addi	x0,x0,0
+    1b34:	00000013          	addi	x0,x0,0
+    1b38:	00000013          	addi	x0,x0,0
+    1b3c:	00000013          	addi	x0,x0,0
+    1b40:	00014097          	auipc	x1,0x14
+    1b44:	6c4080e7          	jalr	x1,1732(x1) # 16204 <rvmodel_io_write_str>
+    1b48:	00003517          	auipc	x10,0x3
+    1b4c:	32852503          	lw	x10,808(x10) # 4e70 <trap_diag_subtype>
+    1b50:	00200593          	addi	x11,x0,2
+    1b54:	08b51463          	bne	x10,x11,1bdc <trap_field_not_cause>
+    1b58:	00000013          	addi	x0,x0,0
+    1b5c:	00000013          	addi	x0,x0,0
+    1b60:	00005517          	auipc	x10,0x5
+    1b64:	98150513          	addi	x10,x10,-1663 # 64e1 <trap_diag_expected_cause_name_str>
+    1b68:	00000013          	addi	x0,x0,0
+    1b6c:	00000013          	addi	x0,x0,0
+    1b70:	00000013          	addi	x0,x0,0
+    1b74:	00000013          	addi	x0,x0,0
+    1b78:	00000013          	addi	x0,x0,0
+    1b7c:	00000013          	addi	x0,x0,0
+    1b80:	00014097          	auipc	x1,0x14
+    1b84:	684080e7          	jalr	x1,1668(x1) # 16204 <rvmodel_io_write_str>
+    1b88:	00003517          	auipc	x10,0x3
+    1b8c:	2f852503          	lw	x10,760(x10) # 4e80 <trap_diag_expected_value>
+    1b90:	284000ef          	jal	x1,1e14 <trap_cause_to_str>
+    1b94:	00014097          	auipc	x1,0x14
+    1b98:	670080e7          	jalr	x1,1648(x1) # 16204 <rvmodel_io_write_str>
+    1b9c:	00000013          	addi	x0,x0,0
+    1ba0:	00005517          	auipc	x10,0x5
+    1ba4:	95850513          	addi	x10,x10,-1704 # 64f8 <trap_diag_actual_cause_name_str>
+    1ba8:	00000013          	addi	x0,x0,0
+    1bac:	00000013          	addi	x0,x0,0
+    1bb0:	00000013          	addi	x0,x0,0
+    1bb4:	00000013          	addi	x0,x0,0
+    1bb8:	00000013          	addi	x0,x0,0
+    1bbc:	00000013          	addi	x0,x0,0
+    1bc0:	00014097          	auipc	x1,0x14
+    1bc4:	644080e7          	jalr	x1,1604(x1) # 16204 <rvmodel_io_write_str>
+    1bc8:	00003517          	auipc	x10,0x3
+    1bcc:	2b052503          	lw	x10,688(x10) # 4e78 <trap_diag_actual_value>
+    1bd0:	244000ef          	jal	x1,1e14 <trap_cause_to_str>
+    1bd4:	00014097          	auipc	x1,0x14
+    1bd8:	630080e7          	jalr	x1,1584(x1) # 16204 <rvmodel_io_write_str>
+
+00001bdc <trap_field_not_cause>:
+    1bdc:	00000097          	auipc	x1,0x0
+    1be0:	314080e7          	jalr	x1,788(x1) # 1ef0 <failedtest_print_csr_context>
+    1be4:	00003517          	auipc	x10,0x3
+    1be8:	28c52503          	lw	x10,652(x10) # 4e70 <trap_diag_subtype>
+    1bec:	00100593          	addi	x11,x0,1
+    1bf0:	02b51e63          	bne	x10,x11,1c2c <trap_field_not_cause+0x50>
+    1bf4:	00000013          	addi	x0,x0,0
+    1bf8:	00000013          	addi	x0,x0,0
+    1bfc:	00000013          	addi	x0,x0,0
+    1c00:	00005517          	auipc	x10,0x5
+    1c04:	96e50513          	addi	x10,x10,-1682 # 656e <trap_diag_hint_vect_str>
+    1c08:	00000013          	addi	x0,x0,0
+    1c0c:	00000013          	addi	x0,x0,0
+    1c10:	00000013          	addi	x0,x0,0
+    1c14:	00000013          	addi	x0,x0,0
+    1c18:	00000013          	addi	x0,x0,0
+    1c1c:	00000013          	addi	x0,x0,0
+    1c20:	00014097          	auipc	x1,0x14
+    1c24:	5e4080e7          	jalr	x1,1508(x1) # 16204 <rvmodel_io_write_str>
+    1c28:	27c0006f          	jal	x0,1ea4 <failedtest_report_end>
+    1c2c:	00200593          	addi	x11,x0,2
+    1c30:	02b51e63          	bne	x10,x11,1c6c <trap_field_not_cause+0x90>
+    1c34:	00000013          	addi	x0,x0,0
+    1c38:	00000013          	addi	x0,x0,0
+    1c3c:	00000013          	addi	x0,x0,0
+    1c40:	00005517          	auipc	x10,0x5
+    1c44:	a0450513          	addi	x10,x10,-1532 # 6644 <trap_diag_hint_cause_str>
+    1c48:	00000013          	addi	x0,x0,0
+    1c4c:	00000013          	addi	x0,x0,0
+    1c50:	00000013          	addi	x0,x0,0
+    1c54:	00000013          	addi	x0,x0,0
+    1c58:	00000013          	addi	x0,x0,0
+    1c5c:	00000013          	addi	x0,x0,0
+    1c60:	00014097          	auipc	x1,0x14
+    1c64:	5a4080e7          	jalr	x1,1444(x1) # 16204 <rvmodel_io_write_str>
+    1c68:	23c0006f          	jal	x0,1ea4 <failedtest_report_end>
+    1c6c:	00300593          	addi	x11,x0,3
+    1c70:	02b51e63          	bne	x10,x11,1cac <trap_field_not_cause+0xd0>
+    1c74:	00000013          	addi	x0,x0,0
+    1c78:	00000013          	addi	x0,x0,0
+    1c7c:	00000013          	addi	x0,x0,0
+    1c80:	00005517          	auipc	x10,0x5
+    1c84:	ab750513          	addi	x10,x10,-1353 # 6737 <trap_diag_hint_epc_str>
+    1c88:	00000013          	addi	x0,x0,0
+    1c8c:	00000013          	addi	x0,x0,0
+    1c90:	00000013          	addi	x0,x0,0
+    1c94:	00000013          	addi	x0,x0,0
+    1c98:	00000013          	addi	x0,x0,0
+    1c9c:	00000013          	addi	x0,x0,0
+    1ca0:	00014097          	auipc	x1,0x14
+    1ca4:	564080e7          	jalr	x1,1380(x1) # 16204 <rvmodel_io_write_str>
+    1ca8:	1fc0006f          	jal	x0,1ea4 <failedtest_report_end>
+    1cac:	00400593          	addi	x11,x0,4
+    1cb0:	02b51e63          	bne	x10,x11,1cec <trap_field_not_cause+0x110>
+    1cb4:	00000013          	addi	x0,x0,0
+    1cb8:	00000013          	addi	x0,x0,0
+    1cbc:	00000013          	addi	x0,x0,0
+    1cc0:	00005517          	auipc	x10,0x5
+    1cc4:	b7250513          	addi	x10,x10,-1166 # 6832 <trap_diag_hint_tval_str>
+    1cc8:	00000013          	addi	x0,x0,0
+    1ccc:	00000013          	addi	x0,x0,0
+    1cd0:	00000013          	addi	x0,x0,0
+    1cd4:	00000013          	addi	x0,x0,0
+    1cd8:	00000013          	addi	x0,x0,0
+    1cdc:	00000013          	addi	x0,x0,0
+    1ce0:	00014097          	auipc	x1,0x14
+    1ce4:	524080e7          	jalr	x1,1316(x1) # 16204 <rvmodel_io_write_str>
+    1ce8:	1bc0006f          	jal	x0,1ea4 <failedtest_report_end>
+    1cec:	00500593          	addi	x11,x0,5
+    1cf0:	02b51e63          	bne	x10,x11,1d2c <trap_field_not_cause+0x150>
+    1cf4:	00000013          	addi	x0,x0,0
+    1cf8:	00000013          	addi	x0,x0,0
+    1cfc:	00000013          	addi	x0,x0,0
+    1d00:	00005517          	auipc	x10,0x5
+    1d04:	c1950513          	addi	x10,x10,-999 # 6919 <trap_diag_hint_ip_str>
+    1d08:	00000013          	addi	x0,x0,0
+    1d0c:	00000013          	addi	x0,x0,0
+    1d10:	00000013          	addi	x0,x0,0
+    1d14:	00000013          	addi	x0,x0,0
+    1d18:	00000013          	addi	x0,x0,0
+    1d1c:	00000013          	addi	x0,x0,0
+    1d20:	00014097          	auipc	x1,0x14
+    1d24:	4e4080e7          	jalr	x1,1252(x1) # 16204 <rvmodel_io_write_str>
+    1d28:	17c0006f          	jal	x0,1ea4 <failedtest_report_end>
+    1d2c:	1780006f          	jal	x0,1ea4 <failedtest_report_end>
+
+00001d30 <trap_report_generic>:
+    1d30:	00000013          	addi	x0,x0,0
+    1d34:	00000013          	addi	x0,x0,0
+    1d38:	00000013          	addi	x0,x0,0
+    1d3c:	00000013          	addi	x0,x0,0
+    1d40:	00004517          	auipc	x10,0x4
+    1d44:	7e650513          	addi	x10,x10,2022 # 6526 <trap_diag_generic_str>
+    1d48:	00000013          	addi	x0,x0,0
+    1d4c:	00000013          	addi	x0,x0,0
+    1d50:	00000013          	addi	x0,x0,0
+    1d54:	00000013          	addi	x0,x0,0
+    1d58:	00000013          	addi	x0,x0,0
+    1d5c:	00000013          	addi	x0,x0,0
+    1d60:	00014097          	auipc	x1,0x14
+    1d64:	4a4080e7          	jalr	x1,1188(x1) # 16204 <rvmodel_io_write_str>
+    1d68:	00003617          	auipc	x12,0x3
+    1d6c:	14062603          	lw	x12,320(x12) # 4ea8 <saved_mepc>
+    1d70:	00000013          	addi	x0,x0,0
+    1d74:	00000013          	addi	x0,x0,0
+    1d78:	00000013          	addi	x0,x0,0
+    1d7c:	00000013          	addi	x0,x0,0
+    1d80:	00003517          	auipc	x10,0x3
+    1d84:	78950513          	addi	x10,x10,1929 # 5509 <xepcinstrstr>
+    1d88:	00000013          	addi	x0,x0,0
+    1d8c:	00000013          	addi	x0,x0,0
+    1d90:	00000013          	addi	x0,x0,0
+    1d94:	00000013          	addi	x0,x0,0
+    1d98:	00000013          	addi	x0,x0,0
+    1d9c:	00000013          	addi	x0,x0,0
+    1da0:	00014097          	auipc	x1,0x14
+    1da4:	464080e7          	jalr	x1,1124(x1) # 16204 <rvmodel_io_write_str>
+    1da8:	00065503          	lhu	x10,0(x12)
+    1dac:	01000593          	addi	x11,x0,16
+    1db0:	00357413          	andi	x8,x10,3
+    1db4:	00300493          	addi	x9,x0,3
+    1db8:	00941a63          	bne	x8,x9,1dcc <trap_report_generic+0x9c>
+    1dbc:	00265403          	lhu	x8,2(x12)
+    1dc0:	01041413          	slli	x8,x8,0x10
+    1dc4:	00856533          	or	x10,x10,x8
+    1dc8:	02000593          	addi	x11,x0,32
+    1dcc:	32c000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    1dd0:	00000013          	addi	x0,x0,0
+    1dd4:	00000013          	addi	x0,x0,0
+    1dd8:	00000013          	addi	x0,x0,0
+    1ddc:	00000013          	addi	x0,x0,0
+    1de0:	00003517          	auipc	x10,0x3
+    1de4:	0e850513          	addi	x10,x10,232 # 4ec8 <ascii_buffer>
+    1de8:	00000013          	addi	x0,x0,0
+    1dec:	00000013          	addi	x0,x0,0
+    1df0:	00000013          	addi	x0,x0,0
+    1df4:	00000013          	addi	x0,x0,0
+    1df8:	00000013          	addi	x0,x0,0
+    1dfc:	00000013          	addi	x0,x0,0
+    1e00:	00014097          	auipc	x1,0x14
+    1e04:	404080e7          	jalr	x1,1028(x1) # 16204 <rvmodel_io_write_str>
+    1e08:	00000097          	auipc	x1,0x0
+    1e0c:	0e8080e7          	jalr	x1,232(x1) # 1ef0 <failedtest_print_csr_context>
+    1e10:	0940006f          	jal	x0,1ea4 <failedtest_report_end>
+
+00001e14 <trap_cause_to_str>:
+    1e14:	02054263          	blt	x10,x0,1e38 <trap_cause_interrupt>
+
+00001e18 <trap_cause_exception>:
+    1e18:	01800593          	addi	x11,x0,24
+    1e1c:	04b55463          	bge	x10,x11,1e64 <trap_cause_unknown>
+    1e20:	00003597          	auipc	x11,0x3
+    1e24:	0d058593          	addi	x11,x11,208 # 4ef0 <end_failure_scratch>
+    1e28:	00251613          	slli	x12,x10,0x2
+    1e2c:	00c585b3          	add	x11,x11,x12
+    1e30:	0005a503          	lw	x10,0(x11)
+    1e34:	00008067          	jalr	x0,0(x1)
+
+00001e38 <trap_cause_interrupt>:
+    1e38:	00100593          	addi	x11,x0,1
+    1e3c:	01f59593          	slli	x11,x11,0x1f
+    1e40:	00b54533          	xor	x10,x10,x11
+    1e44:	01000593          	addi	x11,x0,16
+    1e48:	00b55e63          	bge	x10,x11,1e64 <trap_cause_unknown>
+    1e4c:	00003597          	auipc	x11,0x3
+    1e50:	10458593          	addi	x11,x11,260 # 4f50 <trap_int_name_tbl>
+    1e54:	00251613          	slli	x12,x10,0x2
+    1e58:	00c585b3          	add	x11,x11,x12
+    1e5c:	0005a503          	lw	x10,0(x11)
+    1e60:	00008067          	jalr	x0,0(x1)
+
+00001e64 <trap_cause_unknown>:
+    1e64:	00000013          	addi	x0,x0,0
+    1e68:	00000013          	addi	x0,x0,0
+    1e6c:	00000013          	addi	x0,x0,0
+    1e70:	00000013          	addi	x0,x0,0
+    1e74:	00000013          	addi	x0,x0,0
+    1e78:	00000013          	addi	x0,x0,0
+    1e7c:	00000013          	addi	x0,x0,0
+    1e80:	00003517          	auipc	x10,0x3
+    1e84:	50e50513          	addi	x10,x10,1294 # 538e <trap_cause_unknown_str>
+    1e88:	00000013          	addi	x0,x0,0
+    1e8c:	00000013          	addi	x0,x0,0
+    1e90:	00000013          	addi	x0,x0,0
+    1e94:	00000013          	addi	x0,x0,0
+    1e98:	00000013          	addi	x0,x0,0
+    1e9c:	00000013          	addi	x0,x0,0
+    1ea0:	00008067          	jalr	x0,0(x1)
+
+00001ea4 <failedtest_report_end>:
+    1ea4:	00000013          	addi	x0,x0,0
+    1ea8:	00000013          	addi	x0,x0,0
+    1eac:	00000013          	addi	x0,x0,0
+    1eb0:	00000013          	addi	x0,x0,0
+    1eb4:	00000013          	addi	x0,x0,0
+    1eb8:	00000013          	addi	x0,x0,0
+    1ebc:	00000013          	addi	x0,x0,0
+    1ec0:	00004517          	auipc	x10,0x4
+    1ec4:	09150513          	addi	x10,x10,145 # 5f51 <endstr>
+    1ec8:	00000013          	addi	x0,x0,0
+    1ecc:	00000013          	addi	x0,x0,0
+    1ed0:	00000013          	addi	x0,x0,0
+    1ed4:	00000013          	addi	x0,x0,0
+    1ed8:	00000013          	addi	x0,x0,0
+    1edc:	00000013          	addi	x0,x0,0
+    1ee0:	00014097          	auipc	x1,0x14
+    1ee4:	324080e7          	jalr	x1,804(x1) # 16204 <rvmodel_io_write_str>
+
+00001ee8 <failedtest_terminate>:
+    1ee8:	00014097          	auipc	x1,0x14
+    1eec:	32c080e7          	jalr	x1,812(x1) # 16214 <rvmodel_halt_fail>
+
+00001ef0 <failedtest_print_csr_context>:
+    1ef0:	00003617          	auipc	x12,0x3
+    1ef4:	fb060613          	addi	x12,x12,-80 # 4ea0 <csr_context_ret_addr>
+    1ef8:	00162023          	sw	x1,0(x12)
+    1efc:	00000013          	addi	x0,x0,0
+    1f00:	00003517          	auipc	x10,0x3
+    1f04:	62a50513          	addi	x10,x10,1578 # 552a <mepcstr>
+    1f08:	00000013          	addi	x0,x0,0
+    1f0c:	00000013          	addi	x0,x0,0
+    1f10:	00000013          	addi	x0,x0,0
+    1f14:	00000013          	addi	x0,x0,0
+    1f18:	00000013          	addi	x0,x0,0
+    1f1c:	00000013          	addi	x0,x0,0
+    1f20:	00014097          	auipc	x1,0x14
+    1f24:	2e4080e7          	jalr	x1,740(x1) # 16204 <rvmodel_io_write_str>
+    1f28:	00003517          	auipc	x10,0x3
+    1f2c:	f8052503          	lw	x10,-128(x10) # 4ea8 <saved_mepc>
+    1f30:	02000593          	addi	x11,x0,32
+    1f34:	1c4000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    1f38:	00000013          	addi	x0,x0,0
+    1f3c:	00000013          	addi	x0,x0,0
+    1f40:	00003517          	auipc	x10,0x3
+    1f44:	f8850513          	addi	x10,x10,-120 # 4ec8 <ascii_buffer>
+    1f48:	00000013          	addi	x0,x0,0
+    1f4c:	00000013          	addi	x0,x0,0
+    1f50:	00000013          	addi	x0,x0,0
+    1f54:	00000013          	addi	x0,x0,0
+    1f58:	00000013          	addi	x0,x0,0
+    1f5c:	00000013          	addi	x0,x0,0
+    1f60:	00014097          	auipc	x1,0x14
+    1f64:	2a4080e7          	jalr	x1,676(x1) # 16204 <rvmodel_io_write_str>
+    1f68:	00000013          	addi	x0,x0,0
+    1f6c:	00000013          	addi	x0,x0,0
+    1f70:	00000013          	addi	x0,x0,0
+    1f74:	00000013          	addi	x0,x0,0
+    1f78:	00000013          	addi	x0,x0,0
+    1f7c:	00000013          	addi	x0,x0,0
+    1f80:	00003517          	auipc	x10,0x3
+    1f84:	5ba50513          	addi	x10,x10,1466 # 553a <mcausestr>
+    1f88:	00000013          	addi	x0,x0,0
+    1f8c:	00000013          	addi	x0,x0,0
+    1f90:	00000013          	addi	x0,x0,0
+    1f94:	00000013          	addi	x0,x0,0
+    1f98:	00000013          	addi	x0,x0,0
+    1f9c:	00000013          	addi	x0,x0,0
+    1fa0:	00014097          	auipc	x1,0x14
+    1fa4:	264080e7          	jalr	x1,612(x1) # 16204 <rvmodel_io_write_str>
+    1fa8:	00003517          	auipc	x10,0x3
+    1fac:	f0852503          	lw	x10,-248(x10) # 4eb0 <saved_mcause>
+    1fb0:	02000593          	addi	x11,x0,32
+    1fb4:	144000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    1fb8:	00000013          	addi	x0,x0,0
+    1fbc:	00000013          	addi	x0,x0,0
+    1fc0:	00003517          	auipc	x10,0x3
+    1fc4:	f0850513          	addi	x10,x10,-248 # 4ec8 <ascii_buffer>
+    1fc8:	00000013          	addi	x0,x0,0
+    1fcc:	00000013          	addi	x0,x0,0
+    1fd0:	00000013          	addi	x0,x0,0
+    1fd4:	00000013          	addi	x0,x0,0
+    1fd8:	00000013          	addi	x0,x0,0
+    1fdc:	00000013          	addi	x0,x0,0
+    1fe0:	00014097          	auipc	x1,0x14
+    1fe4:	224080e7          	jalr	x1,548(x1) # 16204 <rvmodel_io_write_str>
+    1fe8:	00000013          	addi	x0,x0,0
+    1fec:	00000013          	addi	x0,x0,0
+    1ff0:	00000013          	addi	x0,x0,0
+    1ff4:	00000013          	addi	x0,x0,0
+    1ff8:	00000013          	addi	x0,x0,0
+    1ffc:	00000013          	addi	x0,x0,0
+    2000:	00003517          	auipc	x10,0x3
+    2004:	54a50513          	addi	x10,x10,1354 # 554a <mtvalstr>
+    2008:	00000013          	addi	x0,x0,0
+    200c:	00000013          	addi	x0,x0,0
+    2010:	00000013          	addi	x0,x0,0
+    2014:	00000013          	addi	x0,x0,0
+    2018:	00000013          	addi	x0,x0,0
+    201c:	00000013          	addi	x0,x0,0
+    2020:	00014097          	auipc	x1,0x14
+    2024:	1e4080e7          	jalr	x1,484(x1) # 16204 <rvmodel_io_write_str>
+    2028:	00003517          	auipc	x10,0x3
+    202c:	e9052503          	lw	x10,-368(x10) # 4eb8 <saved_mtval>
+    2030:	02000593          	addi	x11,x0,32
+    2034:	0c4000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    2038:	00000013          	addi	x0,x0,0
+    203c:	00000013          	addi	x0,x0,0
+    2040:	00003517          	auipc	x10,0x3
+    2044:	e8850513          	addi	x10,x10,-376 # 4ec8 <ascii_buffer>
+    2048:	00000013          	addi	x0,x0,0
+    204c:	00000013          	addi	x0,x0,0
+    2050:	00000013          	addi	x0,x0,0
+    2054:	00000013          	addi	x0,x0,0
+    2058:	00000013          	addi	x0,x0,0
+    205c:	00000013          	addi	x0,x0,0
+    2060:	00014097          	auipc	x1,0x14
+    2064:	1a4080e7          	jalr	x1,420(x1) # 16204 <rvmodel_io_write_str>
+    2068:	00000013          	addi	x0,x0,0
+    206c:	00000013          	addi	x0,x0,0
+    2070:	00000013          	addi	x0,x0,0
+    2074:	00000013          	addi	x0,x0,0
+    2078:	00000013          	addi	x0,x0,0
+    207c:	00000013          	addi	x0,x0,0
+    2080:	00003517          	auipc	x10,0x3
+    2084:	4da50513          	addi	x10,x10,1242 # 555a <mstatusstr>
+    2088:	00000013          	addi	x0,x0,0
+    208c:	00000013          	addi	x0,x0,0
+    2090:	00000013          	addi	x0,x0,0
+    2094:	00000013          	addi	x0,x0,0
+    2098:	00000013          	addi	x0,x0,0
+    209c:	00000013          	addi	x0,x0,0
+    20a0:	00014097          	auipc	x1,0x14
+    20a4:	164080e7          	jalr	x1,356(x1) # 16204 <rvmodel_io_write_str>
+    20a8:	00003517          	auipc	x10,0x3
+    20ac:	e1852503          	lw	x10,-488(x10) # 4ec0 <saved_mstatus>
+    20b0:	02000593          	addi	x11,x0,32
+    20b4:	044000ef          	jal	x1,20f8 <failedtest_hex_to_str>
+    20b8:	00000013          	addi	x0,x0,0
+    20bc:	00000013          	addi	x0,x0,0
+    20c0:	00003517          	auipc	x10,0x3
+    20c4:	e0850513          	addi	x10,x10,-504 # 4ec8 <ascii_buffer>
+    20c8:	00000013          	addi	x0,x0,0
+    20cc:	00000013          	addi	x0,x0,0
+    20d0:	00000013          	addi	x0,x0,0
+    20d4:	00000013          	addi	x0,x0,0
+    20d8:	00000013          	addi	x0,x0,0
+    20dc:	00000013          	addi	x0,x0,0
+    20e0:	00014097          	auipc	x1,0x14
+    20e4:	124080e7          	jalr	x1,292(x1) # 16204 <rvmodel_io_write_str>
+    20e8:	00003617          	auipc	x12,0x3
+    20ec:	db860613          	addi	x12,x12,-584 # 4ea0 <csr_context_ret_addr>
+    20f0:	00062083          	lw	x1,0(x12)
+    20f4:	00008067          	jalr	x0,0(x1)
+
+000020f8 <failedtest_hex_to_str>:
+    20f8:	00000013          	addi	x0,x0,0
+    20fc:	00000013          	addi	x0,x0,0
+    2100:	00003617          	auipc	x12,0x3
+    2104:	dc860613          	addi	x12,x12,-568 # 4ec8 <ascii_buffer>
+    2108:	00000013          	addi	x0,x0,0
+    210c:	00000013          	addi	x0,x0,0
+    2110:	00000013          	addi	x0,x0,0
+    2114:	00000013          	addi	x0,x0,0
+    2118:	00000013          	addi	x0,x0,0
+    211c:	00000013          	addi	x0,x0,0
+    2120:	03000693          	addi	x13,x0,48
+    2124:	00d60023          	sb	x13,0(x12)
+    2128:	07800693          	addi	x13,x0,120
+    212c:	00d600a3          	sb	x13,1(x12)
+    2130:	00260613          	addi	x12,x12,2
+    2134:	00058693          	addi	x13,x11,0
+
+00002138 <failedtest_hex_to_str_loop>:
+    2138:	ffc68693          	addi	x13,x13,-4
+    213c:	00d55733          	srl	x14,x10,x13
+    2140:	00f77713          	andi	x14,x14,15
+    2144:	00a00793          	addi	x15,x0,10
+    2148:	00f74663          	blt	x14,x15,2154 <failedtest_hex_to_str_digit>
+    214c:	05770713          	addi	x14,x14,87
+    2150:	0080006f          	jal	x0,2158 <failedtest_hex_to_str_write>
+
+00002154 <failedtest_hex_to_str_digit>:
+    2154:	03070713          	addi	x14,x14,48
+
+00002158 <failedtest_hex_to_str_write>:
+    2158:	00e60023          	sb	x14,0(x12)
+    215c:	00160613          	addi	x12,x12,1
+    2160:	fc069ce3          	bne	x13,x0,2138 <failedtest_hex_to_str_loop>
+    2164:	00a00693          	addi	x13,x0,10
+    2168:	00d60023          	sb	x13,0(x12)
+    216c:	000600a3          	sb	x0,1(x12)
+    2170:	00008067          	jalr	x0,0(x1)
+
+00002174 <failedtest_dec_to_str>:
+    2174:	00a00693          	addi	x13,x0,10
+    2178:	02d54663          	blt	x10,x13,21a4 <failedtest_dec_to_str+0x30>
+    217c:	ff650513          	addi	x10,x10,-10
+    2180:	03100713          	addi	x14,x0,49
+    2184:	00d54c63          	blt	x10,x13,219c <failedtest_dec_to_str+0x28>
+    2188:	ff650513          	addi	x10,x10,-10
+    218c:	03200713          	addi	x14,x0,50
+    2190:	00d54663          	blt	x10,x13,219c <failedtest_dec_to_str+0x28>
+    2194:	ff650513          	addi	x10,x10,-10
+    2198:	03300713          	addi	x14,x0,51
+    219c:	00e60023          	sb	x14,0(x12)
+    21a0:	00160613          	addi	x12,x12,1
+    21a4:	03050513          	addi	x10,x10,48
+    21a8:	00a60023          	sb	x10,0(x12)
+    21ac:	00a00693          	addi	x13,x0,10
+    21b0:	00d600a3          	sb	x13,1(x12)
+    21b4:	00060123          	sb	x0,2(x12)
+    21b8:	00008067          	jalr	x0,0(x1)
+    21bc:	00000013          	addi	x0,x0,0
+
+Disassembly of section .text.rvmodel:
+
+00016000 <rvmodel_boot>:
+   16000:	feedc0b7          	lui	x1,0xfeedc
+   16004:	ead08093          	addi	x1,x1,-339 # feedbead <absimm+0x8f911ba4>
+   16008:	01909793          	slli	x15,x1,0x19
+   1600c:	0070d113          	srli	x2,x1,0x7
+   16010:	00f16133          	or	x2,x2,x15
+   16014:	01911793          	slli	x15,x2,0x19
+   16018:	00715193          	srli	x3,x2,0x7
+   1601c:	00f1e1b3          	or	x3,x3,x15
+   16020:	01919793          	slli	x15,x3,0x19
+   16024:	0071d213          	srli	x4,x3,0x7
+   16028:	00f26233          	or	x4,x4,x15
+   1602c:	01921793          	slli	x15,x4,0x19
+   16030:	00725293          	srli	x5,x4,0x7
+   16034:	00f2e2b3          	or	x5,x5,x15
+   16038:	01929793          	slli	x15,x5,0x19
+   1603c:	0072d313          	srli	x6,x5,0x7
+   16040:	00f36333          	or	x6,x6,x15
+   16044:	01931793          	slli	x15,x6,0x19
+   16048:	00735393          	srli	x7,x6,0x7
+   1604c:	00f3e3b3          	or	x7,x7,x15
+   16050:	01939793          	slli	x15,x7,0x19
+   16054:	0073d413          	srli	x8,x7,0x7
+   16058:	00f46433          	or	x8,x8,x15
+   1605c:	01941793          	slli	x15,x8,0x19
+   16060:	00745493          	srli	x9,x8,0x7
+   16064:	00f4e4b3          	or	x9,x9,x15
+   16068:	01949793          	slli	x15,x9,0x19
+   1606c:	0074d513          	srli	x10,x9,0x7
+   16070:	00f56533          	or	x10,x10,x15
+   16074:	01951793          	slli	x15,x10,0x19
+   16078:	00755593          	srli	x11,x10,0x7
+   1607c:	00f5e5b3          	or	x11,x11,x15
+   16080:	01959793          	slli	x15,x11,0x19
+   16084:	0075d613          	srli	x12,x11,0x7
+   16088:	00f66633          	or	x12,x12,x15
+   1608c:	01961793          	slli	x15,x12,0x19
+   16090:	00765693          	srli	x13,x12,0x7
+   16094:	00f6e6b3          	or	x13,x13,x15
+   16098:	01969793          	slli	x15,x13,0x19
+   1609c:	0076d713          	srli	x14,x13,0x7
+   160a0:	00f76733          	or	x14,x14,x15
+   160a4:	fab807b7          	lui	x15,0xfab80
+   160a8:	bb678793          	addi	x15,x15,-1098 # fab7fbb6 <absimm+0x8b5b58ad>
+   160ac:	7d5c0837          	lui	x16,0x7d5c0
+   160b0:	ddb80813          	addi	x16,x16,-549 # 7d5bfddb <absimm+0xdff5ad2>
+   160b4:	01981793          	slli	x15,x16,0x19
+   160b8:	00785893          	srli	x17,x16,0x7
+   160bc:	00f8e8b3          	or	x17,x17,x15
+   160c0:	01989793          	slli	x15,x17,0x19
+   160c4:	0078d913          	srli	x18,x17,0x7
+   160c8:	00f96933          	or	x18,x18,x15
+   160cc:	01991793          	slli	x15,x18,0x19
+   160d0:	00795993          	srli	x19,x18,0x7
+   160d4:	00f9e9b3          	or	x19,x19,x15
+   160d8:	01999793          	slli	x15,x19,0x19
+   160dc:	0079da13          	srli	x20,x19,0x7
+   160e0:	00fa6a33          	or	x20,x20,x15
+   160e4:	019a1793          	slli	x15,x20,0x19
+   160e8:	007a5a93          	srli	x21,x20,0x7
+   160ec:	00faeab3          	or	x21,x21,x15
+   160f0:	019a9793          	slli	x15,x21,0x19
+   160f4:	007adb13          	srli	x22,x21,0x7
+   160f8:	00fb6b33          	or	x22,x22,x15
+   160fc:	019b1793          	slli	x15,x22,0x19
+   16100:	007b5b93          	srli	x23,x22,0x7
+   16104:	00fbebb3          	or	x23,x23,x15
+   16108:	019b9793          	slli	x15,x23,0x19
+   1610c:	007bdc13          	srli	x24,x23,0x7
+   16110:	00fc6c33          	or	x24,x24,x15
+   16114:	019c1793          	slli	x15,x24,0x19
+   16118:	007c5c93          	srli	x25,x24,0x7
+   1611c:	00fcecb3          	or	x25,x25,x15
+   16120:	019c9793          	slli	x15,x25,0x19
+   16124:	007cdd13          	srli	x26,x25,0x7
+   16128:	00fd6d33          	or	x26,x26,x15
+   1612c:	019d1793          	slli	x15,x26,0x19
+   16130:	007d5d93          	srli	x27,x26,0x7
+   16134:	00fdedb3          	or	x27,x27,x15
+   16138:	019d9793          	slli	x15,x27,0x19
+   1613c:	007dde13          	srli	x28,x27,0x7
+   16140:	00fe6e33          	or	x28,x28,x15
+   16144:	019e1793          	slli	x15,x28,0x19
+   16148:	007e5e93          	srli	x29,x28,0x7
+   1614c:	00feeeb3          	or	x29,x29,x15
+   16150:	019e9793          	slli	x15,x29,0x19
+   16154:	007edf13          	srli	x30,x29,0x7
+   16158:	00ff6f33          	or	x30,x30,x15
+   1615c:	019f1793          	slli	x15,x30,0x19
+   16160:	007f5f93          	srli	x31,x30,0x7
+   16164:	00ffefb3          	or	x31,x31,x15
+   16168:	00000013          	addi	x0,x0,0
+   1616c:	00000013          	addi	x0,x0,0
+   16170:	00000013          	addi	x0,x0,0
+   16174:	00000013          	addi	x0,x0,0
+   16178:	00000013          	addi	x0,x0,0
+   1617c:	00000013          	addi	x0,x0,0
+   16180:	ffff1117          	auipc	x2,0xffff1
+   16184:	88010113          	addi	x2,x2,-1920 # 6a00 <begin_signature>
+   16188:	00000013          	addi	x0,x0,0
+   1618c:	00000013          	addi	x0,x0,0
+   16190:	00000013          	addi	x0,x0,0
+   16194:	00000013          	addi	x0,x0,0
+   16198:	00000013          	addi	x0,x0,0
+   1619c:	00000013          	addi	x0,x0,0
+
+000161a0 <canary_check>:
+   161a0:	6f5ca337          	lui	x6,0x6f5ca
+   161a4:	30930313          	addi	x6,x6,777 # 6f5ca309 <absimm>
+   161a8:	00012203          	lw	x4,0(x2)
+   161ac:	00620863          	beq	x4,x6,161bc <canary_check+0x1c>
+   161b0:	d8cea2ef          	jal	x5,73c <failedtest_x5_x4>
+   161b4:	000161a0          	.word	0x000161a0
+   161b8:	00005f7a          	.word	0x00005f7a
+   161bc:	00410113          	addi	x2,x2,4
+   161c0:	fffee197          	auipc	x3,0xfffee
+   161c4:	f5018193          	addi	x3,x3,-176 # 4110 <rvtest_data_begin>
+   161c8:	00000013          	addi	x0,x0,0
+   161cc:	00000013          	addi	x0,x0,0
+   161d0:	00000013          	addi	x0,x0,0
+   161d4:	00000013          	addi	x0,x0,0
+   161d8:	00000013          	addi	x0,x0,0
+   161dc:	00000013          	addi	x0,x0,0
+   161e0:	fffea317          	auipc	x6,0xfffea
+   161e4:	e6030313          	addi	x6,x6,-416 # 40 <rvtest_code_begin>
+   161e8:	00000013          	addi	x0,x0,0
+   161ec:	00000013          	addi	x0,x0,0
+   161f0:	00000013          	addi	x0,x0,0
+   161f4:	00000013          	addi	x0,x0,0
+   161f8:	00000013          	addi	x0,x0,0
+   161fc:	00000013          	addi	x0,x0,0
+   16200:	00030067          	jalr	x0,0(x6)
+
+00016204 <rvmodel_io_write_str>:
+   16204:	00008067          	jalr	x0,0(x1)
+
+00016208 <rvmodel_halt_pass>:
+   16208:	00000513          	addi	x10,x0,0
+   1620c:	00000073          	ecall
+   16210:	0000006f          	jal	x0,16210 <rvmodel_halt_pass+0x8>
+
+00016214 <rvmodel_halt_fail>:
+   16214:	00100513          	addi	x10,x0,1
+   16218:	00000073          	ecall
+   1621c:	0000006f          	jal	x0,1621c <rvmodel_halt_fail+0x8>
+   16220:	00000013          	addi	x0,x0,0
+   16224:	00000013          	addi	x0,x0,0
+   16228:	00000013          	addi	x0,x0,0
+   1622c:	00000013          	addi	x0,x0,0
+   16230:	00000013          	addi	x0,x0,0
+   16234:	00000013          	addi	x0,x0,0
+   16238:	00000013          	addi	x0,x0,0
+   1623c:	00000013          	addi	x0,x0,0
