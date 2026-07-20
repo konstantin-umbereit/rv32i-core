@@ -4,17 +4,9 @@
 
 ## 1. Verification State:
 
-No official risc-v verification acquired yet. 
-    
-The cpu passes basic self written test for all rv32i basic integer instructions:
-- add, sub, and, or, xor, sll, srl, sra, slt, sltu
-- addi, andi, ori, xori, slli, srli, srai, slti, sltiu,
-- lb, lh, lw, lbu, lhu
-- sb, sh, sw,
-- beq, bne, blt, bge, bltu, bgeu,
-- jal, jalr
-- lui, auipc
-- ecall, ebreak
+The CPU passes the complete set of official riscv-arch-test suites for the base integer ISA.
+
+See riscv_arch_config/ for the config files and riscv_arch_test_programs/ for the generated test files.
 
 ## 2. Specifications
 
@@ -27,29 +19,42 @@ The cpu passes basic self written test for all rv32i basic integer instructions:
 - An active-low asynchronous reset signal resets the program counter and regfile module.
 
 - System call (ebreak/ecall) handling: Control module sends a control signal to halt the program counter.
+ 
+- 'fence' instruction handling: treated as 'nop'
 
 ## 3. Test Bench Usage
 
 Every module can be tested via its corresponding test bench file.
 
-### 3.1 Top Module Testing
+In addition, their is a separate test bench specifically for the riscv-arch-test suite.
+
+All test benches generate a corresponding .vcd file in the waveforms/ directory.
+
+### 3.1 Top Module Testing with riscv-arch-test files.
 
 1. Source file must be of type '.hex', one instruction per line (little endian) and no in-file metadata.
-(Note: To convert raw binary to '.hex', move the '.bin' file into /test_programs 
-and call * *make test_programs/%.hex* *, where '%' is the source file name (requires python3)).
+(Note: To convert raw binary to '.hex', call * *make %.hex* *, where '%' is the binary source file path (requires python3)).
 
-2. Open tb_rv32i_core.sv in a text editior and change argument 0 of '$readmemh' statement to the path to the '.hex' file.
+2. Open arch_tb_rv32i_core.sv in a text editior and change both the argument 0 of the '$readmemh' statement and the argument 0 the 'load_hex_to_byte_mem' call to the '.hex' file path.
 
-  3.  
+3.  
+```bash 
+        make arch_tb_rv32i_core
+```
+
+### 3.2 Top Module Testing with regular test files.
+
+1. Source file must be of type '.hex', one instruction per line (little endian) and no in-file metadata.
+(Note: To convert raw binary to '.hex', call * *make %.hex* *, where '%' is the binary source file path (requires python3)).
+
+2. Open tb_rv32i_core.sv in a text editior and change argument 0 of '$readmemh' statement to the '.hex' file path.
+
+3.  
 ```bash 
         make tb_rv32i_core
 ```
-
-4. Read console ouput or open /waveforms to 
-access the created '.vdc' file.
-
     
-### 3.2 Sub Module Testing
+### 3.3 Sub Module Testing
 
 ```bash 
         make tb_modulename
