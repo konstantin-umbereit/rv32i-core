@@ -23,6 +23,7 @@ See riscv_arch_config/ for the config files and riscv_arch_test_programs/ for th
 - 'fence' instruction handling: treated as 'nop'
 
 ## 3. Test Bench Usage
+Simulation Tool: Verilator 5.032 (Note: These test benches don't work yet on some newer versions.)
 
 Every module can be tested via its corresponding test bench file.
 
